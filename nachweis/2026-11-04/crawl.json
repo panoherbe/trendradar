@@ -1,0 +1,20 @@
+{
+  "zeitpunkt_utc": "2026-11-04T04:42:38Z",
+  "datum": "2026-11-04",
+  "domains": 136,
+  "status": {
+    "weiterleitung_fremd": 5,
+    "ssl_fehler": 4,
+    "ok": 117,
+    "robots_gesperrt": 2,
+    "kein_text": 5,
+    "http_fehler": 2,
+    "nicht_erreichbar": 1
+  },
+  "quote_ok": 0.86,
+  "seiten_ok": 1182,
+  "seiten_robots_gesperrt": 5,
+  "seiten_fehler": 53,
+  "abrufe": 1419,
+  "dauer_s": 309.6
+}

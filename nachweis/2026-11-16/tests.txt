@@ -1,0 +1,56 @@
+Lauf 2026-11-16T22:16:14Z, docker compose run --rm --entrypoint "python -m pytest -v -p no:cacheprovider tests" test
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.3.4, pluggy-1.7.0 -- /usr/local/bin/python
+rootdir: /app
+configfile: pyproject.toml
+plugins: anyio-4.16.0
+collecting ... collected 40 items
+
+tests/test_api.py::test_megatrends_und_mehrfachzugehoerigkeit PASSED     [  2%]
+tests/test_api.py::test_rangliste_mit_beleg_und_seiten PASSED            [  5%]
+tests/test_api.py::test_fehler_als_json_mit_korrelations_id PASSED       [  7%]
+tests/test_api.py::test_rate_limit_429_mit_retry_after PASSED            [ 10%]
+tests/test_api.py::test_protokoll_ohne_inhaltsdaten PASSED               [ 12%]
+tests/test_api.py::test_passende_trends_mit_quellen PASSED               [ 15%]
+tests/test_api.py::test_kooperation_und_export PASSED                    [ 17%]
+tests/test_api.py::test_oberflaeche PASSED                               [ 20%]
+tests/test_api.py::test_themenseite_zeigt_ohne_angabe_nur_nachweise PASSED [ 22%]
+tests/test_bewertung.py::test_rubrik_stufen PASSED                       [ 25%]
+tests/test_bewertung.py::test_cpv_code_allein_hoechstens_sieben PASSED   [ 27%]
+tests/test_bewertung.py::test_begriffe_kompositum_und_wortanfang PASSED  [ 30%]
+tests/test_bewertung.py::test_datenstand_vollstaendig_und_nachvollziehbar PASSED [ 32%]
+tests/test_bewertung.py::test_jedes_zitat_steht_woertlich_in_der_quelle PASSED [ 35%]
+tests/test_bewertung.py::test_megatrend_beide_regeln PASSED              [ 37%]
+tests/test_bewertung.py::test_zitatpruefung_verwirft_abweichung PASSED   [ 40%]
+tests/test_bewertung.py::test_schwellen_aus_datei_und_unbekanntes_modell PASSED [ 42%]
+tests/test_bewertung.py::test_einbetter_wahl_und_vorsatz PASSED          [ 45%]
+tests/test_bewertung.py::test_rangmasse PASSED                           [ 47%]
+tests/test_bewertung.py::test_hochrechnung_nach_schichten_der_ziehung PASSED [ 50%]
+tests/test_kooperation.py::test_findet_vollstaendige_gruppe_und_bevorzugt_gleichen_kreis PASSED [ 52%]
+tests/test_kooperation.py::test_luecke_wird_ausgewiesen PASSED           [ 55%]
+tests/test_kooperation.py::test_deterministisch PASSED                   [ 57%]
+tests/test_quellen.py::test_nur_unternehmen_mit_rechtsform PASSED        [ 60%]
+tests/test_quellen.py::test_schluessel_ohne_fuzzy PASSED                 [ 62%]
+tests/test_quellen.py::test_eforms_gewinner_je_los_unabhaengig_vom_praefix PASSED [ 65%]
+tests/test_quellen.py::test_zuordnung_nur_wenn_eindeutig PASSED          [ 67%]
+tests/test_quellen.py::test_nur_auftragnehmer_aus_der_region PASSED      [ 70%]
+tests/test_quellen.py::test_bereinigung_entfernt_kontakt_laesst_fachliches PASSED [ 72%]
+tests/test_quellen.py::test_robots_wird_beachtet PASSED                  [ 75%]
+tests/test_quellen.py::test_tdm_vorbehalt PASSED                         [ 77%]
+tests/test_quellen.py::test_seitenauswahl_meidet_impressum_und_kundenseiten PASSED [ 80%]
+tests/test_quellen.py::test_domainvergleich PASSED                       [ 82%]
+tests/test_quellen.py::test_passagen_sind_woertlich PASSED               [ 85%]
+tests/test_quellen.py::test_bereinigung_tel_nr_schraegstrich_und_anrede PASSED [ 87%]
+tests/test_quellen.py::test_ausgelieferte_daten_ohne_kontaktdaten PASSED [ 90%]
+tests/test_taxonomie_karte.py::test_mitgelieferte_taxonomie_ist_konsistent PASSED [ 92%]
+tests/test_taxonomie_karte.py::test_inkonsistente_taxonomie_bricht_ab PASSED [ 95%]
+tests/test_taxonomie_karte.py::test_karte_ohne_kollision[mini] PASSED    [ 97%]
+tests/test_taxonomie_karte.py::test_karte_ohne_kollision[standard] PASSED [100%]
+
+=============================== warnings summary ===============================
+tests/test_api.py::test_megatrends_und_mehrfachzugehoerigkeit
+  /usr/local/lib/python3.12/site-packages/starlette/testclient.py:40: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 40 passed, 1 warning in 8.41s =========================

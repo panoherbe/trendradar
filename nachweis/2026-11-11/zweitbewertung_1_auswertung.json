@@ -1,0 +1,314 @@
+{
+  "zeitpunkt_utc": "2026-11-11T22:40:19Z",
+  "spalte": "score",
+  "paare": 168,
+  "innerhalb_2": 137,
+  "anteil_innerhalb_2": 0.815,
+  "anteil_innerhalb_2_bereiche_gleich_gewichtet": 0.797,
+  "anteil_innerhalb_2_hochgerechnet": 0.969,
+  "hochgerechnet_nach": "Schichten der Ziehung",
+  "je_schicht_der_ziehung": {
+    "1–3": {
+      "n": 50,
+      "innerhalb_2": 49,
+      "bestand": 36961
+    },
+    "4–5": {
+      "n": 18,
+      "innerhalb_2": 12,
+      "bestand": 18
+    },
+    "6–7": {
+      "n": 50,
+      "innerhalb_2": 40,
+      "bestand": 1464
+    },
+    "8–10": {
+      "n": 50,
+      "innerhalb_2": 36,
+      "bestand": 661
+    }
+  },
+  "genau_gleich": 63,
+  "zweitbewertung_nicht_bewertbar": 0,
+  "je_bereich": {
+    "1–3": {
+      "n": 112,
+      "pm2": 92,
+      "gleich": 44,
+      "nb": 0,
+      "anteil_innerhalb_2": 0.821
+    },
+    "4–5": {
+      "n": 4,
+      "pm2": 3,
+      "gleich": 1,
+      "nb": 0,
+      "anteil_innerhalb_2": 0.75
+    },
+    "6–7": {
+      "n": 25,
+      "pm2": 21,
+      "gleich": 11,
+      "nb": 0,
+      "anteil_innerhalb_2": 0.84
+    },
+    "8–10": {
+      "n": 27,
+      "pm2": 21,
+      "gleich": 7,
+      "nb": 0,
+      "anteil_innerhalb_2": 0.778
+    }
+  },
+  "abweichungen_ueber_2": [
+    {
+      "nr": 4,
+      "unternehmen": "Heinrich Schmid GmbH & Co. KG",
+      "subtrend": "Objektschutz & Sicherheitstechnik",
+      "verfahren": 3,
+      "zweitbewertung": 6,
+      "begruendung": "Website nennt Koordination von Sicherheitsdiensten im Facility-Service; einbruchhemmende Ständerwände nur Randbezug."
+    },
+    {
+      "nr": 7,
+      "unternehmen": "zebra I group GmbH I genese Werbeagentur GmbH",
+      "subtrend": "Cybersicherheit",
+      "verfahren": 9,
+      "zweitbewertung": 2,
+      "begruendung": "Werbeagentur; nur Floskeln „Daten sicher“ und „ISO-zertifizierte Sicherheit“, keine Sicherheitsleistung."
+    },
+    {
+      "nr": 12,
+      "unternehmen": "G.U.B. Ingenieur AG",
+      "subtrend": "Rückbau & Baustoffrecycling",
+      "verfahren": 3,
+      "zweitbewertung": 7,
+      "begruendung": "Auftrag Planung Rückbau (Demontage/Abbruch) Uran-Prozessstufe Wismut; Altlasten-Sanierungsbegleitung IAA stützend; Website nur Wasserbau."
+    },
+    {
+      "nr": 14,
+      "unternehmen": "BplusL Infra Log GmbH",
+      "subtrend": "Barrierearmes Bauen & Wohnen",
+      "verfahren": 6,
+      "zweitbewertung": 2,
+      "begruendung": "Baustelleneinrichtung und Containervermietung; keine Aufzüge, barrierefreien Umbauten oder Leitsysteme genannt."
+    },
+    {
+      "nr": 15,
+      "unternehmen": "KOMSA Services GmbH",
+      "subtrend": "Digitale Schule",
+      "verfahren": 1,
+      "zweitbewertung": 5,
+      "begruendung": "Liefert Smartphones/Tablets per Rahmenvertrag an BWI; Endgeräte passen, aber kein Schul- oder Klassenraumbezug."
+    },
+    {
+      "nr": 24,
+      "unternehmen": "MEGWARE Computer Vertrieb und Service GmbH",
+      "subtrend": "Digitale Schule",
+      "verfahren": 8,
+      "zweitbewertung": 3,
+      "begruendung": "HPC-/GPU-Cluster für Universitäten; Server-Installation, aber kein Schul-, WLAN- oder Endgerätebezug."
+    },
+    {
+      "nr": 52,
+      "unternehmen": "FAF gGmbH",
+      "subtrend": "KI & Datenanalyse",
+      "verfahren": 1,
+      "zweitbewertung": 4,
+      "begruendung": "Monitoring-, Benchmark-Analysen und Evaluationen für Integrationsämter; Analysearbeit, aber keine KI, Datenplattform oder Dashboards."
+    },
+    {
+      "nr": 58,
+      "unternehmen": "STRABAG AG",
+      "subtrend": "Strom- & Wärmenetze",
+      "verfahren": 1,
+      "zweitbewertung": 5,
+      "begruendung": "Kabel- und Rohrleitungsbau im Straßenbahnknoten, Batteriespeicher-Infrastruktur; keine explizite Strom-/Fernwärmenetz-Leistung."
+    },
+    {
+      "nr": 71,
+      "unternehmen": "Lutz Voigt & Partner GmbH",
+      "subtrend": "Neue Arbeitsorte & Büroumbau",
+      "verfahren": 1,
+      "zweitbewertung": 4,
+      "begruendung": "Lieferung Garderoben- und Schließfachschränke für Schulen; Möbel, aber keine Büromöbel oder Büroumbau."
+    },
+    {
+      "nr": 73,
+      "unternehmen": "Wirth & Co GmbH Metallbau",
+      "subtrend": "Bezahlbares Wohnen & serielles Bauen",
+      "verfahren": 2,
+      "zweitbewertung": 6,
+      "begruendung": "Website: Zuschnitt und Vormontage von Fassadenteilen in eigener Fertigung; Bezug zu Wohnungsbau fehlt."
+    },
+    {
+      "nr": 79,
+      "unternehmen": "TIP-TOP Dienstleistungen GmbH",
+      "subtrend": "Brand- & Katastrophenschutz",
+      "verfahren": 6,
+      "zweitbewertung": 2,
+      "begruendung": "Nur Gebäude- und Glasreinigung, u. a. in Feuerwehrgerätehäusern; keine Brandschutz- oder Wachenbauleistung."
+    },
+    {
+      "nr": 83,
+      "unternehmen": "Liebelt Haustechnik GmbH",
+      "subtrend": "Mikroelektronik & Sensorik",
+      "verfahren": 9,
+      "zweitbewertung": 4,
+      "begruendung": "Sanitär für Hochschul-Technikum mit Neutralisationsanlagen und Notduschen; keine Reinraum- oder Reinstmedienleistung ausdrücklich."
+    },
+    {
+      "nr": 86,
+      "unternehmen": "Elektro-Gernhardt GmbH",
+      "subtrend": "Pflege & gesundes Altern",
+      "verfahren": 2,
+      "zweitbewertung": 8,
+      "begruendung": "Website zweifach: Lichtrufanlagen nach DIN 0834 zertifiziert errichtet; zudem überwiegend in Pflegeheimen tätig."
+    },
+    {
+      "nr": 87,
+      "unternehmen": "ANNABAU AG",
+      "subtrend": "Bezahlbares Wohnen & serielles Bauen",
+      "verfahren": 1,
+      "zweitbewertung": 4,
+      "begruendung": "Estrich-, Abdichtungs- und Fliesenarbeiten im Hallenbad-Neubau; Gewerk passt, aber kein Wohnungsbau oder Bestandssanierung."
+    },
+    {
+      "nr": 92,
+      "unternehmen": "Elektro Ramm GmbH",
+      "subtrend": "Gebäudeenergie & Wärmewende",
+      "verfahren": 6,
+      "zweitbewertung": 3,
+      "begruendung": "Allgemeine Starkstrominstallation bei Gesamtsanierungen; keine Wärmepumpe, Dämmung, MSR oder Energieberatung genannt."
+    },
+    {
+      "nr": 95,
+      "unternehmen": "VSTR AG Rodewisch",
+      "subtrend": "Glasfaser & Mobilfunk",
+      "verfahren": 3,
+      "zweitbewertung": 7,
+      "begruendung": "1.885 m Kabelschutzrohr für LWL-Kabel verlegt; ergänzend Thüga-Rahmenauftrag inkl. Breitbandkommunikation, Spülbohrverfahren."
+    },
+    {
+      "nr": 97,
+      "unternehmen": "HTS Bau GmbH",
+      "subtrend": "Holzbau & nachwachsende Baustoffe",
+      "verfahren": 2,
+      "zweitbewertung": 6,
+      "begruendung": "Auftrag Tischlerarbeiten Wand- und Deckenverkleidung entspricht Innenausbau in Tischlerqualität; sonst überwiegend Gipstrockenbau."
+    },
+    {
+      "nr": 98,
+      "unternehmen": "Wärmetechnik Wilkau - Haßlau GmbH & Co. KG",
+      "subtrend": "Wasserversorgung & Abwasser",
+      "verfahren": 9,
+      "zweitbewertung": 4,
+      "begruendung": "Gebäudeinterne Abwasser-/Trinkwasserleitungen und Strangsanierung; keine Netze, Kanäle oder Kläranlagen der Versorger."
+    },
+    {
+      "nr": 102,
+      "unternehmen": "Götz-Gebäudemanagement Sachsen-Thüringen GmbH",
+      "subtrend": "Arbeitsschutz & Schutzausrüstung",
+      "verfahren": 4,
+      "zweitbewertung": 1,
+      "begruendung": "Nur Gebäude- und Glasreinigung, Objektsicherheitsdienst; keine Schutzkleidung, PSA, Arbeitssicherheitsbetreuung oder Prüfungen."
+    },
+    {
+      "nr": 112,
+      "unternehmen": "G.E.O.S. Ingenieurgesellschaft mbH",
+      "subtrend": "Digitales Planen & Bauen (BIM)",
+      "verfahren": 3,
+      "zweitbewertung": 8,
+      "begruendung": "HOAI-§43-Planung Grubenbauverwahrung und Datenbankmanagementsystem für Bau-/Unterhaltungsdaten Küstenschutz; Website nennt 3D-Modellierung."
+    },
+    {
+      "nr": 113,
+      "unternehmen": "Serval Gebäudemanagement und Industrietechnik GmbH",
+      "subtrend": "Brücken- & Straßenerhalt",
+      "verfahren": 8,
+      "zweitbewertung": 5,
+      "begruendung": "Winterdienst nur an Schulgelände im Reinigungsauftrag; keine Straßen- oder Brückenleistung."
+    },
+    {
+      "nr": 117,
+      "unternehmen": "STRABAG Umwelttechnik GmbH",
+      "subtrend": "Klimaanpassung & Hochwasserschutz",
+      "verfahren": 1,
+      "zweitbewertung": 5,
+      "begruendung": "Entschlammung von Regenrückhaltebecken: Pflege, nicht Bau solcher Anlagen; nur ein Auftrag."
+    },
+    {
+      "nr": 121,
+      "unternehmen": "Ingplan Technik GmbH",
+      "subtrend": "Rechenzentren & IT-Infrastruktur",
+      "verfahren": 1,
+      "zweitbewertung": 5,
+      "begruendung": "TGA-Planer; Website nennt Planung Datentechnik und passive Netze, aber kein Errichten, kein Rechenzentrum."
+    },
+    {
+      "nr": 124,
+      "unternehmen": "Haustechnik Schubert GmbH",
+      "subtrend": "Wasserversorgung & Abwasser",
+      "verfahren": 2,
+      "zweitbewertung": 5,
+      "begruendung": "Website: Trink- und Abwasseranlagen sowie Trinkwasserwartung im Haus; keine Netze, Kanäle oder Klärwerke; Aufträge Metallbau."
+    },
+    {
+      "nr": 127,
+      "unternehmen": "Buschbeck Bäder GmbH",
+      "subtrend": "Gebäudeenergie & Wärmewende",
+      "verfahren": 1,
+      "zweitbewertung": 4,
+      "begruendung": "Kälteleitungen, Klimageräte, Entstaubung und Fortluftkanal; keine Wärmepumpe, Heizung oder Lüftung mit Wärmerückgewinnung."
+    },
+    {
+      "nr": 138,
+      "unternehmen": "G.U.B. Ingenieur AG",
+      "subtrend": "Wissenstransfer & Gründungen",
+      "verfahren": 6,
+      "zweitbewertung": 3,
+      "begruendung": "Ingenieurbüro Sanierung, Geotechnik, Wasserbau; nur Fördermittelmanagement in Projektsteuerung, kein Wissenstransfer."
+    },
+    {
+      "nr": 140,
+      "unternehmen": "cproject ingenieure gmbh",
+      "subtrend": "Strom- & Wärmenetze",
+      "verfahren": 2,
+      "zweitbewertung": 6,
+      "begruendung": "Ingenieurs- und Genehmigungsplanung NordWestHub für TenneT-Gleichstromnetz; sonst nur Deponie-Controlling."
+    },
+    {
+      "nr": 151,
+      "unternehmen": "Eleba Elektro- und Haustechnik GmbH",
+      "subtrend": "Ladeinfrastruktur",
+      "verfahren": 2,
+      "zweitbewertung": 5,
+      "begruendung": "Betriebshof mit Lastmanagement, Batteriespeicher, Trafostation, PV; aber kein Ladepunkt oder Wallbox genannt."
+    },
+    {
+      "nr": 156,
+      "unternehmen": "first medical gmbh",
+      "subtrend": "Versorgungssicherheit & Lieferketten",
+      "verfahren": 2,
+      "zweitbewertung": 6,
+      "begruendung": "Lieferung an mehrere Standorte mit Lagerleistungen (Einräumen, Sortieren) in zwei Losen eines Verfahrens."
+    },
+    {
+      "nr": 159,
+      "unternehmen": "Baugeschäft Happ GmbH",
+      "subtrend": "Glasfaser & Mobilfunk",
+      "verfahren": 3,
+      "zweitbewertung": 7,
+      "begruendung": "Thüga-Rahmenvertrag Breitbandausbau 2025 ff.; zweiter Bauleistungsvertrag nennt Breitbandkommunikation unter vielen Netzen."
+    },
+    {
+      "nr": 167,
+      "unternehmen": "Phönix Bau GmbH",
+      "subtrend": "Brücken- & Straßenerhalt",
+      "verfahren": 9,
+      "zweitbewertung": 6,
+      "begruendung": "Hochwasserschutzlose Zwönitz enthalten Asphalt fräsen und Trag-/Deckschicht neu; Straßenarbeit nur Nebenposition."
+    }
+  ]
+}

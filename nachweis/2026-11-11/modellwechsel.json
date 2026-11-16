@@ -1,0 +1,115 @@
+{
+  "datum": "2026-11-11",
+  "vorher": {
+    "einbettung": "BAAI/bge-m3",
+    "sprachmodell": "qwen2.5:7b-instruct"
+  },
+  "nachher": {
+    "einbettung": "qwen3-embedding:4b",
+    "sprachmodell": "qwen3.8:27b"
+  },
+  "zweitbewertung": {
+    "maßstab": "blinde Zweitbewertung vom 04.11.2026, 326 Paare (Lauf 1 und 2), Endstand je Datenstand",
+    "alle": {
+      "vorher": {
+        "paare": 326,
+        "innerhalb_2": 233,
+        "anteil_innerhalb_2": 0.715,
+        "genau_gleich": 122,
+        "nicht_bewertbar": 0
+      },
+      "nachher": {
+        "paare": 326,
+        "innerhalb_2": 253,
+        "anteil_innerhalb_2": 0.776,
+        "genau_gleich": 129,
+        "nicht_bewertbar": 0
+      }
+    },
+    "nachweis": {
+      "hinweis": "Paare, denen das jeweilige Verfahren Stufe 6–10 gibt",
+      "vorher": {
+        "paare": 156,
+        "innerhalb_2": 98,
+        "anteil_innerhalb_2": 0.628,
+        "genau_gleich": 33,
+        "nicht_bewertbar": 0
+      },
+      "nachher": {
+        "paare": 121,
+        "innerhalb_2": 92,
+        "anteil_innerhalb_2": 0.76,
+        "genau_gleich": 44,
+        "nicht_bewertbar": 0
+      }
+    },
+    "zweitbewertung_6_10": {
+      "vorher": {
+        "paare": 122,
+        "innerhalb_2": 90,
+        "anteil_innerhalb_2": 0.738,
+        "genau_gleich": 33,
+        "nicht_bewertbar": 0
+      },
+      "nachher": {
+        "paare": 122,
+        "innerhalb_2": 89,
+        "anteil_innerhalb_2": 0.73,
+        "genau_gleich": 44,
+        "nicht_bewertbar": 0
+      }
+    },
+    "hochgerechnet_nach_schichten_der_ziehung": {
+      "lauf_1": {
+        "vorher": 0.955,
+        "nachher": 0.969
+      },
+      "lauf_2": {
+        "vorher": 0.912,
+        "nachher": 0.913
+      }
+    }
+  },
+  "einbettung": {
+    "spearman": {
+      "vorher": 0.583,
+      "nachher": 0.72
+    },
+    "auc_stufe_6_10": {
+      "vorher": 0.758,
+      "nachher": 0.856
+    },
+    "auc_stufe_8_10": {
+      "vorher": 0.744,
+      "nachher": 0.842
+    }
+  },
+  "pruefschritt_100_paare": {
+    "ohne_pruefschritt": 0.53,
+    "vorher": 0.61,
+    "nachher": 0.72
+  },
+  "steckbrief": {
+    "vorher": {
+      "vorgeschlagen": 908,
+      "behalten": 667,
+      "verworfen_zitat": 219,
+      "doppelt": 22
+    },
+    "nachher": {
+      "vorgeschlagen": 2002,
+      "behalten": 1970,
+      "verworfen_zitat": 26,
+      "doppelt": 6
+    }
+  },
+  "quellen": [
+    "modellwahl_einbettung.json",
+    "modellwahl_sprachmodell.json",
+    "vergleich.json",
+    "zweitbewertung_1_auswertung.json",
+    "zweitbewertung_2_auswertung.json",
+    "merkmale.json",
+    "../2026-11-04/merkmale.json"
+  ]
+}

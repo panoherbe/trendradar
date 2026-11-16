@@ -1,0 +1,16 @@
+{
+  "zeitpunkt_utc": "2026-11-04T04:42:48Z",
+  "auftrag": {
+    "geprueft": 1113,
+    "woertlich": 1113
+  },
+  "web": {
+    "geprueft": 479,
+    "woertlich": 479
+  },
+  "merkmale": {
+    "geprueft": 667,
+    "woertlich": 667
+  },
+  "nicht_gefunden": []
+}

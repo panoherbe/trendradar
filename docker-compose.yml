@@ -1,0 +1,36 @@
+# Trend-Radar lokal starten:
+#   docker compose up -d          # Oberfläche: http://127.0.0.1:8470  ·  API: http://127.0.0.1:8470/api/v1/docs
+#   docker compose run --rm test  # automatische Tests
+# Die Datenbank ist nur im internen Netz erreichbar; die Anwendung lauscht nur auf 127.0.0.1.
+name: trendradar
+services:
+  db:
+    image: postgres:16
+    environment: {POSTGRES_USER: radar, POSTGRES_PASSWORD: radar, POSTGRES_DB: radar}
+    volumes: ["db:/var/lib/postgresql/data"]
+    healthcheck:
+      # über TCP prüfen: während initdb antwortet der Unix-Socket schon, der Server aber noch nicht
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U radar"]
+      interval: 2s
+      retries: 30
+  laden:
+    build: .
+    command: ["python", "-m", "trendradar.db", "laden", "--daten", "daten"]
+    environment: {DATABASE_URL: "postgresql://radar:radar@db:5432/radar"}
+    depends_on: {db: {condition: service_healthy}}
+  app:
+    build: .
+    environment:
+      DATABASE_URL: "postgresql://radar:radar@db:5432/radar"
+      RATE_LIMIT_PRO_MINUTE: "${RATE_LIMIT_PRO_MINUTE:-60}"
+    ports: ["127.0.0.1:${APP_PORT:-8470}:8000"]
+    depends_on: {laden: {condition: service_completed_successfully}}
+    restart: unless-stopped
+  test:
+    build: .
+    profiles: [test]
+    entrypoint: ["python", "-m", "pytest", "-q", "tests"]
+    environment: {DATABASE_URL: "postgresql://radar:radar@db:5432/radar"}
+    depends_on: {db: {condition: service_healthy}}
+volumes:
+  db: {}

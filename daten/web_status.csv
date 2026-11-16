@@ -1,0 +1,137 @@
+domain,status,grund,seiten_gelesen,abrufe,dauer_s
+599media.de,ok,,4,5,5.0
+abn-maler-service.de,weiterleitung_fremd,leitet weiter auf bauvorhaben-butler.de,0,1,0.2
+akustikbau-deutschland.de,http_fehler,HTTP 403,0,2,1.0
+arcadis.com,ok,,15,16,17.4
+art-eng.eu,ok,,8,11,10.2
+atlantics.de,ok,,15,16,16.1
+bas-scheibenberg.de,ok,,2,26,309.6
+bauconzept.com,ok,,15,16,15.7
+bauer-planung.com,ok,,14,15,14.2
+bautenschutz-gmbh.de,ok,,11,12,14.0
+bea-consulting.de,ok,,9,10,9.1
+beak.de,ok,,10,12,11.5
+bechtle.com,ok,,15,16,18.1
+befa-stahlbau.de,ok,,3,4,14.5
+bibliolenk.de,weiterleitung_fremd,leitet weiter auf intelligenteinrichten.de,0,1,0.2
+biug-geotechnik.de,ok,,15,16,15.9
+boehme-online.com,ok,,15,16,15.7
+bplusl.de,ok,,15,16,20.6
+bpm-gruppe.de,ok,,15,16,15.8
+bpm-ingenieure.de,weiterleitung_fremd,leitet weiter auf bpm-gruppe.de,0,1,0.4
+bsbanktechnik.de,ok,,15,16,44.7
+buero-schmaus.de,ok,,15,16,19.6
+cabs-chemnitz.de,ok,,15,16,15.5
+community4you.de,ok,,6,7,6.1
+cproject.eu,robots_gesperrt,robots.txt sperrt die Startseite,0,2,1.0
+dbi-gruppe.de,ok,,15,16,16.2
+dr-spang.de,ok,,15,16,15.5
+eaa.de,ok,,11,12,12.8
+ecolochem.de,ok,,5,6,5.1
+efa-dachbau.de,ok,,1,2,1.6
+efb-erdmannsdorf.de,ok,,4,5,4.1
+el-ru-fe.de,ok,,5,6,5.2
+eleba-edorf.de,ok,,13,14,13.2
+elektro-gernhardt.com,ok,,2,3,25.4
+ermafa.de,ok,,15,16,23.4
+esbo.net,kein_text,weniger als 200 Zeichen lesbarer Text (z. B. nur JavaScript),1,2,1.0
+faf-gmbh.de,ok,,15,16,16.9
+fensterbau-wagner.de,ok,,15,16,15.7
+freiberger-eisenbahn.de,ok,,15,16,15.5
+freiberger-eurometall.de,ok,,6,7,6.1
+fuchs-bauen.de,ok,,15,16,211.6
+garten-jacob.de,ok,,15,16,15.4
+geosfreiberg.de,ok,,2,16,15.2
+geovogt.de,ok,,2,3,2.2
+geowid.de,ok,,8,9,8.5
+gmw-solidbau.de,ok,,12,13,12.4
+goetz-fm.com,ok,,15,16,15.8
+goldbeck.de,http_fehler,HTTP 429,0,2,1.0
+gub-ing.de,ok,,15,16,15.5
+haustechnik2000.com,ssl_fehler,[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010),0,4,3.0
+heinrich-ingenieure.de,ssl_fehler,"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'heinrich-ingenieure.de'. (_ssl.c:1010)",0,4,3.0
+heinrich-schmid.com,ok,,15,16,19.3
+heinze-montagen.de,ok,,1,3,2.2
+herfurt-fensterbau.de,ok,,15,16,15.6
+ht-protect.de,ok,,15,16,17.1
+htb-rochlitz.de,ok,,15,16,44.6
+hts-trockenbau.de,kein_text,weniger als 200 Zeichen lesbarer Text (z. B. nur JavaScript),1,2,1.0
+ibt.de,ok,,15,16,16.1
+if-sozialdienste.de,ok,,6,8,20.1
+igw-bau.de,ok,,6,7,6.2
+ingplan-technik.de,ok,,7,8,19.6
+iproplan.de,ok,,15,16,15.5
+jaeger-ausbau.de,ok,,15,16,16.3
+jakob-becker.de,ok,,15,16,15.4
+kehr-sport.de,ok,,13,14,16.9
+keilberg.de,ok,,12,13,13.0
+kh-medizintechnik.de,ok,,7,8,7.6
+kone-garant.de,ok,,8,9,9.1
+krauseundco.de,ok,,6,7,22.7
+kreller.de,robots_gesperrt,robots.txt sperrt die Startseite,0,3,16.1
+krieger-bauplanung.de,ok,,15,16,15.4
+lissner-und-vogel.de,ok,,14,15,14.4
+lr-dotzauer.de,ok,,10,11,24.3
+lst-chemnitz.de,ok,,1,31,44.7
+maler-decor.de,ok,,4,5,4.3
+maler-reichenbach.de,ok,,14,15,14.9
+man.eu,ok,,15,16,54.1
+maschinenbau-schieck.de,ok,,8,9,36.3
+medizinservice-sachsen.de,ok,,1,2,1.2
+megware.com,ok,,15,16,16.0
+metalltechnik-tiepner.de,ssl_fehler,[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010),0,4,3.0
+ming.de,ok,,5,6,5.3
+msbl.de,ok,,2,3,2.2
+oe-konzept.de,ok,,1,2,1.0
+oehme-gmbh.de,ok,,4,5,4.1
+passnorm.de,weiterleitung_fremd,leitet weiter auf stuckundbau.de,0,1,0.8
+phw-moebel.de,ok,,5,6,5.6
+popp-lausser.de,ok,,8,9,8.2
+print-xxl.com,ok,,15,16,21.1
+projekt-licht.de,ok,,3,4,5.4
+qualitaetsboeden.de,ok,,13,14,15.2
+raidmedia.com,ok,,8,9,8.1
+ratiomat.de,ok,,15,16,16.1
+raum-objektausstattung.de,ok,,2,3,2.0
+raum-schrift.de,ok,,4,7,6.1
+restaurierung-kaufungen.de,ok,,5,6,9.0
+rewa.li,ok,,15,16,16.3
+rkb.de,ok,,15,16,28.8
+saveco.de,ok,,1,2,1.0
+saydamoebel.de,kein_text,weniger als 200 Zeichen lesbarer Text (z. B. nur JavaScript),1,2,2.5
+sbucher.de,ok,,6,7,6.4
+scharnagl.de,ok,,15,16,16.3
+schilder-illig.de,ok,,14,15,14.8
+schilderwerk-beutha.de,ssl_fehler,[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010),0,4,3.2
+schmitt-aufzuege.de,ok,,15,16,15.9
+schneider-business.com,ok,,6,12,12.0
+schubert-haustechnik.de,ok,,15,16,15.2
+schulz-rohrbau.de,ok,,4,5,4.1
+schulze-rank.de,ok,,11,12,11.4
+scia-systems.com,ok,,15,16,16.1
+security-smarttecs.com,weiterleitung_fremd,leitet weiter auf smarttecs.com,0,1,1.5
+seiwo.de,ok,,15,16,36.8
+serval-isp.de,ok,,9,10,15.0
+serviceteamsimon.de,ok,,2,5,4.3
+skr-soenitz.de,ok,,3,4,4.4
+sp-bau-gmbh.de,ok,,11,12,12.6
+stahlbau-thuemmel.de,kein_text,weniger als 200 Zeichen lesbarer Text (z. B. nur JavaScript),1,2,1.0
+strabag.com,ok,,15,16,15.8
+strabag.de,ok,,1,2,1.1
+swing-cut.de,ok,,8,9,8.6
+syfatec.de,kein_text,weniger als 200 Zeichen lesbarer Text (z. B. nur JavaScript),1,2,1.2
+techno-farm.de,ok,,1,2,1.0
+tiptop-group.de,ok,,15,16,79.9
+tischlerei-weigel.de,ok,,15,16,15.7
+tubetech.de,ok,,15,16,15.3
+tunger-exklusiv.de,ok,,15,16,16.1
+ubv.de,ok,,5,6,6.0
+val24.de,nicht_erreichbar,ConnectTimeout,0,4,60.0
+wackler-group.de,ok,,15,16,142.3
+waermetechnik-wh.de,ok,,15,16,15.8
+weber-fliesenhaus.de,ok,,2,3,2.3
+weber-kunz.net,ok,,13,14,13.5
+wirth-chemnitz.de,ok,,6,9,30.4
+zebra.de,ok,,15,16,15.8
+ziegler.de,ok,,15,16,15.9
+zimmereihandwerk-aufbau.de,ok,,8,9,8.2

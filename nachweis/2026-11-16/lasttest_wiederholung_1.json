@@ -1,0 +1,43 @@
+{
+  "nutzer": 10,
+  "dauer_s": 60.1,
+  "anfragen": 2113,
+  "je_sekunde": 35.2,
+  "fehler": {},
+  "ms_median": 260.8,
+  "ms_p95": 619.5,
+  "ms_max": 1252.6,
+  "je_art": {
+    "Rangliste Subtrend (Filter Kreis, Score ≥ 6)": {
+      "n": 348,
+      "ms_median": 247.6,
+      "ms_p95": 572.4
+    },
+    "Rangliste Subtrend, Seite 20 zu 200": {
+      "n": 370,
+      "ms_median": 335.7,
+      "ms_p95": 648.5
+    },
+    "Rangliste Megatrend (Mittel Top 3)": {
+      "n": 344,
+      "ms_median": 410.7,
+      "ms_p95": 767.3
+    },
+    "Unternehmensprofil (alle Themen mit Belegen)": {
+      "n": 360,
+      "ms_median": 19.9,
+      "ms_p95": 345.0
+    },
+    "Namenssuche": {
+      "n": 341,
+      "ms_median": 206.0,
+      "ms_p95": 438.0
+    },
+    "Subtrend-Seite (HTML)": {
+      "n": 350,
+      "ms_median": 283.1,
+      "ms_p95": 572.7
+    }
+  },
+  "zeitpunkt_utc": "2026-11-16T21:48:01Z"
+}

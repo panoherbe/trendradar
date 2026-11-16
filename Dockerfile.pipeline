@@ -1,0 +1,9 @@
+# Verarbeitung: Webabruf, Bewertung, Prüfschritt, Steckbrief. Einbettungs- und Sprachmodell laufen in Ollama
+# (OLLAMA_URL), dieses Image braucht weder GPU noch PyTorch.
+FROM python:3.12-slim
+WORKDIR /repo
+COPY pyproject.toml ./
+COPY trendradar ./trendradar
+RUN pip install --no-cache-dir ".[pipeline,test]"
+ENV PYTHONUNBUFFERED=1
+ENTRYPOINT ["python", "-m"]

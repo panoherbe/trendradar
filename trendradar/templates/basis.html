@@ -1,0 +1,27 @@
+{% import "_makros.html" as mk %}<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block titel %}Zukunftsfelder{% endblock %} · Trend-Radar</title>
+<link rel="preload" href="/static/schrift/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/stil.css">
+</head>
+<body>
+<header class="kopf"><div class="innen">
+  <a href="/" class="marke">{{ mk.logo() }}<span><b>Trend-Radar</b><small>Beispielregion Südwestsachsen · Prototyp auf offenen Daten</small></span></a>
+  <nav>
+    <a href="/" {% if nav == 'start' %}class="aktiv"{% endif %}>Zukunftsfelder</a>
+    <a href="/unternehmen" {% if nav == 'unternehmen' %}class="aktiv"{% endif %}>Unternehmen</a>
+    <a href="/region" {% if nav == 'region' %}class="aktiv"{% endif %}>Kreise</a>
+    <a href="/methodik" {% if nav == 'methodik' %}class="aktiv"{% endif %}>So funktioniert’s</a>
+  </nav>
+</div></header>
+<main class="innen">{% block inhalt %}{% endblock %}</main>
+<footer class="fuss innen">
+  <span>Offene Daten: Bekanntmachungsservice öffentlicher Auftraggeber (CC0) und öffentliche Websites der Unternehmen.
+  Beispiel-Taxonomie, Version {{ version }}.</span>
+  <span><a href="/karte">Alle Themen als Liniennetz</a> · <a href="/api/v1/docs">Schnittstelle (API)</a> · <a href="https://panoherbe.com">panoherbe.com</a></span>
+</footer>
+</body>
+</html>

@@ -1,0 +1,158 @@
+{"nr": 1, "score": 1, "begruendung": "Einziger Auftrag Messdatenerfassungsrechner für MODES III, kein Bezug zu PV, Speichern oder deren Betriebsführung."}
+{"nr": 2, "score": 9, "begruendung": "Vier Aufträge ökologische Baubegleitung von Hochwasserschutzmaßnahmen (Pockau, Döbeln, Olbernhau) entsprechen umweltfachlicher Begleitung."}
+{"nr": 3, "score": 2, "begruendung": "Nur Bauwerksabdichtung, Trockenlegung, Horizontalsperren; Feuchteschutz an Gebäuden, kein Hochwasser- oder Regenwasserbau."}
+{"nr": 4, "score": 9, "begruendung": "Drei Aufträge nennen Dämmung explizit: Außenwand-Mineralwolle, EPS-Dachdämmung Studentenwohnheim, Fassadendämmung Kirchhain."}
+{"nr": 5, "score": 2, "begruendung": "Nur Planung der Grubenbauverwahrung im Wismut-Altbergbau; kein Gebäuderückbau, keine Schadstoffsanierung oder Recycling."}
+{"nr": 6, "score": 6, "begruendung": "Ein Auftrag (doppelt gelistet): Beschaffung und Implementierung CAFM-Software für WBM, passt zu Fachsoftware/Einführung."}
+{"nr": 7, "score": 4, "begruendung": "Fahrzeugumbau, Aufbauten und Lkw-Wartung belegt, aber nirgends Elektro-, Hybrid- oder Hochvolttechnik."}
+{"nr": 8, "score": 3, "begruendung": "Fenster- und Türenbau, Alu-Metallbau, CNC-Profilbearbeitung; keine Präzisionsteile, Laserschneiden oder Messtechnik genannt."}
+{"nr": 9, "score": 9, "begruendung": "DKFZ RLT mit WRG, DKFZ Wärmepumpe Heizen/Kühlen, weitere RLT-Aufträge Braunschweig und 2720-465: Lüftung/Wärmepumpe mehrfach belegt."}
+{"nr": 10, "score": 2, "begruendung": "Nur Open-House-Verträge Kfz-Service und Instandsetzung; kein Linienverkehr, Haltestellen-, Radwegebau oder Verkehrsplanung."}
+{"nr": 11, "score": 6, "begruendung": "Website: grundhafte Erneuerung Straße Am Wasserturm in Asphalt, erneuerte Busbuchten; als Planer, Auftrag nur Hochwasserschutz."}
+{"nr": 12, "score": 7, "begruendung": "Rahmenverträge Bauarbeiten an Versorgungsnetzen (Strom, Gas, Fernwärme) für Thüga-Stadtwerke; einer davon titelt Breitbandausbau."}
+{"nr": 13, "score": 4, "begruendung": "Planung Umbau Betriebsgebäude (Büro, Sozialräume) der Kläranlage Chemnitz; keine Klärtechnik, Netze oder Leitungsbau genannt."}
+{"nr": 14, "score": 2, "begruendung": "Nur Tragwerksplanung für Klinikumbau Erlabrunn; keine Dämmung, Heizung, TGA-Planung oder Energieberatung."}
+{"nr": 15, "score": 2, "begruendung": "Nur Flächennutzungsplan mit Landschaftsplan Grimma; keine Beleuchtung, Verkehrstechnik, Sensorik oder Datenplattform."}
+{"nr": 16, "score": 1, "begruendung": "Einziger Auftrag Fliesenlegerarbeiten mit Abdichtung; kein Rückbau, keine Schadstoffsanierung oder Recycling."}
+{"nr": 17, "score": 2, "begruendung": "Nur Gebäude-Elektroinstallation (Polizeirevier, SPZ, Klinik) und Versorgungsnetze; keine Bahn-, Signal- oder Oberleitungstechnik."}
+{"nr": 18, "score": 2, "begruendung": "Einziger Auftrag TGA-Fachplanung Anlagengruppen 1–3 für Sporthalle; kein Brandschutz, keine Brandmelde- oder Löschtechnik."}
+{"nr": 19, "score": 2, "begruendung": "Maler-, Trockenbau-, WDVS- und Fassadenarbeiten; Website nennt Dachdecken, aber nirgends Photovoltaik oder Speicher."}
+{"nr": 20, "score": 2, "begruendung": "Ausschließlich Gebäudereinigung (Behörden, Schulen, Kitas); keine Straßenreinigung, Winterdienst oder Brückenarbeiten."}
+{"nr": 21, "score": 6, "begruendung": "Los 45 Schwachstrom Kulturanum mit Datennetz von 575 Datendosen entspricht strukturierter Verkabelung; sonst PV, Trafo, KNX."}
+{"nr": 22, "score": 1, "begruendung": "Einziger Auftrag Gerüstbauarbeiten Straßenmeisterei; keinerlei Bezug zu Faserverbund, Leichtmetall oder Kunststofftechnik."}
+{"nr": 23, "score": 9, "begruendung": "Viele Belege: HWS-Planung Zwickauer Mulde, Distelburg, Lungwitzbach, Rahmede, Niederschlag-Abfluss-Modell, Flussvermessung; Website Hydrologie/HWS."}
+{"nr": 24, "score": 5, "begruendung": "Vorhänge, Rollos und Sitzauflagen für Förderschul-Neubau: Ausstattung einer Schule, aber keine Schulmöbel oder Fachraumeinrichtung."}
+{"nr": 25, "score": 6, "begruendung": "Website nennt Spezialisierung „Abfallwirtschaft, Recycling, Gebäuderückbau“; Auftrag nur Geotechnik Lausitzer Kippen, kein konkretes Rückbauprojekt."}
+{"nr": 26, "score": 1, "begruendung": "Nur Sammlung und Entsorgung gefährlicher Abfälle; kein Bezug zu Forschung, Transferberatung, Gründerzentren oder Veranstaltungen."}
+{"nr": 27, "score": 3, "begruendung": "Nur HWS-Anlage Dörfelbach (sechs Nachträge) mit Beton- und Erdarbeiten; keine Brücken-, Fahrbahn- oder Straßendienstleistung."}
+{"nr": 28, "score": 7, "begruendung": "Breitbandausbau Seiffen: Leerrohr-Tiefbau, LWL-Einzug, 728 Hausanschlüsse und PoP-Einrichtung, also Verlegung plus Montage."}
+{"nr": 29, "score": 8, "begruendung": "Zwei Aufträge: Lieferung/Montage Personenaufzug LfULG und zwei Hebebühnen für barrierefreie Erschließung HTWK Leipzig."}
+{"nr": 30, "score": 7, "begruendung": "Website: eigene Gesundheitsmonitoring-Software GMON entwickelt und betreut, dazu Diagnosesysteme mit Auswertungssoftware; Aufträge nur Klinikmöbel/Leuchten."}
+{"nr": 31, "score": 6, "begruendung": "Website: Anlagenverschrottung, Rückbau und Verwertung, Schrottankauf (Metallaufbereitung); Aufträge sind Abbruch/Rückbau, Entsorgung nur nebenbei."}
+{"nr": 32, "score": 9, "begruendung": "Pumpen- und Rührwerkstausch Zentralklärwerk Zeitz, drei Lose Pumpenwartung/Ersatzteile, pH-Messmaterial: Pumpen mehrfach plus Kläranlagenmodernisierung."}
+{"nr": 33, "score": 8, "begruendung": "Rahmenvertrag Blindenleitsystem in zwei Losen (Bonn, Berlin) für Sehbehinderte; übrige Aufträge Verkehrs- und Radwegweisung."}
+{"nr": 34, "score": 2, "begruendung": "Werbeagentur: Kampagne Standortmarke MV, Website nur Marketing-Tech und Datensicherheit allgemein; keine Server, Verkabelung oder Hosting."}
+{"nr": 35, "score": 3, "begruendung": "Nur zerstörungsfreie Schweißnahtprüfung an Gas-/Fernwärmeleitungen; Prüfleistung, aber nicht an Arbeitsmitteln, keine PSA oder Sicherheitsbetreuung."}
+{"nr": 36, "score": 8, "begruendung": "Zwei Aufträge: Probenahme/Analytik Boden, Eluat, Grundwasser, Bodenluft mit Kernbohrungen sowie Setzen von Rammpegeln und Bodenluftmessstellen."}
+{"nr": 37, "score": 2, "begruendung": "Nur Baustelleneinrichtung und Container (Bauwasser, Medientrassen nebenbei); keine Pumpen, Kanäle, Kläranlagen oder Wasseranalytik."}
+{"nr": 38, "score": 1, "begruendung": "Einziger Auftrag Dachabdichtung/Spenglerarbeiten an Schulerweiterung; kein Bezug zu Feuerwehr, Brandmelde- oder Wachenbau."}
+{"nr": 39, "score": 6, "begruendung": "JVA Zwickau Paket 17D (mehrfach gelistet): Hausanschlusskanäle Regen-/Schmutzwasser, Trink- und Löschwasserleitungen; übrige Aufträge Bahn/Außenanlagen."}
+{"nr": 40, "score": 8, "begruendung": "Zwei GU-Aufträge Wohnungsneubau: zwei Wohnanlagen Holzhybrid mit 320 WE in Tegel und Mehrfamilienhaus mit 30 WE Frankfurt."}
+{"nr": 41, "score": 1, "begruendung": "Nur Stahlbau- und Schlosserarbeiten für Straßenmeisterei-Neubau; kein Notstrom, Lager, Transport oder Beschaffungsberatung."}
+{"nr": 42, "score": 7, "begruendung": "PV-Anlage Förderschule Radebeul: Module, Aufständerung, Verkabelung, Anmeldung beim EVU (Montage plus Anschluss); sonst nur Trafostationen."}
+{"nr": 43, "score": 9, "begruendung": "Zahlreiche Aufträge Schutz- und Dienstkleidung: flammhemmende Einsatzanzüge BPoL, PSA-Regenjacken, Funktionsoveralls, Polizei- und Marinebekleidung."}
+{"nr": 44, "score": 1, "begruendung": "Nur Baustelleneinrichtung, Baustrom und Container; keinerlei Server, Rechenzentrumsbau, Datenverkabelung oder IT-Betrieb."}
+{"nr": 45, "score": 1, "begruendung": "Nur Tiefbau (Abwasserleitungen, Leerrohrtrassen) und Versorgungsnetz-Rahmenvertrag; kein Bezug zu Mikroelektronik, Sensorik oder Reinraum."}
+{"nr": 46, "score": 10, "begruendung": "HWS Flöha Olbernhau (acht Nachträge), Erneuerung Regenrückhaltebecken RRB 42, Website: Hochwasserschutz, Ufermauern, Staudämme."}
+{"nr": 47, "score": 10, "begruendung": "Viele Serveraufträge (HPC, Storage, GPU, x86, LMU); Website zusätzlich Racks mit Wasserkühlung, Wartung und Betriebsunterstützung."}
+{"nr": 48, "score": 4, "begruendung": "Mehrere Freianlagenplanungen (Star Park, Kita Genthin, Schulhof) als verwandte Arbeit; kein Hochwasser-, Regenwasser- oder Stadtgrün-Bezug genannt."}
+{"nr": 49, "score": 8, "begruendung": "Website: Partner im Wohnungsbau, Massivhäuser, Altbausanierung im Wohnungsbau; Aufträge Rohbau/Baumeister nur an Museen, nicht Wohngebäude."}
+{"nr": 50, "score": 10, "begruendung": "Website: Containerdienst, Sonderabfall, kommunale Sammlung Rest/Bio/LVP/Glas, E-Schrott sortieren und verwerten, eigene Sortier-/Aufbereitungsanlagen."}
+{"nr": 51, "score": 9, "begruendung": "Vier Aufzugsaufträge: Steuerungserneuerung nach EN 81-70, Aufzüge Kita Dachau und Vaterstetten (barrierefreier Zugang), Aufzug Regelschule."}
+{"nr": 52, "score": 6, "begruendung": "Amtsgericht Zwickau (mehrfach gelistet) enthält Abbruch Bodenbeläge 1400 m² und Deckenauflagen; sonst reine Rohbauaufträge."}
+{"nr": 53, "score": 1, "begruendung": "Nur Zimmerer- und Holzbauarbeiten (Dachstuhl, Salzlagerhallen, Turnhalle); keine Sammlung, Sortierung oder Abfallberatung."}
+{"nr": 54, "score": 8, "begruendung": "Zwei Aufträge Hosting und Softwarepflege KISS der Autobahn mit Datenbankbetrieb und Support; dazu Datenpflege Kompensationskataster."}
+{"nr": 55, "score": 3, "begruendung": "Nur HWS-Planung Zwönitz mit schlechterem Baugrund; Website nennt Grundbau-Planung, aber keine Altlasten-, Halden- oder Bergbausanierung."}
+{"nr": 56, "score": 1, "begruendung": "Bauunternehmen: Baumeister- und Rohbauarbeiten, WDVS, Sanierung; keinerlei Software, E-Akte oder Online-Dienste."}
+{"nr": 57, "score": 8, "begruendung": "Umweltbaubegleitung HRB Oberbobritzsch und geologische Bauüberwachung Dünenverstärkung: zwei explizite Begleitungen von Schutzmaßnahmen."}
+{"nr": 58, "score": 7, "begruendung": "BImA-Auftrag: 337 Holz-Isolierglasfenster und Holzaußentüren; dazu Tischler-Fensterauftrag; sonst Aluminium-Metallbau."}
+{"nr": 59, "score": 4, "begruendung": "Fliesen/Bodenbeläge in Kaufhaus und Gastronomie; kein Wohnungsbau oder Wohnungssanierung belegt."}
+{"nr": 60, "score": 7, "begruendung": "Putzarbeiten beim Neubau Feuerwehrtechnisches Zentrum; zweiter Beleg Ortsfeuerwehr Zug, dort aber Altbau-Innenputz."}
+{"nr": 61, "score": 9, "begruendung": "Zahlreiche Unterhalts-, Glas- und Grundreinigungsverträge in Verwaltungsgebäuden (Kanzleramt, HZA, BAMF, Kasernen); nur eine Teilfähigkeit."}
+{"nr": 62, "score": 6, "begruendung": "Ein Auftrag: Regenrückhaltebecken, Sickerleitung und Regenwasserbehandlung im Gewerbegebiet Schmalkalden."}
+{"nr": 63, "score": 4, "begruendung": "Nur Gebäude-Elektroinstallation (NSHV, Unterverteiler, Beleuchtung); kein Verteilnetz-, Trafo- oder Wärmenetzauftrag."}
+{"nr": 64, "score": 1, "begruendung": "Nur Stahltreppen, Geländer, Türen; keinerlei Bezug zu Ladesäulen oder Elektroinstallation."}
+{"nr": 65, "score": 9, "begruendung": "Website: eigene Recyclinganlage (Brecher, Siebe) zu Recyclingprodukten, Containerdienst, Entsorgungskonzepte; Auftrag mit Entsorgung."}
+{"nr": 66, "score": 5, "begruendung": "Badewassertechnik mit Pumpen, Armaturen, Rohren, Filtern; kein Trink- oder Abwasserbezug genannt."}
+{"nr": 67, "score": 2, "begruendung": "Baustelleneinrichtung, Versorgungsnetze, Außenanlagen; kein Rad-, Gehweg- oder Haltestellenbau belegt."}
+{"nr": 68, "score": 2, "begruendung": "Einziger Auftrag: Freianlagenplanung Straßenausbau; kein Pflegeheimbau oder Pflegebezug."}
+{"nr": 69, "score": 9, "begruendung": "Mehrere Lieferungen Betonfertigteile für Hochbahnsteige, Bahnsteigkantensteine und Bahnübergangsbeläge; Zulieferung, nicht Einbau."}
+{"nr": 70, "score": 1, "begruendung": "Nur TGA-Planung für Wohnheim und Sporthalle; kein Bezug zu Elektrofahrzeugen oder Antrieben."}
+{"nr": 71, "score": 10, "begruendung": "Viele Unterhalts-/Glasreinigungsverträge, Lieferung Sanitärhygienematerial und Desinfektionsmittel, Mattenbereitstellung: drei Teilfähigkeiten."}
+{"nr": 72, "score": 3, "begruendung": "Rohbau und Betonerhaltung; Website nennt nur allgemein Entwässerung und Erschließung, kein Hochwasser- oder Regenwasserbau."}
+{"nr": 73, "score": 8, "begruendung": "Zahlreiche Planungs- und Kontrollnachträge Hochwasserschutz Schwarze Pockau; alle ein Projekt, eine Teilfähigkeit."}
+{"nr": 74, "score": 5, "begruendung": "Planung Büroanbau mit Bildschirmarbeitsplätzen und Empfang (Wismut); Neubauplanung, kein Büroumbau im Bestand."}
+{"nr": 75, "score": 1, "begruendung": "Einziger Auftrag: Betrieb einer Gemeinschaftsunterkunft; kein Bezug zu Mikroelektronik oder Sensorik."}
+{"nr": 76, "score": 8, "begruendung": "Brandmeldeanlage TU BAF Laborflügel und komplettes BMA-System TU Chemnitz EMZ; dazu Brandschutzklappen-Bussystem."}
+{"nr": 77, "score": 6, "begruendung": "Ein Auftrag: Entwässerungskanalarbeiten mit Leitungsverlegung und Schachtinstallationen; Regenwasser, kein Trink-/Schmutzwasser genannt."}
+{"nr": 78, "score": 1, "begruendung": "Nur Busverkehrsleistungen im Landkreis Zwickau; kein Daten- oder KI-Bezug."}
+{"nr": 79, "score": 2, "begruendung": "Breites Planungsbüro (Verkehr, Schulen, Wohnhaus, BNB); kein Pflegeheim oder Seniorenbau genannt."}
+{"nr": 80, "score": 2, "begruendung": "Einbaumöbel und Innenausbau, auch Palliativstation-Möblierung; nichts Barrierefreies wie Rampen, Duschen, Leitsysteme."}
+{"nr": 81, "score": 5, "begruendung": "Trinkwasser-/Abwasserrohre und Armaturen nur als Gebäudeinstallation (Schule, Feuerwehrzentrum); kein Netz- oder Anlagenbau."}
+{"nr": 82, "score": 2, "begruendung": "Stahl-Glas- und Brandschutztüren in Schulen, Kliniken, Sporthallen; kein Wohnungsbau oder Vorfertigung."}
+{"nr": 83, "score": 1, "begruendung": "Nur geotechnische Sachverständigenleistungen Lausitz; kein ÖPNV-, Rad- oder Fußwegbezug."}
+{"nr": 84, "score": 9, "begruendung": "Tragwerksplanung Neubau Chemische Institute Frankfurt, DLR-Laborgebäude, Universitätsbibliothek Gießen; Website: Campus Westend, Labore RGZM."}
+{"nr": 85, "score": 4, "begruendung": "Nur Asphalt-, Zaun- und Bodenabbruch bei Freianlagen; kein Gebäudeabbruch, keine Schadstoffsanierung oder Recyclingaufbereitung."}
+{"nr": 86, "score": 1, "begruendung": "Nur Sonnenschutz und Fliesenarbeiten; kein Bezug zu Strom- oder Wärmenetzen."}
+{"nr": 87, "score": 7, "begruendung": "Möblierung Palliativstation Krankenhaus Mittweida; dazu Einbaumöbel Archäometrie-/Analysewerkstätten und Arztpraxen laut Website."}
+{"nr": 88, "score": 8, "begruendung": "Viele Aufträge Labormöbel, Digestorien, Laborspülen, Deckenversorgung; jedoch Schul-Fachräume, nicht Klinik- oder Forschungslabore."}
+{"nr": 89, "score": 1, "begruendung": "Nur Übernahme und Verwertung von Bioabfällen; kein Bezug zu Rechenzentren oder IT."}
+{"nr": 90, "score": 1, "begruendung": "Einziger Auftrag: Medientechnik für Gefahrenabwehrzentrum; kein Schul-, Kita- oder Bildungsbaubezug."}
+{"nr": 91, "score": 1, "begruendung": "Einziger Auftrag: Fenster Studentenwohnheim; kein Bezug zu Straßenbeleuchtung, Sensorik oder Datenplattformen."}
+{"nr": 92, "score": 5, "begruendung": "Radwegbau mit Asphalttragschicht, Brücke Wiesenstraße nur im HWS-Lostitel; Website nennt Straßen-/Brückenbau allgemein, keine Instandsetzung."}
+{"nr": 93, "score": 2, "begruendung": "Nur Umsetzung eines Bremsenprüfstands in einer Kfz-Werkstatt; keine Ausbildungswerkstatt oder Bildungsleistung."}
+{"nr": 94, "score": 10, "begruendung": "Viele Abbruch-/Rückbauaufträge, einer mit Schadstoffsanierung; Website: Rückbau, Abbruch, Schadstoffsanierung nach TRGS 519/521/524."}
+{"nr": 95, "score": 4, "begruendung": "Baustelleneinrichtung und Baustrom; Website erwähnt nur allgemein Solarstrom- und Energielösungen für Container, nichts Konkretes."}
+{"nr": 96, "score": 5, "begruendung": "Lose Möblierung mit Tafeln, Werkbänken, Bühne, Garderoben deutet auf Schulen, aber kein Auftrag nennt Schule oder Kita."}
+{"nr": 97, "score": 2, "begruendung": "Einziger Auftrag: Fenster Studentenwohnheim; nur Firmenname Dachdeckerei deutet entfernt auf Gründächer."}
+{"nr": 98, "score": 8, "begruendung": "Sechs Nachträge HWS-Anlage am Dörfelbach (Steinschüttung, Stahlbeton); explizit Hochwasserschutzbau, aber nur ein Projekt."}
+{"nr": 99, "score": 4, "begruendung": "Fliesen/Bodenbeläge in Schulen, Technikum, Einkaufszentrum; kein Wohnungsbau oder Wohnungssanierung."}
+{"nr": 100, "score": 9, "begruendung": "Mehrere Rahmenverträge Umzugs- und Transportleistungen (Bundesagentur, AOK); Teilfähigkeit nennt Umzüge explizit."}
+{"nr": 101, "score": 6, "begruendung": "Baubegleitende Ingenieurvermessung Neubau Institutsgebäude Chemie TU Chemnitz; ein Projekt, mehrfach gelistet."}
+{"nr": 102, "score": 2, "begruendung": "Breitband-Tiefbau Seiffen; Konzern-Website ohne BIM-, Vermessungs- oder Modellierungsbezug."}
+{"nr": 103, "score": 1, "begruendung": "Nur Grünpflege und Säuberung in Chemnitz; kein Bezug zu Strom- oder Wärmenetzen."}
+{"nr": 104, "score": 1, "begruendung": "Einziger Auftrag: PV-Freiflächenanlage Kläranlage; kein Bezug zu barrierefreiem Bauen."}
+{"nr": 105, "score": 7, "begruendung": "Thüga-Rahmenvertrag Bauarbeiten an Strom-, Gas- und Fernwärmenetzen; zweiter Eintrag ist das Breitbandlos mit gleicher Generalbeschreibung."}
+{"nr": 106, "score": 1, "begruendung": "Einziger Auftrag: Malerarbeiten Verwaltungsneubau; kein Transfer-, Gründungs- oder Forschungsbezug."}
+{"nr": 107, "score": 1, "begruendung": "Nur Bereitstellung von Mobilkranen für Wismut; kein Bezug zu Gesundheits-IT oder Telemedizin."}
+{"nr": 108, "score": 1, "begruendung": "Einziger Auftrag: Gebäudeautomation Polizeirevier; kein Bezug zu Elektrofahrzeugen oder Antrieben."}
+{"nr": 109, "score": 10, "begruendung": "Wartungsvertrag Krankenbetten Uniklinikum Halle; Website: Wartung, MPBetreibV-Prüfung, Reparatur von Betten, Steckbeckenspülern, Behandlungsliegen."}
+{"nr": 110, "score": 9, "begruendung": "Rutsch-/Sprungschachtanlagen in mindestens fünf neuen Feuer- und Rettungswachen (Krefeld, Wetzlar, Köln, Rheydt, Berlin)."}
+{"nr": 111, "score": 4, "begruendung": "Zimmerarbeiten an Baudenkmälern; Website nennt Trockenbau und 20 % Aufträge von Wohnungsgesellschaften, keine Wohnungssanierung konkret."}
+{"nr": 112, "score": 1, "begruendung": "Lieferung Trägerfahrzeug mit Verpflegungsmodul; Fahrzeugbau ohne Klinik- oder Laborbezug."}
+{"nr": 113, "score": 3, "begruendung": "Nur Verkehrsplanung/Elektrotechnik Busbahnhof Borna; keine Lichtsignal-, Beleuchtungssteuerung, Sensorik oder Datenplattform genannt."}
+{"nr": 114, "score": 1, "begruendung": "Einziger Auftrag Gerüstbau Straßenmeisterei; kein Bezug zu Ladeinfrastruktur, keine Website."}
+{"nr": 115, "score": 10, "begruendung": "Website: Neubau Wohnanlagen, Generalunternehmer schlüsselfertig, eigene Mietwohnungen, Wohnungsverwaltung/Vermietung über Töchter; mehrere Passagen, zwei Fähigkeiten."}
+{"nr": 116, "score": 2, "begruendung": "Nur allgemeine Elektroinstallation Gymnasium mit Blitzschutz; keine Brandmelde-, Alarm- oder Löschanlage genannt."}
+{"nr": 117, "score": 6, "begruendung": "Ein Auftrag: Objektplanung Verkehrsanlagen/Ingenieurbauwerke nach HOAI LP 2-4; kein BIM, keine Vermessung genannt."}
+{"nr": 118, "score": 7, "begruendung": "Mehrere Trockenbau-/Sanierungsaufträge im Bestand (TUD, Polizeirevier), aber keine Wohngebäude."}
+{"nr": 119, "score": 2, "begruendung": "Nur Lieferung von Lasern, Rasterkraftmikroskop, nanoIR-Spektrometer; keine Datenanalyse oder KI erkennbar."}
+{"nr": 120, "score": 6, "begruendung": "Ein Auftrag Probenahme und chemische Analytik (Feststoff, Eluat, Grundwasser); Rammpegel nur Messstellenbau."}
+{"nr": 121, "score": 1, "begruendung": "Nur Sanitärinstallation Gymnasium; keine IT-, Kühl- oder Rechenzentrumsleistung erkennbar."}
+{"nr": 122, "score": 7, "begruendung": "Mehrere Rohbauaufträge Stahlbeton/Ziegelmauerwerk (Schulen, Feuerwehrhäuser), aber kein Wohngebäude."}
+{"nr": 123, "score": 8, "begruendung": "Viele Malerarbeiten bei Generalsanierungen; Website: Badsanierung im Bestand, Schimmelsanierung, Wohnraumgestaltung."}
+{"nr": 124, "score": 8, "begruendung": "Zwei Rahmenaufträge Bauarbeiten Strom-Nieder-/Mittelspannungs-, Gas- und Fernwärmenetze für Thüga-Beteiligungen."}
+{"nr": 125, "score": 9, "begruendung": "Mehrere Hochwasserschutz-Lose an der Zwönitz: Fangedamm, Hochwasserpumpen, Binnenentwässerung, Uferzone."}
+{"nr": 126, "score": 9, "begruendung": "Vier Bewachungsaufträge: Asylunterkunft Plauen, Gerichte Leipzig, Behördenkomplex Chemnitz, Rentenversicherung."}
+{"nr": 127, "score": 1, "begruendung": "Nur Möbellieferungen (Bibliothek, Museum, Klinik); keinerlei Planungs- oder Vermessungsleistung."}
+{"nr": 128, "score": 1, "begruendung": "Einziger Auftrag Holzfenster Bahnhofsumbau; kein Bezug zu Hochwasserschutz oder Klimaanpassung."}
+{"nr": 129, "score": 6, "begruendung": "Ein Auftrag: Regen- und Schmutzwasserkanal mit Stahlbetonschächten TU Chemnitz; zweiter nur Kälteleitung."}
+{"nr": 130, "score": 7, "begruendung": "Busbetriebshof Lindenau Erweiterung Ladeinfrastruktur, Anbindung Ladegeräte; dazu Trafo-/Mittelspannungsanlagen als Stütze."}
+{"nr": 131, "score": 2, "begruendung": "Nur urbane Smart-City-Datenplattform als SaaS; kein Schulbezug, keine Lernsoftware oder Schul-IT."}
+{"nr": 132, "score": 9, "begruendung": "Hochwasserschutzwand mit Spundwand Döbeln, Hochwasserschutz Schwarze Pockau, Wasserbau Elstermühlgraben Leipzig."}
+{"nr": 133, "score": 3, "begruendung": "Auftrag nur Breitbandtiefbau; Konzern-Website nennt allgemein Hochbau, keinen Wohnungsbau oder Fertigteile."}
+{"nr": 134, "score": 7, "begruendung": "Wartungsverträge und Website: Instandhaltung, Ersatzteile, Inbetriebnahme von Geldbearbeitungsmaschinen, nicht Fertigungsindustrie."}
+{"nr": 135, "score": 9, "begruendung": "Zahlreiche Tragwerksplanungsaufträge nach HOAI (Kliniken, Hochschulen, Schulen); Website bestätigt; kein BIM genannt."}
+{"nr": 136, "score": 2, "begruendung": "Nur Lkw-/Fahrzeuglieferungen; Website E-Trucks mit Batterie, aber keine Ladesäulen oder Ladebetrieb."}
+{"nr": 137, "score": 1, "begruendung": "Nur Lkw-/Fahrzeuglieferungen und E-Truck-Website; keinerlei Server-, Netzwerk- oder Rechenzentrumsbezug."}
+{"nr": 138, "score": 4, "begruendung": "Umbau Bundespolizeigebäude mit Innenputz/Spachtel; keine Trennwände, Akustikdecken oder Büroflächenumbau genannt."}
+{"nr": 139, "score": 1, "begruendung": "Einziger Auftrag Metall-Glas-Türen; kein Bezug zu Wasser, Abwasser, Rohren oder Kläranlagen."}
+{"nr": 140, "score": 2, "begruendung": "Digitaldruck, Werbetechnik, Grafikelemente; Fräsen/Schneiden nur für Druckmedien, keine Metall-Präzisionsfertigung."}
+{"nr": 141, "score": 9, "begruendung": "Drei Analytikaufträge: Grund-/Oberflächenwasser, Grund- und Bauwasser inkl. Wasserreinigungsanlage, Rahmenvertrag Umweltanalytik Wasser."}
+{"nr": 142, "score": 1, "begruendung": "Nur Werbe- und Standortkampagnen (Kulturhauptstadt, So geht sächsisch); keine Fachsoftware oder Portale."}
+{"nr": 143, "score": 1, "begruendung": "Nur Straßenverkehrszählungen in Thüringen; kein Bezug zu Aus- oder Weiterbildung."}
+{"nr": 144, "score": 6, "begruendung": "Ein Auftrag: Erweiterung Brandmeldeanlage Gymnasium mit Zentrale, Rauch- und Handmeldern."}
+{"nr": 145, "score": 9, "begruendung": "Website: Verbundforschung SUBmarIne mit TU Freiberg, eigene Entwicklung Sensorträger, Testdurchführung, Vorstellung auf IFAT; Auftrag nur Tauchleistungen."}
+{"nr": 146, "score": 1, "begruendung": "Nur Objekt- und Fachplanung Betriebshofumbau; keine Daten-, KI- oder Auswertungsleistung erkennbar."}
+{"nr": 147, "score": 2, "begruendung": "Fremdprüfung Kunststoffabdichtung Deponie; Website Gastechnik-Forschung, Automatisierung nur von Versuchsanlagen, keine Robotik."}
+{"nr": 148, "score": 2, "begruendung": "Fahrzeug- und Aufbautenbau, Promotiontrucks; kein Faserverbund, Leichtmetall oder Leichtbau genannt."}
+{"nr": 149, "score": 9, "begruendung": "Viele HOAI-Planungsaufträge: Tragwerksplanung, Objektplanung Ingenieurbauwerke, Technische Ausrüstung; dazu Vermessung/Bestandserfassung; kein BIM."}
+{"nr": 150, "score": 2, "begruendung": "Nur Baustelleneinrichtung und Container; keine Haltestellen, Radwege oder Verkehrsleistungen."}
+{"nr": 151, "score": 9, "begruendung": "Zahlreiche Lieferungen Hochtemperatur-, Vakuum-, Pyrolyseöfen, Glovebox Hochschule Pforzheim, Forschungsanlage Imprägnierstrecke."}
+{"nr": 152, "score": 1, "begruendung": "Nur Lieferung zweier Kommunalfahrzeuge mit Winterdienstausrüstung; keine Beleuchtung, Verkehrstechnik oder Sensorik."}
+{"nr": 153, "score": 5, "begruendung": "Zwei Lose Schlammentnahme aus Kleinkläranlagen und Grubenentleerung; verwandte Abwasserleistung, aber keine benannte Fähigkeit."}
+{"nr": 154, "score": 7, "begruendung": "Website: eigene Fertigteilwerke für Holz und Beton, Holzbau Bayern, hybrides Bausystem; Aufträge nur Stahlbeton-Rohbau."}
+{"nr": 155, "score": 8, "begruendung": "Gerüstbau an mehreren Schulsanierungen/-erweiterungen (Max-Weber-Schule, GS Theodor Eckert, GGS Opladen, René-Schickele-Schule)."}
+{"nr": 156, "score": 1, "begruendung": "Nur Badewassertechnik für Thermen und Bäder; keine Forschung, Transferberatung oder Gründerangebote."}
+{"nr": 157, "score": 2, "begruendung": "Nur allgemeine Elektroinstallation Straßenmeisterei (Verteilungen, Blitzschutz); keine Daten- oder Rechenzentrumstechnik genannt."}
+{"nr": 158, "score": 9, "begruendung": "Viele Bewachungsaufträge: Polizeihochschule, Bestreifung, Wach-/Kontrollzentrum, BKG Wettzell, Justiz, JVA Zwickau."}

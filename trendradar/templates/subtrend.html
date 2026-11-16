@@ -1,0 +1,49 @@
+{% extends "basis.html" %}
+{% import "_makros.html" as mk %}
+{% set nav = 'start' %}
+{% block titel %}{{ s.name }}{% endblock %}
+{% block inhalt %}
+{% set m0 = s.megatrends[0] if s.megatrends else none %}
+{% if m0 %}<a class="zurueck" href="/megatrend/{{ m0.id }}">← {{ m0.name }}</a>{% endif %}
+<div class="ueberzeile">{% for m in s.megatrends %}<span style="color:{{ m.farbe }}">{{ m.name }}</span>{% endfor %}</div>
+<h1>{{ s.name }}</h1>
+<p class="einleitung">{{ s.beschreibung }}</p>
+{% set k = s.kennzahlen %}
+<div class="lage">
+  <div><b>{{ k.n_beleg|default(0)|zahl }}</b><span>Unternehmen mit Nachweis</span></div>
+  <div><b>{{ k.n_stark|default(0)|zahl }}</b><span>davon mit starkem Nachweis</span></div>
+</div>
+
+<h3>Was dazugehört</h3>
+<div class="bausteine">
+  {% for f in s.faehigkeiten %}
+  <div class="baustein {% if not f.n_unternehmen %}luecke{% endif %}"><b>{{ f.name }}</b>
+    <span>{% if f.n_unternehmen %}{{ f.n_unternehmen|zahl }} Unternehmen mit Nachweis{% else %}niemand in der Region belegt das{% endif %}</span></div>
+  {% endfor %}
+</div>
+<div class="aktionen">
+  <a class="knopf" href="/kooperation/{{ s.id }}">Wer kann das gemeinsam? Partner finden →</a>
+  <a class="knopf zweit klein" href="/api/v1/subtrends/{{ s.id }}/export?format=xlsx{% if kreis %}&kreis={{ kreis }}{% endif %}">Liste als Excel</a>
+</div>
+
+<h2>Diese Unternehmen passen am besten</h2>
+{{ mk.kreise('/subtrend/' ~ s.id ~ ('?alle=1' if alle else ''), kreis) }}
+<div class="liste">
+  {% for e in rl.eintraege %}
+  <article class="karte treffer">
+    <div class="platz">{{ (rl.seite - 1) * rl.pro_seite + loop.index }}</div>
+    <div>
+      <div class="kopfzeile">
+        <div><h3><a href="/unternehmen/{{ e.id }}">{{ e.name }}</a></h3><div class="ort">{{ e.ort }} · {{ e.kreis_nuts|kreis }}</div></div>
+        {{ mk.staerke(e.score, e.status) }}
+      </div>
+      {% if e.zitat %}<div class="baustein-name">{{ e.faehigkeit }}</div>{{ mk.zitat(e) }}{{ mk.quelle(e) }}{% endif %}
+    </div>
+  </article>
+  {% else %}
+  <p class="leise">Kein Unternehmen mit Nachweis{% if kreis %} in diesem Kreis{% endif %}.</p>
+  {% endfor %}
+</div>
+{{ mk.seiten(rl, '?kreis=' ~ kreis ~ ('&alle=1' if alle else '') ~ '&') }}
+{% if not alle and min_score_offen is none %}<p class="mitte" style="margin-top:26px"><a href="/subtrend/{{ s.id }}?alle=1{% if kreis %}&kreis={{ kreis }}{% endif %}">Auch Unternehmen mit schwachen Hinweisen zeigen</a></p>{% endif %}
+{% endblock %}

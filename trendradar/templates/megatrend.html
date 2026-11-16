@@ -1,0 +1,39 @@
+{% extends "basis.html" %}
+{% import "_makros.html" as mk %}
+{% set nav = 'start' %}
+{% block titel %}{{ m.name }}{% endblock %}
+{% block inhalt %}
+<a class="zurueck" href="/">← Alle Zukunftsfelder</a>
+<div class="ueberzeile" style="color:{{ m.farbe }}">Zukunftsfeld</div>
+<h1>{{ m.name }}</h1>
+<p class="einleitung">{{ m.beschreibung }}</p>
+
+<h2>Wählen Sie ein Thema</h2>
+<div class="raster">
+  {% for sid in m.subtrends %}{% set s = tax.subtrends[sid] %}{% set k = kz.get(sid, {}) %}
+  <a class="karte kachel" href="/subtrend/{{ sid }}" style="--farbe: {{ m.farbe }}">
+    <h3>{{ s.name }}</h3>
+    <p>{{ s.beschreibung|erster_satz }}</p>
+    <div class="kachel-fuss"><b>{{ k.n_beleg|default(0)|zahl }}</b><span>Unternehmen mit Nachweis</span><i>→</i></div>
+    {% if top.get(sid) %}<div class="beispiele">z. B. {{ top[sid][:2]|join(' · ') }}</div>{% endif %}
+  </a>
+  {% endfor %}
+</div>
+
+<h2>Die Unternehmen mit den stärksten Nachweisen in diesem Feld</h2>
+{{ mk.kreise('/megatrend/' ~ m.id ~ ('?regel=top3' if regel == 'top3' else ''), kreis) }}
+<div class="firmen">
+  {% for e in rl.eintraege %}
+  <a class="karte firma-zeile" href="/unternehmen/{{ e.id }}">
+    <span><b>{{ e.name }}</b><div class="ort">{{ e.ort }} · {{ e.kreis_nuts|kreis }}{% if e.staerkster_subtrend %} · am stärksten bei „{{ e.staerkster_subtrend }}“{% endif %}</div></span>
+    {{ mk.staerke(e.max) }}
+  </a>
+  {% endfor %}
+</div>
+{{ mk.seiten(rl, '?regel=' ~ regel ~ '&kreis=' ~ kreis ~ '&') }}
+<details style="margin-top:22px"><summary>Wie die Reihenfolge entsteht</summary>
+<p class="leise" style="max-width:780px">Gezählt wird der stärkste Nachweis des Unternehmens in einem der Themen dieses Feldes.
+Alternativ zählt der Durchschnitt der drei stärksten Themen; das belohnt Breite statt Spitze.
+{% if regel == 'top3' %}<a href="?regel=max&kreis={{ kreis }}">Nach stärkstem Thema ordnen</a>{% else %}<a href="?regel=top3&kreis={{ kreis }}">Nach Breite ordnen</a>{% endif %}.
+Welche Regel gilt, ist eine fachliche Entscheidung; beide sind gespeichert.</p></details>
+{% endblock %}

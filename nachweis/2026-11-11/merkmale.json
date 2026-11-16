@@ -1,0 +1,16 @@
+{
+  "zeitpunkt_utc": "2026-11-11T22:32:10Z",
+  "modell": "qwen3.8:27b",
+  "digest": "aaee06c39dcf",
+  "prompt": "M1",
+  "domains": 117,
+  "vorgeschlagen": 2002,
+  "behalten": 1970,
+  "verworfen": 32,
+  "verworfen_nach_grund": {
+    "zitat_nicht_woertlich": 21,
+    "zitat_zu_kurz": 5,
+    "doppelt": 6
+  },
+  "zeiten": "hier nicht ausgewiesen; Geschwindigkeit auf der Demo-Hardware: modellwahl_sprachmodell.json"
+}

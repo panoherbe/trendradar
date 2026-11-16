@@ -1,0 +1,10 @@
+{
+  "unternehmen": 100000,
+  "subtrends": 100,
+  "teilfaehigkeiten": 400,
+  "dimension": 1024,
+  "werte": 10000000,
+  "sekunden": 1.04,
+  "geraet": "CPU (NumPy, float32)",
+  "zeitpunkt_utc": "2026-11-16T21:40:13Z"
+}

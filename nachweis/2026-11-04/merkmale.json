@@ -1,0 +1,18 @@
+{
+  "zeitpunkt_utc": "2026-11-04T02:36:23Z",
+  "modell": "qwen2.5:7b-instruct",
+  "digest": "845dbda0ea48",
+  "prompt": "M1",
+  "domains": 117,
+  "vorgeschlagen": 908,
+  "behalten": 667,
+  "verworfen": 241,
+  "verworfen_nach_grund": {
+    "zitat_nicht_woertlich": 173,
+    "doppelt": 22,
+    "zitat_zu_kurz": 17,
+    "passage_unbekannt": 29
+  },
+  "sekunden_je_domain_median": 14.5,
+  "sekunden_gesamt": 1956.0
+}

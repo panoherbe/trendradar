@@ -1,0 +1,93 @@
+{
+  "zeitpunkt_utc": "2026-11-11T18:23:05Z",
+  "maßstab": "blinde Zweitbewertung 04.11.2026, Lauf 1, Paare mit Stufe 6–10 vor der Prüfung",
+  "paare": 100,
+  "neu_bewertet_abweichend_vom_04_11": 0,
+  "ohne_pruefschritt": {
+    "paare": 100,
+    "innerhalb_2": 53,
+    "anteil_innerhalb_2": 0.53,
+    "genau_gleich": 18,
+    "mittlere_abweichung": 2.51,
+    "nachweis_ja_nein": {
+      "tp": 47,
+      "fp": 53,
+      "fn": 0,
+      "tn": 0,
+      "trefferquote": 1.0,
+      "genauigkeit": 0.47,
+      "ausgewogen": 0.5
+    },
+    "belegstellen": 256,
+    "bestaetigt": 256,
+    "ohne_urteil": 0
+  },
+  "modelle": {
+    "qwen2.5:7b-instruct": {
+      "pruefschritt": {
+        "paare": 100,
+        "innerhalb_2": 61,
+        "anteil_innerhalb_2": 0.61,
+        "genau_gleich": 25,
+        "mittlere_abweichung": -0.36,
+        "nachweis_ja_nein": {
+          "tp": 37,
+          "fp": 19,
+          "fn": 10,
+          "tn": 34,
+          "trefferquote": 0.787,
+          "genauigkeit": 0.661,
+          "ausgewogen": 0.714
+        },
+        "belegstellen": 256,
+        "bestaetigt": 113,
+        "ohne_urteil": 0
+      },
+      "hinweis": "Urteile aus dem Zwischenspeicher vom 04.11.2026 (Ollama 0.20.6)"
+    },
+    "qwen3.8:27b": {
+      "digest": "aaee06c39dcf",
+      "pruefschritt": {
+        "paare": 100,
+        "innerhalb_2": 72,
+        "anteil_innerhalb_2": 0.72,
+        "genau_gleich": 32,
+        "mittlere_abweichung": -0.56,
+        "nachweis_ja_nein": {
+          "tp": 40,
+          "fp": 12,
+          "fn": 7,
+          "tn": 41,
+          "trefferquote": 0.851,
+          "genauigkeit": 0.769,
+          "ausgewogen": 0.812
+        },
+        "belegstellen": 256,
+        "bestaetigt": 105,
+        "ohne_urteil": 0,
+        "modellfehler": 0,
+        "sekunden_je_paar_median": 19.6,
+        "sekunden_gesamt_wand": 1259.1,
+        "parallel": 2,
+        "ausgabe_tokens_je_sekunde_median": 5.9
+      },
+      "steckbrief": {
+        "websites": 10,
+        "vorgeschlagen": 195,
+        "behalten": 193,
+        "anteil_verworfen": 0.01,
+        "verworfen_nach_grund": {
+          "zitat_nicht_woertlich": 2
+        },
+        "sekunden_je_website_median": 119.3
+      },
+      "geladen": [
+        {
+          "name": "qwen3.8:27b",
+          "groesse_gb": 19.1,
+          "davon_gpu_gb": 10.2
+        }
+      ]
+    }
+  }
+}

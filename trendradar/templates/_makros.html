@@ -1,0 +1,48 @@
+{# Stärke in Worten statt Zahlencode; die Stufe 1–10 steht im Tooltip und in der API. #}
+{% macro staerke(wert, status=None) -%}
+{%- if status == 'nicht_bewertbar' or wert is none -%}<span class="staerke nb" title="nicht bewertbar: zu wenig Beschreibungstext">zu wenig Angaben</span>
+{%- elif wert >= 8 -%}<span class="staerke stark" title="Stufe {{ wert }} von 10: mehrere eindeutige Nachweise"><span class="p"><i class="an"></i><i class="an"></i><i class="an"></i></span>starker Nachweis</span>
+{%- elif wert >= 6 -%}<span class="staerke belegt" title="Stufe {{ wert }} von 10: ein eindeutiger Nachweis"><span class="p"><i class="an"></i><i class="an"></i><i></i></span>Nachweis</span>
+{%- elif wert >= 4 -%}<span class="staerke hinweis" title="Stufe {{ wert }} von 10: nur indirekter Bezug"><span class="p"><i class="an"></i><i></i><i></i></span>Hinweis</span>
+{%- else -%}<span class="staerke kein" title="Stufe {{ wert }} von 10"><span class="p"><i></i><i></i><i></i></span>kein Nachweis</span>{%- endif -%}
+{%- endmacro %}
+
+{% macro quelle(b) -%}
+<div class="quelle">
+{%- if b.quelle == 'auftrag' -%}<span>Aus einem öffentlichen Auftrag{% if b.datum %} vom {{ b.datum|datum }}{% endif %}</span><a href="{{ b.url }}" target="_blank" rel="noopener">Bekanntmachung öffnen ↗</a>
+{%- else -%}<span>Von der Website des Unternehmens{% if b.datum %}, gelesen am {{ b.datum|datum }}{% endif %}</span><a href="{{ b.url }}" target="_blank" rel="noopener">Seite öffnen ↗</a>
+{%- endif -%}
+{%- if b.geprueft == 'bestaetigt' -%}<span class="geprueft" title="Von der KI gegen den Baustein geprüft: {{ b.pruef_grund }}">✓ von der KI gegengeprüft</span>{%- endif -%}
+</div>
+{%- endmacro %}
+
+{% macro zitat(b, klasse='') -%}
+{%- set z = b.zitat -%}
+{%- if b.signal == 'begriff' and b.treffer -%}
+  {%- set i = z.lower().find(b.treffer) -%}
+  {%- if i >= 0 -%}<div class="zitat {{ klasse }}">„{{ z[:i] }}<mark>{{ z[i:i + b.treffer|length] }}</mark>{{ z[i + b.treffer|length:] }}“</div>
+  {%- else -%}<div class="zitat {{ klasse }}">„{{ z }}“</div>{%- endif -%}
+{%- else -%}<div class="zitat {{ klasse }}">„{{ z }}“</div>{%- endif -%}
+{%- endmacro %}
+
+{% macro kreise(basis, kreis, alle='Ganze Region') -%}
+<nav class="pillen" aria-label="Kreis wählen">
+  <a href="{{ basis }}" {% if not kreis %}class="aktiv"{% endif %}>{{ alle }}</a>
+  {% for code, name in KREISE.items() %}<a href="{{ basis }}{{ '&' if '?' in basis else '?' }}kreis={{ code }}" {% if kreis == code %}class="aktiv"{% endif %}>{{ name }}</a>{% endfor %}
+</nav>
+{%- endmacro %}
+
+{% macro seiten(erg, basis) -%}
+{%- set letzte = ((erg.gesamt - 1) // erg.pro_seite) + 1 if erg.gesamt else 1 -%}
+{%- if letzte > 1 -%}
+<div class="seiten">
+  {% if erg.seite > 1 %}<a class="knopf zweit klein" href="{{ basis }}seite={{ erg.seite - 1 }}">← zurück</a>{% endif %}
+  <span>Seite {{ erg.seite }} von {{ letzte }}</span>
+  {% if erg.seite < letzte %}<a class="knopf zweit klein" href="{{ basis }}seite={{ erg.seite + 1 }}">weiter →</a>{% endif %}
+</div>
+{%- endif -%}
+{%- endmacro %}
+
+{% macro logo() -%}
+<svg viewBox="0 0 42 42" aria-hidden="true"><rect width="42" height="42" rx="12" fill="#0b5866"/><circle cx="21" cy="21" r="12.5" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2"/><circle cx="21" cy="21" r="6.5" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2"/><path d="M21 21 L31 12" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><circle cx="21" cy="21" r="2.6" fill="#fff"/><circle cx="29.5" cy="25" r="2.4" fill="#ffd166"/></svg>
+{%- endmacro %}

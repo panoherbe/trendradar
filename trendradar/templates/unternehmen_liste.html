@@ -1,0 +1,27 @@
+{% extends "basis.html" %}
+{% import "_makros.html" as mk %}
+{% set nav = 'unternehmen' %}
+{% block titel %}Unternehmen{% endblock %}
+{% block inhalt %}
+<div class="ueberzeile">{{ erg.gesamt|zahl }} Unternehmen</div>
+<h1>Unternehmen finden</h1>
+<p class="einleitung">Alle Unternehmen mit Sitz in der Region, die mindestens einen öffentlichen Auftrag gewonnen haben.</p>
+<form class="suche" method="get" role="search" style="margin-bottom:22px">
+  <input name="q" value="{{ q }}" placeholder="Firma oder Ort, z. B. Zwickau" aria-label="Firma oder Ort">
+  {% if kreis %}<input type="hidden" name="kreis" value="{{ kreis }}">{% endif %}
+  {% if subtrend %}<input type="hidden" name="subtrend" value="{{ subtrend }}">{% endif %}
+  <button class="knopf">Suchen</button>
+</form>
+{{ mk.kreise('/unternehmen?q=' ~ q ~ ('&subtrend=' ~ subtrend if subtrend else ''), kreis, 'Alle Kreise') }}
+{% if subtrend %}<p class="leise">Geordnet nach dem Thema „{{ tax.subtrends[subtrend].name }}“. <a href="/unternehmen?q={{ q }}&kreis={{ kreis }}">Ohne Thema</a></p>{% endif %}
+<div class="firmen">
+  {% for e in erg.eintraege %}
+  <a class="karte firma-zeile" href="/unternehmen/{{ e.id }}">
+    <span><b>{{ e.name }}</b><div class="ort">{{ e.ort }} · {{ e.kreis_nuts|kreis }}</div></span>
+    {% if subtrend %}{{ mk.staerke(e.score, e.status) }}{% else %}<span class="leise">{% if e.n_subtrends_beleg %}Nachweis in {{ e.n_subtrends_beleg }} Thema{{ '' if e.n_subtrends_beleg == 1 else 'en' }}{% else %}noch kein Nachweis{% endif %}</span>{% endif %}
+  </a>
+  {% else %}<p class="leise">Kein Unternehmen gefunden.</p>
+  {% endfor %}
+</div>
+{{ mk.seiten(erg, '?q=' ~ q ~ '&kreis=' ~ kreis ~ '&subtrend=' ~ subtrend ~ '&min_score=' ~ (min_score or '') ~ '&') }}
+{% endblock %}

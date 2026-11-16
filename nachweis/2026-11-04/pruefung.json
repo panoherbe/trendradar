@@ -1,0 +1,38 @@
+{
+  "zeitpunkt_utc": "2026-11-04T04:42:46Z",
+  "modell": "qwen2.5:7b-instruct",
+  "prompt": "P3",
+  "paare_geprueft": 2125,
+  "belegstellen_geprueft": 4086,
+  "bestaetigt": 1539,
+  "nicht_bestaetigt": 2547,
+  "paare_geaendert": 1674,
+  "modellfehler": 0,
+  "belegstellen_ohne_urteil": 0,
+  "sekunden_je_paar_median": null,
+  "sekunden_gesamt": 0,
+  "verteilung_vorher": {
+    "1": 34303,
+    "2": 2128,
+    "3": 530,
+    "4": 16,
+    "5": 2,
+    "6": 1206,
+    "7": 258,
+    "8": 196,
+    "9": 301,
+    "10": 164
+  },
+  "verteilung_nachher": {
+    "1": 34957,
+    "2": 2497,
+    "3": 734,
+    "4": 22,
+    "5": 4,
+    "6": 527,
+    "7": 96,
+    "8": 101,
+    "9": 127,
+    "10": 39
+  }
+}

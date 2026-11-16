@@ -1,0 +1,34 @@
+{% extends "basis.html" %}
+{% import "_makros.html" as mk %}
+{% set nav = 'start' %}
+{% block titel %}Partner finden · {{ s.name }}{% endblock %}
+{% block inhalt %}
+<a class="zurueck" href="/subtrend/{{ s.id }}">← {{ s.name }}</a>
+<div class="ueberzeile">Partner finden</div>
+<h1>Wer kann „{{ s.name }}“ gemeinsam anbieten?</h1>
+<p class="einleitung">Ein Thema hat mehrere Bausteine. Hier stehen Teams aus der Region, die zusammen jeden Baustein mit einem
+Nachweis abdecken – Firmen aus demselben Kreis zuerst.</p>
+{{ mk.kreise('/kooperation/' ~ s.id, kreis) }}
+{% if k.luecken_region %}<div class="hinweis warm"><b>Hier fehlt der {{ 'Region' if not kreis else 'Auswahl' }} jemand:</b>
+{% for fid in k.luecken_region %}„{{ (k.faehigkeiten|selectattr('id', 'equalto', fid)|first).name }}“{{ ', ' if not loop.last }}{% endfor %}
+belegt kein Unternehmen. Ein Ansatzpunkt für Ansiedlung, Partner von außerhalb oder eine gezielte Ansprache.</div>{% endif %}
+{% for g in k.gruppen[:3] %}
+<div class="team-kopf"><h3>Team {{ loop.index }}: {{ g.mitglieder|length }} Unternehmen</h3>
+  <span class="leise">{% if g.luecken %}{{ g.luecken|length }} Baustein{{ 'e' if g.luecken|length > 1 }} offen{% else %}deckt alle Bausteine ab{% endif %}</span></div>
+<div class="team">
+  {% for st in g.schritte %}
+  <div class="mitglied {% if not st.unternehmen_id %}luecke{% endif %}">
+    <div class="rolle">{{ st.faehigkeit }}</div>
+    {% if st.unternehmen_id %}
+    <a class="firma" href="/unternehmen/{{ st.unternehmen_id }}">{{ st.unternehmen }}</a>
+    <div class="ort">{{ st.kreis }}</div>
+    <div class="zitat klein">„{{ st.beleg.zitat|truncate(140, True, '…') }}“</div>
+    <div class="quelle"><a href="{{ st.beleg.url }}" target="_blank" rel="noopener">{{ 'Auftrag' if st.beleg.quelle == 'auftrag' else 'Website' }} vom {{ st.beleg.datum|datum }} ↗</a></div>
+    {% else %}<div class="firma">noch offen</div><div class="ort">niemand in der Auswahl belegt diesen Baustein</div>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% else %}<p class="leise">Kein Team möglich: kein Unternehmen mit Nachweis{% if kreis %} in diesem Kreis{% endif %}.</p>
+{% endfor %}
+<p class="leise" style="margin-top:34px">Ein Vorschlag, keine Empfehlung: Die Nachweise zeigen, warum ein Unternehmen genannt wird. Ob es passt, entscheiden Menschen.</p>
+{% endblock %}

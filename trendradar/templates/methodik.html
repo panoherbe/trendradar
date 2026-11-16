@@ -1,0 +1,53 @@
+{% extends "basis.html" %}
+{% set nav = 'methodik' %}
+{% block titel %}So funktioniert’s{% endblock %}
+{% block inhalt %}
+{% set lauf = stand.lauf or {} %}{% set crawl = stand.crawl or {} %}{% set merk = stand.merkmale or {} %}{% set zit = stand.zitate or {} %}{% set last = stand.lasttest or {} %}{% set zw1 = stand.zweitbewertung_1_auswertung or {} %}{% set zw2 = stand.zweitbewertung_2_auswertung or {} %}{% set pr = stand.pruefung or {} %}{% set mw = stand.modellwechsel or {} %}
+<div class="ueberzeile">So funktioniert’s</div>
+<h1>Jede Aussage hat eine Quelle.</h1>
+<p class="einleitung">Der Trend-Radar liest offene Quellen, ordnet sie den Themen zu und zeigt zu jeder Einordnung das Zitat, auf dem sie beruht.
+Die Anwendung rechnet auf dem eigenen Server und schickt keinen Text an einen Cloud-Dienst; nur die einmalige Qualitätsmessung (Zweitbewertung öffentlicher Textpaare) nutzte ein kommerzielles Sprachmodell.</p>
+<div class="schritte">
+  <div class="schritt"><b>Lesen</b><span>{{ lauf.auftraege|zahl }} öffentliche Aufträge und {{ lauf.websites.gelesen|zahl }} Firmen-Websites, höflich und nach den Regeln der Seiten.</span></div>
+  <div class="schritt"><b>Zuordnen</b><span>Jedes Thema ist in Bausteine zerlegt. Fachbegriffe und ein Sprachverständnis-Modell finden passende Textstellen.</span></div>
+  <div class="schritt"><b>Gegenprüfen</b><span>Eine KI prüft jeden starken Treffer: Erbringt die Firma das selbst, oder ist es nur eine Nebenposition?</span></div>
+  <div class="schritt"><b>Zeigen</b><span>Sie sehen die Einordnung mit Zitat und Link zur Quelle. Unklare Fälle stehen als „zu wenig Angaben“ da.</span></div>
+</div>
+
+<h2>Wie stark ein Nachweis ist</h2>
+<table>
+<tr><th style="width:260px">Anzeige</th><th>Bedeutung</th><th style="width:120px">Stufe</th></tr>
+<tr><td><span class="staerke stark"><span class="p"><i class="an"></i><i class="an"></i><i class="an"></i></span>starker Nachweis</span></td><td>mehrere eindeutige Nachweise, mindestens zwei nennen die Fähigkeit im Text</td><td>8–10</td></tr>
+<tr><td><span class="staerke belegt"><span class="p"><i class="an"></i><i class="an"></i><i></i></span>Nachweis</span></td><td>ein eindeutiger Nachweis (ein Auftrag oder eine Website-Stelle)</td><td>6–7</td></tr>
+<tr><td><span class="staerke hinweis"><span class="p"><i class="an"></i><i></i><i></i></span>Hinweis</span></td><td>nur ein indirekter Bezug, ohne Fachbegriff</td><td>4–5</td></tr>
+<tr><td><span class="staerke kein"><span class="p"><i></i><i></i><i></i></span>kein Nachweis</span></td><td>keine oder nur entfernte Anhaltspunkte</td><td>1–3</td></tr>
+<tr><td><span class="staerke nb">zu wenig Angaben</span></td><td>weniger als {{ lauf.schwellen.min_zeichen|default('') }} Zeichen Text: ein eigener Status, nie ein schlechter Wert</td><td>–</td></tr>
+</table>
+
+<h2>Gemessen</h2>
+<table>
+<tr><th style="width:240px">Was</th><th>Ergebnis</th><th style="width:120px">Stand</th></tr>
+<tr><td>Modelle</td><td>Sprachverständnis (Einbettung): <b>{{ lauf.modell }}</b>; Gegenprüfung und Firmenprofil: <b>{{ pr.modell or merk.modell }}</b>. Beide quelloffen, lokal auf dem eigenen Server.</td><td>{{ (lauf.zeitpunkt_utc or '')[:10]|datum }}</td></tr>
+{% if mw %}<tr><td>Modellwechsel</td><td>vorher {{ mw.vorher.einbettung }} und {{ mw.vorher.sprachmodell }}, seit {{ mw.datum|datum }} {{ mw.nachher.einbettung }} und {{ mw.nachher.sprachmodell }}.
+  Übereinstimmung mit der blinden Zweitbewertung (±2 Stufen) auf denselben {{ mw.zweitbewertung.alle.nachher.paare }} Paaren: {{ mw.zweitbewertung.alle.vorher.anteil_innerhalb_2|prozent }} → <b>{{ mw.zweitbewertung.alle.nachher.anteil_innerhalb_2|prozent }}</b>;
+  wo das Verfahren einen Nachweis sieht: {{ mw.zweitbewertung.nachweis.vorher.anteil_innerhalb_2|prozent }} → <b>{{ mw.zweitbewertung.nachweis.nachher.anteil_innerhalb_2|prozent }}</b>.</td><td>{{ mw.datum|datum }}</td></tr>{% endif %}
+<tr><td>Bestand</td><td>{{ lauf.unternehmen|zahl }} Unternehmen, {{ lauf.auftraege|zahl }} öffentliche Aufträge, {{ lauf.passagen|zahl }} Textstellen ({{ lauf.passagen_web|zahl }} aus Websites); {{ lauf.paare|zahl }} Paare Unternehmen × Thema bewertet, davon {{ lauf.paare_nicht_bewertbar|zahl }} mit zu wenig Angaben</td><td>{{ (lauf.zeitpunkt_utc or '')[:10]|datum }}</td></tr>
+{% if crawl %}<tr><td>Websites</td><td>{{ crawl.domains }} Websites: {{ crawl.status.ok|default(0) }} gelesen ({{ crawl.quote_ok|prozent }}), {{ crawl.seiten_ok|zahl }} Seiten; nicht gelesen mit Grund:
+  {% for k, v in crawl.status.items() if k != 'ok' %}{{ k|replace('_', ' ') }} {{ v }}{{ ', ' if not loop.last }}{% endfor %}</td><td>{{ crawl.datum|datum }}</td></tr>{% endif %}
+{% if merk %}{% set vg = merk.verworfen_nach_grund %}<tr><td>Firmenprofil aus der Website</td><td>{{ merk.vorgeschlagen|zahl }} Vorschläge der KI, {{ merk.behalten|zahl }} übernommen;
+  {{ (vg.zitat_nicht_woertlich|default(0) + vg.passage_unbekannt|default(0) + vg.zitat_zu_kurz|default(0))|zahl }} verworfen, weil das Zitat nicht wörtlich auf der Website stand, die Stelle fehlte oder das Zitat zu kurz war; {{ vg.doppelt|default(0) }} doppelt</td><td>{{ (merk.zeitpunkt_utc or '')[:10]|datum }}</td></tr>{% endif %}
+{% if pr %}<tr><td>Gegenprüfung durch die KI</td><td>{{ pr.paare_geprueft|zahl }} Paare mit Nachweis, {{ pr.belegstellen_geprueft|zahl }} Textstellen geprüft: {{ pr.bestaetigt|zahl }} bestätigt, {{ pr.nicht_bestaetigt|zahl }} verworfen</td><td>{{ (pr.zeitpunkt_utc or '')[:10]|datum }}</td></tr>{% endif %}
+{% if zit %}<tr><td>Nachprüfung aller Zitate</td><td>{{ (zit.auftrag.woertlich + zit.web.woertlich + zit.merkmale.woertlich)|zahl }} von {{ (zit.auftrag.geprueft + zit.web.geprueft + zit.merkmale.geprueft)|zahl }} gezeigten Zitaten stehen wörtlich in der gespeicherten Quelle</td><td>{{ (zit.zeitpunkt_utc or lauf.zeitpunkt_utc or '')[:10]|datum }}</td></tr>{% endif %}
+{% for zw, name in ((zw1, 'Blinde Zweitbewertung, Stichprobe 1'), (zw2, 'Blinde Zweitbewertung, Stichprobe 2')) if zw %}<tr><td>{{ name }}</td><td>{{ zw.anteil_innerhalb_2|prozent }} der {{ zw.paare }} Paare innerhalb ±2 Stufen; je Bereich: {% for k, v in zw.je_bereich.items() if v.n %}{{ k }}: {{ v.anteil_innerhalb_2|prozent }} (n = {{ v.n }}){{ ', ' if not loop.last }}{% endfor %}{% if zw.hochgerechnet_nach == 'Schichten der Ziehung' %}; hochgerechnet auf alle Paare: {{ zw.anteil_innerhalb_2_hochgerechnet|prozent }}{% endif %}.
+  Zweitbewertung durch ein großes Sprachmodell nach derselben Rubrik, ohne Kenntnis der Scores – kein Ersatz für eine Referenzbewertung durch Fachleute.</td><td>{{ (zw.zeitpunkt_utc or '')[:10]|datum }}</td></tr>{% endfor %}
+{% if last %}<tr><td>Lasttest (simuliert)</td><td>{{ last.unternehmen|zahl }} synthetische Unternehmen × {{ last.subtrends }} Themen = {{ last.bewertungen|zahl }} Bewertungen; {{ last.nutzer }} gleichzeitige Nutzer: Median {{ last.ms_median|zahl }} ms, 95 % unter {{ last.ms_p95|zahl }} ms{% if last.fehler %}; dabei {{ last.fehler.values()|sum }} Serverfehler, Ursache nicht ermittelt, Wiederholungen ohne Fehler (Messprotokoll){% endif %}</td><td>{{ (last.zeitpunkt_utc or '')[:10]|datum }}</td></tr>{% endif %}
+</table>
+<p class="leise" style="margin-top:14px">Messweg, Rohdaten und Grenzen: Messprotokoll im Repository (<code>nachweis/</code>).</p>
+
+<h2>Quellen</h2>
+<div class="karte">
+<p><b>Öffentliche Aufträge:</b> tägliche Exporte des Bekanntmachungsservice öffentlicher Auftraggeber (oeffentlichevergabe.de), Lizenz CC0. Übernommen werden Name, Ort, Kreis, Website und was geliefert oder gebaut wurde; nie Ansprechpersonen, E-Mail, Telefon oder Steuernummern.</p>
+<p><b>Websites:</b> nur öffentliche Seiten; robots.txt und Nutzungsvorbehalte (§ 44b UrhG) beachtet, höchstens ein Abruf je Sekunde, Impressum, Kontakt und Karriere nie gelesen, Kontaktdaten entfernt. Gezeigt werden kurze Zitate mit Quelle.</p>
+<p style="margin:0"><b>Themen:</b> eigene Beispiel-Taxonomie ({{ tax.megatrends|length }} Zukunftsfelder, {{ lauf.subtrends }} Themen, {{ lauf.teilfaehigkeiten }} Bausteine). Eine eigene Taxonomie wird als Datei eingespielt und versioniert.</p>
+</div>
+{% endblock %}

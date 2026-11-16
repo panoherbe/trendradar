@@ -1,0 +1,7 @@
+.git
+roh
+.modelle
+aus
+daten/web_lauf.jsonl
+nachweis/*/stichprobe_*_blind.jsonl
+**/__pycache__

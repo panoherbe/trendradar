@@ -1,0 +1,1294 @@
+# Trend-Taxonomie des Trend-Radars (Prototyp)
+# Eigene Formulierung, Lizenz AGPL-3.0-only wie der Quellcode. Keine Übernahme fremder Trendmodelle oder -texte.
+#
+# Aufbau: Megatrend -> Subtrend -> Teilfähigkeit („Fähigkeits-Brücke“).
+# Ein Unternehmen passt zu einem Subtrend über Belege für eine oder mehrere Teilfähigkeiten.
+# Die Teilfähigkeiten eines Subtrends ergänzen sich entlang der Wertschöpfung
+# (Material/Komponenten -> Fertigung/Errichtung -> Steuerung/Software -> Betrieb/Service),
+# damit der Kooperationsfinder Gruppen regionaler Firmen bilden kann, die gemeinsam alles abdecken.
+#
+# begriffe: kleingeschriebene Wortstämme, die als Teilzeichenkette in Firmentexten gesucht werden.
+# cpv:      CPV-Präfixe (4-8 Ziffern); ein Präfix trifft alle darunterliegenden Codes.
+
+version: "2026-11-04b"
+titel: "Beispiel-Taxonomie (eigene Formulierung, AGPL-3.0-only)"
+
+megatrends:
+  - id: M01
+    name: "Klima & Energie"
+    farbe: "#1b7f5b"
+    beschreibung: "Strom und Wärme sollen erneuerbar erzeugt, klug verteilt und sparsam genutzt werden, während Hitze und Starkregen häufiger werden. Daraus entstehen Aufträge für Gebäudetechnik, Netzbau, neue Energieträger und Vorsorge."
+    subtrends: [S001, S003, S002, S021, S004, S005]
+  - id: M02
+    name: "Ressourcen & Kreislaufwirtschaft"
+    farbe: "#8c564b"
+    beschreibung: "Rohstoffe werden knapper und teurer, deshalb sollen Materialien länger genutzt, zurückgewonnen und wieder eingesetzt werden. Die Region bringt dafür Bergbau-, Werkstoff- und Entsorgungswissen mit."
+    subtrends: [S010, S006, S007, S009, S024, S008]
+  - id: M03
+    name: "Digitalisierung & Vernetzung"
+    farbe: "#0072b2"
+    beschreibung: "Netze, Rechenleistung und digitale Abläufe werden zur Grundausstattung von Verwaltung, Schulen und Betrieben. Gefragt sind Leitungsbau, IT-Betrieb, Fachsoftware und deren Absicherung."
+    subtrends: [S011, S012, S013, S034, S032, S039]
+  - id: M04
+    name: "Automatisierung & KI"
+    farbe: "#6a3d9a"
+    beschreibung: "Maschinen, Sensoren und lernende Software übernehmen Routinearbeit in Fertigung und Planung. Für den Maschinenbau- und Elektronikstandort Südwestsachsen ist das Chance und Anpassungsdruck zugleich."
+    subtrends: [S018, S017, S014, S015, S016, S019]
+  - id: M05
+    name: "Mobilitätswandel"
+    farbe: "#d55e00"
+    beschreibung: "Antriebe werden elektrisch oder wasserstoffbasiert, Fahrzeuge leichter, und Bahn, Bus und Rad gewinnen Gewicht. Die Zulieferregion um Zwickau muss Produkte und Verfahren darauf umstellen."
+    subtrends: [S020, S024, S021, S004, S022, S023]
+  - id: M06
+    name: "Gesundheit & Pflege"
+    farbe: "#cc79a7"
+    beschreibung: "Mehr Behandlungsbedarf, strengere Hygiene und digitale Versorgung verändern Kliniken, Praxen und Pflegeeinrichtungen. Regionale Betriebe liefern Ausstattung, Bau, Reinigung, Textilien und Software."
+    subtrends: [S025, S027, S028, S026, S029, S044]
+  - id: M07
+    name: "Demografischer Wandel"
+    farbe: "#56b4e9"
+    beschreibung: "Die Bevölkerung der Region altert, zugleich kommen Zugewanderte und junge Familien hinzu. Wohnen, Mobilität, Betreuung und Betriebsnachfolge müssen sich auf neue Altersstrukturen einstellen."
+    subtrends: [S040, S031, S023, S030, S029, S045]
+  - id: M08
+    name: "Stadt, Land & Wohnen"
+    farbe: "#999933"
+    beschreibung: "Städte und Dörfer sollen bezahlbaren, energiesparenden und gut angebundenen Wohnraum bieten. Das treibt Sanierung, Neubau, Breitband und vernetzte kommunale Infrastruktur."
+    subtrends: [S033, S002, S030, S011, S032, S005]
+  - id: M09
+    name: "Sicherheit & Resilienz"
+    farbe: "#555555"
+    beschreibung: "Hochwasser, Cyberangriffe, gestörte Lieferketten und alternde Infrastruktur zeigen, wie verletzlich Versorgung und Betriebe sind. Vorsorge, Schutztechnik und Instandhaltung werden zur Daueraufgabe."
+    subtrends: [S005, S035, S036, S034, S037, S038]
+  - id: M10
+    name: "Bildung & Wissen"
+    farbe: "#882255"
+    beschreibung: "Schulen, Hochschulen und Weiterbildung brauchen moderne Räume, digitale Ausstattung und Forschungstechnik. Wissen aus Chemnitz, Zwickau und Freiberg soll schneller in Betriebe und Gründungen fließen."
+    subtrends: [S040, S039, S041, S042, S043]
+  - id: M11
+    name: "Arbeitswelt & Fachkräfte"
+    farbe: "#e69f00"
+    beschreibung: "Fachkräfte werden knapp, Belegschaften älter und Arbeitsorte flexibler. Betriebe investieren in Qualifizierung, Entlastung durch Technik, Arbeitsschutz und gesunde Arbeitsbedingungen."
+    subtrends: [S041, S015, S046, S044, S047, S045]
+
+subtrends:
+  - id: S001
+    name: "Photovoltaik & Speicher"
+    beschreibung: "Dächer, Fassaden und Freiflächen werden zu Kraftwerken, Batteriespeicher glätten Eigenverbrauch und Netzlast. Gefragt sind Montage, Elektroanschluss und Betriebsführung kleiner und mittlerer Anlagen."
+    megatrends: [M01]
+    faehigkeiten:
+      - id: S001-F1
+        name: "Module, Wechselrichter & Batterien"
+        beschreibung: "Wir liefern Solarmodule, Wechselrichter, Batteriespeicher und Montagesysteme für Dach- und Freiflächenanlagen."
+        begriffe: ["solarmodul", "photovoltaikmodul", "wechselrichter", "batteriespeicher", "stromspeicher", "speichersystem", "lithium-ionen", "montagesystem", "pv-unterkonstruktion"]
+        cpv: ["09331", "3143", "3144"]
+      - id: S001-F2
+        name: "PV-Montage auf Dach und Fläche"
+        beschreibung: "Wir montieren Photovoltaikanlagen auf Dächern, Fassaden, Carports und Freiflächen einschließlich Dachdurchdringung und Statik."
+        begriffe: ["photovoltaik", "pv-anlage", "pv anlage", "solaranlage", "solardach", "solarcarport", "freiflächenanlage", "agri-pv", "balkonkraftwerk", "solarpark"]
+        cpv: ["09332", "45261215"]
+      - id: S001-F3
+        name: "Elektroanschluss & Netzeinspeisung"
+        beschreibung: "Wir übernehmen Elektroinstallation, Zählerplatz, Netzanschluss und Inbetriebnahme von Erzeugungs- und Speicheranlagen."
+        begriffe: ["netzeinspeisung", "einspeisung", "zählerschrank", "zählerplatz", "netzanschluss", "anlagenzertifikat", "eigenverbrauch", "einspeisemanagement"]
+        cpv: ["45315", "45311"]
+      - id: S001-F4
+        name: "Betriebsführung & Wartung"
+        beschreibung: "Wir überwachen Solaranlagen und Speicher per Fernwirktechnik, reinigen Module und führen Wartung und Prüfung durch."
+        begriffe: ["anlagenüberwachung", "pv-monitoring", "anlagenmonitoring", "modulreinigung", "betriebsführung", "fernüberwachung", "e-check", "thermografie", "ertragsprognose"]
+        cpv: ["50711"]
+
+  - id: S002
+    name: "Gebäudeenergie & Wärmewende"
+    beschreibung: "Bestandsgebäude müssen bis 2045 weitgehend ohne fossile Heizung auskommen, Gebäudehülle und Haustechnik werden dafür erneuert. Für das regionale Bauhandwerk ist das die größte absehbare Sanierungswelle."
+    megatrends: [M01, M08]
+    faehigkeiten:
+      - id: S002-F1
+        name: "Gebäudehülle & Dämmung"
+        beschreibung: "Wir dämmen Fassaden, Dächer und Kellerdecken, setzen Wärmedämmverbundsysteme und tauschen Fenster gegen Wärmeschutzverglasung."
+        begriffe: ["wärmedämm", "dämmarbeiten", "fassadendämmung", "dachdämmung", "wdvs", "wärmedämmverbund", "aufsparrendämmung", "wärmeschutzverglasung", "dreifachverglasung", "kerndämmung", "einblasdämmung"]
+        cpv: ["45321", "45443", "45421132"]
+      - id: S002-F2
+        name: "Wärmepumpe, Heizung & Lüftung"
+        beschreibung: "Wir planen und installieren Wärmepumpen, Erdwärmesonden, Heizungsanlagen und Lüftungsanlagen mit Wärmerückgewinnung."
+        begriffe: ["wärmepumpe", "erdwärme", "erdwärmesonde", "sole-wasser", "luft-wasser", "heizungsanlage", "heizungsinstallation", "heizungsbau", "lüftungsanlage", "wärmerückgewinnung", "flächenheizung", "fußbodenheizung", "raumlufttechnik"]
+        cpv: ["45331", "42511110"]
+      - id: S002-F3
+        name: "Gebäudeautomation & MSR"
+        beschreibung: "Wir errichten Mess-, Steuer- und Regeltechnik und Gebäudeleittechnik, die Heizung, Lüftung, Licht und Verschattung bedarfsgerecht steuert."
+        begriffe: ["gebäudeautomation", "gebäudeleittechnik", "msr-technik", "mess-, steuer", "regelungstechnik", "einzelraumregelung", "knx", "bacnet", "smart home", "energiemanagementsystem"]
+        cpv: ["38810"]
+      - id: S002-F4
+        name: "Energieberatung & TGA-Planung"
+        beschreibung: "Wir beraten zu Energieeffizienz, erstellen Energieausweise und Sanierungsfahrpläne und planen die technische Gebäudeausrüstung."
+        begriffe: ["energieberatung", "energieausweis", "sanierungsfahrplan", "energieeffizienz", "technische gebäudeausrüstung", "tga-planung", "tga planung", "wärmeschutznachweis", "geg-nachweis", "heizlastberechnung"]
+        cpv: ["71314", "71321"]
+
+  - id: S003
+    name: "Strom- & Wärmenetze"
+    beschreibung: "Mehr dezentrale Erzeuger, Wärmepumpen und Ladepunkte verlangen stärkere Verteilnetze und den Ausbau kommunaler Wärmenetze. Stadtwerke in der Region vergeben dafür laufend Tiefbau- und Montageleistungen."
+    megatrends: [M01]
+    faehigkeiten:
+      - id: S003-F1
+        name: "Kabel, Rohre & Netzkomponenten"
+        beschreibung: "Wir liefern Energiekabel, Transformatoren, Schaltanlagen und vorgedämmte Fernwärmerohre für Verteilnetze."
+        begriffe: ["transformator", "schaltanlage", "mittelspannungskabel", "energiekabel", "kunststoffmantelrohr", "kmr-rohr", "fernwärmerohr", "kabelmuffe", "ortsnetzstation"]
+        cpv: ["3117", "3121", "3132"]
+      - id: S003-F2
+        name: "Leitungs- & Kabeltiefbau"
+        beschreibung: "Wir verlegen Strom-, Gas- und Fernwärmeleitungen im offenen Graben oder grabenlos und stellen Hausanschlüsse her."
+        begriffe: ["leitungsbau", "netzbau", "fernwärmeleitung", "fernwärmetrasse", "gasleitung", "hausanschluss", "versorgungsnetz", "versorgungsleitung", "spülbohr", "horizontalbohr", "grabenlos"]
+        cpv: ["45231", "45232140", "45232200"]
+      - id: S003-F3
+        name: "Umspann- & Erzeugungsanlagen"
+        beschreibung: "Wir errichten Trafostationen, Umspannwerke, Heizzentralen, Blockheizkraftwerke und Fernwärmekessel."
+        begriffe: ["trafostation", "umspannwerk", "mittelspannung", "niederspannungs", "blockheizkraftwerk", "bhkw", "kraft-wärme-kopplung", "heizzentrale", "heizkraftwerk", "fernwärmekessel", "großwärmepumpe"]
+        cpv: ["45251", "45315700", "4216"]
+      - id: S003-F4
+        name: "Netzplanung & Netzbetrieb"
+        beschreibung: "Wir planen Strom- und Wärmenetze, erstellen kommunale Wärmeplanungen und übernehmen Netzleittechnik und Störungsdienst."
+        begriffe: ["wärmeplanung", "wärmenetz", "fernwärmenetz", "nahwärme", "netzplanung", "netzleittechnik", "netzberechnung", "stromnetz", "verteilnetz", "fernwirktechnik"]
+        cpv: ["0932"]
+
+  - id: S004
+    name: "Wasserstoff & Brennstoffzelle"
+    beschreibung: "Grüner Wasserstoff soll Industrieprozesse und schwere Fahrzeuge klimafreundlich machen; Chemnitz baut dazu Forschung und Testfelder auf. Zulieferer können Komponenten, Anlagenbau und Prüftechnik beisteuern."
+    megatrends: [M01, M05]
+    faehigkeiten:
+      - id: S004-F1
+        name: "Elektrolyseur- & Brennstoffzellenkomponenten"
+        beschreibung: "Wir fertigen Bipolarplatten, Stacks, Membranen und Komponenten für Elektrolyseure und Brennstoffzellen."
+        begriffe: ["wasserstoff", "elektrolyseur", "elektrolyse", "brennstoffzelle", "bipolarplatte", "membran-elektroden", "h2-"]
+        cpv: ["24111600"]
+      - id: S004-F2
+        name: "Druckbehälter, Verdichter & Leitungen"
+        beschreibung: "Wir liefern und montieren Druckbehälter, Verdichter, Edelstahlleitungen und Armaturen für Gase unter hohem Druck."
+        begriffe: ["druckbehälter", "drucktank", "verdichter", "gasarmatur", "orbitalschweiß"]
+        cpv: ["44611", "42123"]
+      - id: S004-F3
+        name: "Anlagenbau & Tankstellen"
+        beschreibung: "Wir errichten Gasanlagen, Elektrolyse-Container und Betankungsanlagen einschließlich Sicherheits- und Explosionsschutz."
+        begriffe: ["tankstelle", "betankung", "gasanlage", "gasversorgung", "explosionsschutz", "ex-schutz", "atex", "gaswarnanlage"]
+        cpv: ["45255", "45333"]
+      - id: S004-F4
+        name: "Prüfung, Sicherheit & Zertifizierung"
+        beschreibung: "Wir prüfen Dichtheit und Druckfestigkeit, analysieren Gasqualität und begleiten Genehmigung und Zertifizierung."
+        begriffe: ["dichtheitsprüfung", "druckprüfung", "gasanalyse", "gasanalytik", "gasmesstechnik", "gasdetektion", "prüfstand", "explosionsschutzdokument", "wasserstoffsicherheit"]
+        cpv: ["71631", "3843"]
+
+  - id: S005
+    name: "Klimaanpassung & Hochwasserschutz"
+    beschreibung: "Starkregen, Hochwasser und Hitzesommer treffen die Täler des Erzgebirges und die Städte gleichermaßen. Kommunen und Landestalsperrenverwaltung investieren in Schutzbauten, Regenwassermanagement und Stadtgrün."
+    megatrends: [M01, M09, M08]
+    faehigkeiten:
+      - id: S005-F1
+        name: "Wasserbau & Hochwasserschutzanlagen"
+        beschreibung: "Wir bauen Hochwasserschutzwände, Deiche, Ufermauern, Spundwände und Rückhaltebecken an Flüssen und Bächen."
+        begriffe: ["hochwasserschutz", "hochwasserrückhalte", "hws-wand", "deichbau", "deich", "ufermauer", "spundwand", "rückhaltebecken", "wasserbau", "gewässerausbau", "talsperre"]
+        cpv: ["45246", "45247", "45262620"]
+      - id: S005-F2
+        name: "Regenwasser-Management"
+        beschreibung: "Wir bauen Regenrückhalte- und Versickerungsanlagen, Rigolen, Zisternen, Gründächer und entsiegeln Flächen."
+        begriffe: ["regenrückhalte", "regenwasser", "versickerung", "rigole", "zisterne", "gründach", "dachbegrünung", "entsiegelung", "retention", "schwammstadt", "starkregen"]
+        cpv: ["45232130", "45232452"]
+      - id: S005-F3
+        name: "Stadtgrün & Baumpflege"
+        beschreibung: "Wir pflanzen und pflegen Bäume, Grünflächen und Verschattung in Städten und Gemeinden als Schutz vor Hitze."
+        begriffe: ["grünpflege", "baumpflege", "baumpflanzung", "baumschnitt", "grünflächen", "stadtgrün", "garten- und landschaftsbau", "galabau", "verschattung", "hitzeschutz"]
+        cpv: ["77310", "7734", "45112710"]
+      - id: S005-F4
+        name: "Hydrologie, Messung & Planung"
+        beschreibung: "Wir modellieren Abflüsse, messen Pegel und Erschütterungen, planen Schutzmaßnahmen und begleiten sie umweltfachlich."
+        begriffe: ["hydraulisch", "hydrolog", "abflussberechnung", "pegelmessung", "pegel", "starkregenrisiko", "gewässerunterhaltung", "umweltbaubegleitung", "überflutungs"]
+        cpv: ["71313", "71351"]
+
+  - id: S006
+    name: "Recycling & Wertstoffkreislauf"
+    beschreibung: "Getrennt erfasste Abfälle sollen als Sekundärrohstoff in die Produktion zurückkehren, auch Batterien und Elektronikschrott. Rund um Freiberg gibt es dafür Aufbereitungs- und Metallurgiekompetenz."
+    megatrends: [M02]
+    faehigkeiten:
+      - id: S006-F1
+        name: "Sammlung & Entsorgungslogistik"
+        beschreibung: "Wir sammeln und transportieren Haushalts-, Gewerbe- und Sonderabfälle, stellen Container und betreiben Wertstoffhöfe."
+        begriffe: ["abfallsammlung", "abfallentsorgung", "müllabfuhr", "wertstoffhof", "containerdienst", "abfalltransport", "sperrmüll", "problemabfall", "sonderabfall", "abfallbehälter", "entsorgungsfachbetrieb"]
+        cpv: ["9051", "9052", "34144511"]
+      - id: S006-F2
+        name: "Sortierung & Aufbereitung"
+        beschreibung: "Wir sortieren, zerkleinern und bereiten Kunststoffe, Metalle, Altholz, Papier und Elektroschrott zu Sekundärrohstoffen auf."
+        begriffe: ["recycling", "sortieranlage", "aufbereitungsanlage", "schrott", "altmetall", "altholz", "elektroschrott", "elektroaltgeräte", "sekundärrohstoff", "rezyklat", "verwertung"]
+        cpv: ["90514"]
+      - id: S006-F3
+        name: "Metallurgie & Batterierecycling"
+        beschreibung: "Wir gewinnen Metalle aus Schlacken, Batterien und Produktionsresten zurück und verarbeiten sie hüttentechnisch weiter."
+        begriffe: ["batterierecycling", "hüttenwerk", "metallurgie", "schmelzbetrieb", "gießerei", "schlacke", "rückgewinnung", "kritische rohstoffe", "seltene erden", "nichteisenmetall"]
+        cpv: ["1472"]
+      - id: S006-F4
+        name: "Abfallberatung & Stoffstrommanagement"
+        beschreibung: "Wir beraten Betriebe und Kommunen zu Abfallvermeidung, Entsorgungskonzepten, Nachweisführung und Kreislaufwirtschaft."
+        begriffe: ["abfallwirtschaftskonzept", "abfallberatung", "abfallmanagement", "entsorgungskonzept", "stoffstrom", "kreislaufwirtschaft", "abfallbilanz", "entsorgungsnachweis", "ressourceneffizienz"]
+        cpv: ["90533", "71800"]
+
+  - id: S007
+    name: "Rückbau & Baustoffrecycling"
+    beschreibung: "Statt Abriss und Deponie sollen Bauteile und Baustoffe aus Bestandsgebäuden wieder in Neubauten eingehen. Rückbau, Schadstoffsanierung und Aufbereitung werden damit planbarer Teil jedes Bauprojekts."
+    megatrends: [M02]
+    faehigkeiten:
+      - id: S007-F1
+        name: "Abbruch & Entkernung"
+        beschreibung: "Wir entkernen und brechen Gebäude, Hallen und Ingenieurbauwerke selektiv und maschinell ab und trennen die Materialien sortenrein."
+        begriffe: ["abbrucharbeiten", "abbruchleistung", "gebäudeabbruch", "abbruch des", "abbruch der", "abbruch eines", "rückbauarbeiten", "maschineller rückbau", "selektiver rückbau", "entkernung", "abriss", "betonschneid", "betonbohr", "sprengarbeiten"]
+        cpv: ["45111", "45110"]
+      - id: S007-F2
+        name: "Schadstoffsanierung"
+        beschreibung: "Wir sanieren Asbest, künstliche Mineralfasern, PAK und belastete Bauteile fachgerecht und entsorgen sie nach Vorschrift."
+        begriffe: ["schadstoffsanierung", "asbest", "kmf-sanierung", "mineralfaser", "schadstofferkundung", "schadstoffkataster", "trgs 519", "pcb-sanierung", "pak-haltig"]
+        cpv: ["45262660", "9065"]
+      - id: S007-F3
+        name: "Baustoffaufbereitung & Recyclingbaustoffe"
+        beschreibung: "Wir brechen und sieben Bauschutt und Asphalt zu güteüberwachten Recyclingbaustoffen auf und liefern sie für Wege- und Straßenbau."
+        begriffe: ["bauschutt", "recyclingbaustoff", "rc-material", "rc-baustoff", "brechanlage", "asphaltaufbruch", "ersatzbaustoff", "bodenmanagement", "bodenaufbereitung"]
+        cpv: []
+      - id: S007-F4
+        name: "Rückbauplanung & Bauteilbörse"
+        beschreibung: "Wir planen Rückbau und Entsorgung, erstellen Rückbaukonzepte und vermitteln wiederverwendbare Bauteile."
+        begriffe: ["rückbaukonzept", "rückbauplanung", "abbruchplanung", "entsorgungsplanung", "bauteilbörse", "urban mining", "wiederverwendung", "materialpass"]
+        cpv: []
+
+  - id: S008
+    name: "Wasserversorgung & Abwasser"
+    beschreibung: "Trockenere Sommer, alte Leitungen und strengere Reinigungsanforderungen zwingen Zweckverbände zu Investitionen in Netze und Kläranlagen. Der ländliche Raum der Region hat hier besonders viel Nachholbedarf."
+    megatrends: [M02]
+    faehigkeiten:
+      - id: S008-F1
+        name: "Pumpen, Armaturen & Rohre"
+        beschreibung: "Wir liefern und warten Pumpen, Schieber, Armaturen und Rohrsysteme für Trink- und Abwasser."
+        begriffe: ["pumpwerk", "pumpstation", "pumpenaggregat", "abwasserpumpe", "schieber", "absperrarmatur", "druckrohr", "steinzeugrohr", "gussrohr"]
+        cpv: ["4212", "44163"]
+      - id: S008-F2
+        name: "Kanal- & Leitungsbau"
+        beschreibung: "Wir bauen und sanieren Trinkwasserleitungen, Schmutz- und Mischwasserkanäle, Schächte und Hausanschlüsse."
+        begriffe: ["kanalbau", "kanalsanierung", "abwasserkanal", "mischwasser", "schmutzwasser", "trinkwasserleitung", "wasserleitung", "inliner", "schachtbauwerk", "entwässerungsleitung", "abwasserleitung"]
+        cpv: ["45231300", "45232400", "4523241"]
+      - id: S008-F3
+        name: "Klär- & Aufbereitungsanlagen"
+        beschreibung: "Wir errichten und modernisieren Kläranlagen, Trinkwasseraufbereitung, Hochbehälter und Kleinkläranlagen."
+        begriffe: ["kläranlage", "kleinkläranlage", "wasseraufbereitung", "trinkwasseraufbereitung", "wasserwerk", "hochbehälter", "belebungsbecken", "klärschlamm", "abwasserbehandlung"]
+        cpv: ["45252", "9040"]
+      - id: S008-F4
+        name: "Analytik & Betriebsführung"
+        beschreibung: "Wir untersuchen Wasser und Abwasser im Labor, warten Netze per Kamerabefahrung und führen den Betrieb von Anlagen."
+        begriffe: ["abwasseruntersuchung", "wasseranalytik", "trinkwasseruntersuchung", "kamerabefahrung", "tv-inspektion", "kanalinspektion", "kanalreinigung", "leckortung", "dichtheitsprüfung"]
+        cpv: ["71900", "90470"]
+
+  - id: S009
+    name: "Holzbau & nachwachsende Baustoffe"
+    beschreibung: "Holz, Lehm und Naturdämmstoffe speichern Kohlenstoff und lassen sich vorfertigen. Aufstockungen und Schulbauten in Holz eröffnen Zimmereien und Sägewerken der Region neue Märkte."
+    megatrends: [M02]
+    faehigkeiten:
+      - id: S009-F1
+        name: "Holz & Naturbaustoffe"
+        beschreibung: "Wir liefern Bauholz, Brettsperrholz, Holzfaserdämmung, Lehmbaustoffe und Kalkputze."
+        begriffe: ["brettsperrholz", "brettschichtholz", "konstruktionsvollholz", "holzfaser", "lehmbau", "lehmputz", "kalkputz", "naturdämm", "zellulose", "hanfdämm", "sägewerk"]
+        cpv: ["0341", "44191", "4422"]
+      - id: S009-F2
+        name: "Zimmerei & Holzrahmenbau"
+        beschreibung: "Wir fertigen Dachstühle, Holzrahmen- und Holzständerwände, Holzmodule und Aufstockungen in Holzbauweise."
+        begriffe: ["zimmerer", "zimmerei", "holzbau", "holzrahmenbau", "holzständer", "dachstuhl", "aufstockung", "holzmodul", "holzhybrid", "abbund"]
+        cpv: ["45261100", "45422000"]
+      - id: S009-F3
+        name: "Holzfassade & Innenausbau"
+        beschreibung: "Wir bauen Holzfassaden, Holzfenster, Holzdecken und Einbauten in Tischlerqualität."
+        begriffe: ["holzfassade", "holzfenster", "tischlerarbeiten", "tischlerei", "schreinerarbeiten", "holzdecke", "parkett", "holztreppe", "einbaumöbel"]
+        cpv: ["45421153", "45422100"]
+      - id: S009-F4
+        name: "Forst & Holzbereitstellung"
+        beschreibung: "Wir ernten und rücken Holz, pflegen Wälder und bauen Waldwege für eine nachhaltige Rohstoffversorgung."
+        begriffe: ["holzeinschlag", "holzernte", "forstarbeiten", "forstbetrieb", "waldweg", "wegebau forst", "schadholz", "aufforstung", "rückearbeiten"]
+        cpv: ["7720", "7721"]
+
+  - id: S010
+    name: "Altlasten, Halden & Flächenrecycling"
+    beschreibung: "Bergbau und Industrie haben in Erzgebirge und Westsachsen Halden, Deponien und belastete Flächen hinterlassen. Ihre Sanierung macht Flächen für Gewerbe und Natur wieder nutzbar."
+    megatrends: [M02]
+    faehigkeiten:
+      - id: S010-F1
+        name: "Erkundung & Geotechnik"
+        beschreibung: "Wir erkunden Boden und Grundwasser, setzen Messstellen und Bohrungen und bewerten Baugrund und Altlasten."
+        begriffe: ["altlast", "baugrund", "geotechnik", "bodengutachten", "grundwassermessstelle", "rammpegel", "bodenluft", "erkundungsbohrung", "rammkernsondierung", "kampfmittel"]
+        cpv: ["71332", "71351500"]
+      - id: S010-F2
+        name: "Sanierung & Erdbau"
+        beschreibung: "Wir sanieren belastete Böden, profilieren und decken Halden und Deponien ab und führen Erdbau im großen Maßstab aus."
+        begriffe: ["haldensanierung", "deponie", "deponieabschnitt", "oberflächenabdichtung", "bodensanierung", "flächensanierung", "rekultivierung", "sanierungsbergbau", "haldenabdeckung"]
+        cpv: ["45222110", "9072"]
+      - id: S010-F3
+        name: "Bergbausicherung & Stollen"
+        beschreibung: "Wir sichern Grubenbaue, sanieren Stollen und Schächte und behandeln Grubenwasser."
+        begriffe: ["stolln", "stollen", "grubenbau", "bergsicherung", "schachtsanierung", "verwahrung", "grubenwasser", "altbergbau", "wismut"]
+        cpv: ["45221250"]
+      - id: S010-F4
+        name: "Umweltplanung & Monitoring"
+        beschreibung: "Wir planen Sanierungen, überwachen Grundwasser und Emissionen und erstellen Umweltgutachten und Genehmigungsunterlagen."
+        begriffe: ["umweltgutachten", "umweltplanung", "grundwassermonitoring", "sanierungsplanung", "umweltverträglichkeit", "artenschutz", "naturschutzfachlich", "landschaftspflegerisch", "renaturierung"]
+        cpv: ["71313", "9073"]
+
+  - id: S011
+    name: "Glasfaser & Mobilfunk"
+    beschreibung: "Gigabitnetze bis ins letzte Dorf und lückenloser Mobilfunk sind Voraussetzung für Homeoffice, Telemedizin und vernetzte Betriebe. Der geförderte Breitbandausbau bindet Tiefbau und Netztechnik über Jahre."
+    megatrends: [M03, M08]
+    faehigkeiten:
+      - id: S011-F1
+        name: "Glasfaserkabel & Netzkomponenten"
+        beschreibung: "Wir liefern Glasfaserkabel, Mikrorohre, Verteiler, Spleißmuffen und aktive Netztechnik für Zugangsnetze."
+        begriffe: ["glasfaserkabel", "lichtwellenleiter", "lwl-kabel", "mikrorohr", "speedpipe", "spleißmuffe", "netzverteiler", "kabelverzweiger"]
+        cpv: ["32562", "3242"]
+      - id: S011-F2
+        name: "Breitband-Tiefbau & Verlegung"
+        beschreibung: "Wir verlegen Leerrohre und Glasfaser im Graben, im Spül- und Fräsverfahren und stellen Gebäudeanschlüsse her."
+        begriffe: ["glasfaser", "breitband", "ftth", "fttb", "leerrohr", "trenching", "fräsverfahren", "kabelpflug", "glasfaserausbau", "gigabit"]
+        cpv: ["45232300", "45231600"]
+      - id: S011-F3
+        name: "Spleißen, Montage & Inbetriebnahme"
+        beschreibung: "Wir spleißen und messen Glasfaserstrecken, montieren Hausübergabepunkte und nehmen Netze in Betrieb."
+        begriffe: ["spleiß", "otdr", "lwl-messung", "hausübergabepunkt", "glasfaser-abschlusspunkt", "netzabschluss", "patchfeld", "lwl-montage"]
+        cpv: ["45314"]
+      - id: S011-F4
+        name: "Funkmasten & Mobilfunk"
+        beschreibung: "Wir planen und errichten Funkmasten, Antennenanlagen und Richtfunk und betreuen Mobilfunkstandorte."
+        begriffe: ["funkmast", "mobilfunkstandort", "antennenanlage", "richtfunk", "sendemast", "funkturm", "digitalfunk", "funknetz"]
+        cpv: ["45312", "3250"]
+
+  - id: S012
+    name: "Rechenzentren & IT-Infrastruktur"
+    beschreibung: "Daten werden zunehmend in regionalen Rechenzentren und Hochleistungsrechnern verarbeitet, die viel Strom und Kühlung brauchen. Betrieb und Ausstattung bieten Systemhäusern und Gebäudetechnikern Arbeit."
+    megatrends: [M03]
+    faehigkeiten:
+      - id: S012-F1
+        name: "Server, Speicher & Netzwerk"
+        beschreibung: "Wir liefern Server, Speichersysteme, Rechenknoten und Netzwerktechnik für Rechenzentren und Hochschulen."
+        begriffe: ["serversystem", "serverhardware", "server-", "speichersystem", "rechenknoten", "hpc-", "hochleistungsrechn", "storage", "netzwerktechnik", "firewall-appliance"]
+        cpv: ["4882", "3021", "3242"]
+      - id: S012-F2
+        name: "Rechenzentrumsbau & Kühlung"
+        beschreibung: "Wir bauen Serverräume mit Klimatisierung, Kaltgang-Einhausung, unterbrechungsfreier Stromversorgung und Brandschutz."
+        begriffe: ["rechenzentrum", "serverraum", "kaltgang", "präzisionsklima", "usv-anlage", "unterbrechungsfreie", "doppelboden", "netzersatzanlage", "rechenzentrumskühlung"]
+        cpv: ["31154", "45331231"]
+      - id: S012-F3
+        name: "Strukturierte Verkabelung"
+        beschreibung: "Wir errichten Daten- und Kommunikationsnetze in Gebäuden mit Kupfer- und Glasfaserverkabelung, WLAN und Netzwerkschränken."
+        begriffe: ["datennetz", "netzwerkverkabelung", "strukturierte verkabelung", "fernmelde", "kommunikationsnetz", "wlan", "netzwerkschrank", "datenverkabelung", "cat.7"]
+        cpv: ["45314", "4531432"]
+      - id: S012-F4
+        name: "IT-Betrieb & Managed Services"
+        beschreibung: "Wir betreiben Server und Netze für Kunden, übernehmen Hosting, Cloud-Dienste, Datensicherung und Support."
+        begriffe: ["hosting", "cloud", "managed service", "rechenzentrumsbetrieb", "datensicherung", "backup", "it-betrieb", "systemhaus", "it-support", "helpdesk"]
+        cpv: ["7231", "7250", "7270"]
+
+  - id: S013
+    name: "Digitale Verwaltung & Fachverfahren"
+    beschreibung: "Behörden müssen Leistungen online anbieten und Akten digital führen. Für regionale Softwarehäuser entstehen Aufträge für Fachverfahren, Schnittstellen und Datenmigration."
+    megatrends: [M03]
+    faehigkeiten:
+      - id: S013-F1
+        name: "Fachsoftware & Datenbanken"
+        beschreibung: "Wir entwickeln Fachanwendungen und Datenbanksysteme für Behörden, Versorger und Betriebe."
+        begriffe: ["fachverfahren", "fachanwendung", "fachsoftware", "datenbanksystem", "datenbankmanagement", "softwareentwicklung", "individualsoftware", "webanwendung", "programmierung"]
+        cpv: ["4810", "4861", "7221"]
+      - id: S013-F2
+        name: "Dokumentenmanagement & E-Akte"
+        beschreibung: "Wir führen Dokumentenmanagement, elektronische Akten und Workflows ein und digitalisieren Papierbestände."
+        begriffe: ["dokumentenmanagement", "e-akte", "elektronische akte", "digitalisierung von akten", "scandienst", "workflow", "posteingang", "aktendigitalisierung"]
+        cpv: ["4831", "79999100"]
+      - id: S013-F3
+        name: "Online-Dienste & Portale"
+        beschreibung: "Wir bauen Bürgerportale, Online-Formulare, Terminbuchung und Bezahlschnittstellen für Verwaltungen."
+        begriffe: ["onlinezugangsgesetz", "bürgerportal", "online-formular", "e-government", "serviceportal", "terminvergabe", "onlinedienst", "webportal"]
+        cpv: ["72413"]
+      - id: S013-F4
+        name: "Einführung, Schulung & Betreuung"
+        beschreibung: "Wir migrieren Daten, binden Schnittstellen an, schulen Anwender und betreuen Software im Betrieb."
+        begriffe: ["datenmigration", "softwareeinführung", "anwenderschulung", "softwarepflege", "softwarewartung", "schnittstellenentwicklung"]
+        cpv: ["7226", "80533"]
+
+  - id: S014
+    name: "Industrie 4.0 & vernetzte Fertigung"
+    beschreibung: "Maschinen melden Zustand und Auslastung, Aufträge laufen digital durch die Fertigung. Mittelständische Zulieferer der Region müssen ihre Anlagen nachrüsten, um wettbewerbsfähig zu bleiben."
+    megatrends: [M04]
+    faehigkeiten:
+      - id: S014-F1
+        name: "Sondermaschinen- & Anlagenbau"
+        beschreibung: "Wir konstruieren und bauen Sondermaschinen, Montageanlagen, Prüfstände und Fördertechnik für die Serienfertigung."
+        begriffe: ["sondermaschinenbau", "sondermaschine", "maschinen- und anlagenbau", "maschinenbau", "montageanlage", "fördertechnik", "prüfstand", "vorrichtungsbau", "werkzeugmaschine"]
+        cpv: ["4260", "4299", "3854"]
+      - id: S014-F2
+        name: "Steuerungstechnik & Schaltschrankbau"
+        beschreibung: "Wir programmieren speicherprogrammierbare Steuerungen und bauen Schaltschränke und Antriebstechnik für Maschinen."
+        begriffe: ["steuerungstechnik", "sps-programmierung", "speicherprogrammierbar", "schaltschrankbau", "schaltschrank", "antriebstechnik", "automatisierungstechnik", "elektrokonstruktion"]
+        cpv: ["3881", "3121"]
+      - id: S014-F3
+        name: "Fertigungs-IT & Datenerfassung"
+        beschreibung: "Wir vernetzen Maschinen, erfassen Betriebs- und Maschinendaten und führen Fertigungsleit- und Planungssoftware ein."
+        begriffe: ["mes-", "fertigungsleit", "betriebsdatenerfassung", "maschinendatenerfassung", "opc ua", "retrofit", "condition monitoring", "predictive maintenance", "erp-"]
+        cpv: ["4810"]
+      - id: S014-F4
+        name: "Instandhaltung & Inbetriebnahme"
+        beschreibung: "Wir montieren, nehmen Maschinen in Betrieb und übernehmen Wartung, Ersatzteilversorgung und Instandsetzung im Werk."
+        begriffe: ["industriemontage", "maschinenmontage", "anlagenmontage", "maschinenverlagerung", "maschinenumzug", "industrieservice", "maschineninstandhaltung", "ersatzteilversorgung", "werksinstandhaltung"]
+        cpv: ["5053"]
+
+  - id: S015
+    name: "Robotik & Automatisierungstechnik"
+    beschreibung: "Roboter übernehmen schwere, monotone und gefährliche Arbeit und gleichen fehlende Fachkräfte aus. Integratoren in der Region verbinden Roboter, Greifer und Sicherheitstechnik zu fertigen Zellen."
+    megatrends: [M04, M11]
+    faehigkeiten:
+      - id: S015-F1
+        name: "Greifer, Antriebe & Komponenten"
+        beschreibung: "Wir liefern und fertigen Greifer, Linearachsen, Antriebe und Sicherheitssensorik für Roboteranwendungen."
+        begriffe: ["greifer", "linearachse", "linearführung", "servomotor", "servoantrieb", "sicherheitslichtgitter", "endeffektor", "pneumatik", "handhabungstechnik"]
+        cpv: ["4299"]
+      - id: S015-F2
+        name: "Roboterintegration & Zellenbau"
+        beschreibung: "Wir planen und bauen Roboterzellen zum Schweißen, Palettieren, Montieren und Bestücken von Maschinen."
+        begriffe: ["roboter", "robotik", "roboterzelle", "cobot", "schweißroboter", "palettier", "automatisierungslösung", "maschinenbeschickung", "pick-and-place"]
+        cpv: ["42997300"]
+      - id: S015-F3
+        name: "Fahrerlose Transportsysteme & Lagerautomatik"
+        beschreibung: "Wir automatisieren innerbetrieblichen Transport mit fahrerlosen Fahrzeugen, Regalbediengeräten und Kommissioniertechnik."
+        begriffe: ["fahrerlos", "regalbediengerät", "automatisches kleinteilelager", "kommissionier", "intralogistik", "hochregallager", "shuttle-system"]
+        cpv: ["4241"]
+      - id: S015-F4
+        name: "Bildverarbeitung & Qualitätsprüfung"
+        beschreibung: "Wir prüfen Bauteile automatisch mit Kameras, Lasermesstechnik und Prüfsoftware direkt in der Linie."
+        begriffe: ["bildverarbeitung", "machine vision", "inline-prüfung", "optische prüfung", "kamerasystem", "oberflächeninspektion", "automatische prüfung", "prüfautomat"]
+        cpv: ["3850"]
+
+  - id: S016
+    name: "KI & Datenanalyse"
+    beschreibung: "Lernende Software erkennt Muster in Mess-, Bild- und Textdaten und unterstützt Planung, Prüfung und Verwaltung. Gefragt sind Datenaufbereitung, Modellbau und verlässlicher Betrieb."
+    megatrends: [M04]
+    faehigkeiten:
+      - id: S016-F1
+        name: "Datenerfassung & Datenplattform"
+        beschreibung: "Wir führen Daten aus Maschinen, Sensoren und Fachverfahren in Datenbanken und Plattformen zusammen und bereiten sie auf."
+        begriffe: ["data warehouse", "datenplattform", "datenintegration", "datenaufbereitung", "data lake", "datenmanagement", "big data", "zeitreihen"]
+        cpv: ["7230", "72316"]
+      - id: S016-F2
+        name: "Modelle & KI-Entwicklung"
+        beschreibung: "Wir entwickeln Verfahren des maschinellen Lernens, Bilderkennung und Sprachmodelle für konkrete Anwendungen."
+        begriffe: ["künstliche intelligenz", "ki-gestützt", "ki-basiert", "ki-lösung", "maschinelles lernen", "machine learning", "deep learning", "neuronale", "bilderkennung", "sprachmodell", "prognosemodell", "data science"]
+        cpv: ["7311", "7221"]
+      - id: S016-F3
+        name: "Auswertung & Visualisierung"
+        beschreibung: "Wir bauen Dashboards, Berichte und Prognosen für Entscheider in Betrieben und Verwaltungen."
+        begriffe: ["dashboard", "business intelligence", "datenanalyse", "datenauswertung", "datenvisualisierung", "geodaten", "statistische auswertung"]
+        cpv: ["72316"]
+      - id: S016-F4
+        name: "KI-Betrieb & Rechenleistung"
+        beschreibung: "Wir stellen Rechenleistung mit Grafikprozessoren bereit und betreiben KI-Anwendungen sicher und datenschutzkonform."
+        begriffe: ["gpu", "grafikprozessor", "deeplearning", "rechencluster", "ki-anwendung", "ki-plattform", "mlops", "inferenz"]
+        cpv: ["4882"]
+
+  - id: S017
+    name: "Präzisionsfertigung & Lasertechnik"
+    beschreibung: "Engere Toleranzen, kleinere Losgrößen und neue Werkstoffe verlangen flexible spanende, additive und laserbasierte Verfahren. Die Metallbearbeiter in Südwestsachsen gehören hier zu den stärksten in Deutschland."
+    megatrends: [M04]
+    faehigkeiten:
+      - id: S017-F1
+        name: "Zerspanung & Drehteile"
+        beschreibung: "Wir fertigen Präzisionsdrehteile, Frästeile und Baugruppen auf CNC-Maschinen in Einzel- und Serienfertigung."
+        begriffe: ["zerspanung", "drehteile", "frästeile", "cnc-", "präzisionsteile", "lohnfertigung", "rundschleif", "flachschleif", "drehen und fräsen", "fräsbearbeitung"]
+        cpv: ["4262"]
+      - id: S017-F2
+        name: "Laserschneiden, Schweißen & Blech"
+        beschreibung: "Wir schneiden, kanten und schweißen Bleche und Rohre mit Laser und fertigen Metallbaugruppen und Stahlkonstruktionen."
+        begriffe: ["laserschneid", "laserschweiß", "laserbearbeitung", "blechbearbeitung", "kantteile", "abkanten", "schweißkonstruktion", "schlosserei"]
+        cpv: ["45262670", "45223210", "38636100"]
+      - id: S017-F3
+        name: "Additive Fertigung & Oberflächen"
+        beschreibung: "Wir drucken Bauteile in Metall und Kunststoff und veredeln Oberflächen durch Beschichten, Härten und Strukturieren."
+        begriffe: ["additive fertigung", "3d-druck", "3d druck", "pulverbeschichtung", "galvanik", "härterei", "beschichtungstechnik", "oberflächentechnik", "laserstrukturier", "eloxal"]
+        cpv: []
+      - id: S017-F4
+        name: "Messtechnik & Qualitätssicherung"
+        beschreibung: "Wir vermessen Werkstücke mit Koordinatenmessgeräten und optischen Systemen und dokumentieren die Qualität nach Norm."
+        begriffe: ["koordinatenmess", "messtechnik", "erstmusterprüfung", "werkstoffprüfung", "3d-scan", "kalibrierung", "computertomograph"]
+        cpv: ["3830", "3854"]
+
+  - id: S018
+    name: "Mikroelektronik & Sensorik"
+    beschreibung: "Chips, Sensoren und Mikrosysteme stecken in jedem vernetzten Produkt; Sachsen ist Europas größter Halbleiterstandort. Zulieferer liefern Reinraumtechnik, Baugruppen und Prüfgeräte."
+    megatrends: [M04]
+    faehigkeiten:
+      - id: S018-F1
+        name: "Halbleiter- & Mikrosystemtechnik"
+        beschreibung: "Wir entwickeln und fertigen Mikrosysteme, Sensoren, Wafer-Prozessanlagen und Dünnschichttechnik."
+        begriffe: ["halbleiter", "mikrosystem", "mems", "wafer", "dünnschicht", "beschichtungsanlage", "pvd-", "sensorchip", "reinraumanlage"]
+        cpv: ["31712", "3171"]
+      - id: S018-F2
+        name: "Elektronikfertigung & Baugruppen"
+        beschreibung: "Wir bestücken Leiterplatten, fertigen elektronische Baugruppen und Kabelkonfektionen."
+        begriffe: ["leiterplatte", "smd-bestückung", "elektronikfertigung", "baugruppenfertigung", "elektronische baugruppen", "kabelkonfektion", "platinen", "ems-dienstleist"]
+        cpv: ["3171", "3122"]
+      - id: S018-F3
+        name: "Sensorik & Messsysteme"
+        beschreibung: "Wir entwickeln Sensoren und Messsysteme für Temperatur, Druck, Durchfluss, Schwingung und Umweltdaten."
+        begriffe: ["sensorik", "sensortechnik", "messsystem", "datenlogger", "durchflussmess", "schwingungsmess", "umweltsensor", "messwerterfassung", "telemetrie"]
+        cpv: ["3841", "3842", "3812"]
+      - id: S018-F4
+        name: "Reinraum & Prozessmedien"
+        beschreibung: "Wir planen und bauen Reinräume, Reinstwasser- und Gasversorgung sowie Laborinstallationen für Hochtechnologiebetriebe."
+        begriffe: ["reinraum", "reinstwasser", "laborgas", "sondergas", "prozessmedien", "medienversorgung", "partikelmessung", "reinraumtechnik"]
+        cpv: ["45333"]
+
+  - id: S019
+    name: "Digitales Planen & Bauen (BIM)"
+    beschreibung: "Bauwerke werden zuerst als digitales Modell geplant, abgestimmt und später im Betrieb weitergenutzt. Öffentliche Auftraggeber verlangen das zunehmend, Planungsbüros und Vermesser müssen mitziehen."
+    megatrends: [M04]
+    faehigkeiten:
+      - id: S019-F1
+        name: "Vermessung & 3D-Erfassung"
+        beschreibung: "Wir vermessen Gelände und Gebäude mit Laserscanning, Drohnen und GNSS und erzeugen Punktwolken und Bestandsmodelle."
+        begriffe: ["vermessung", "laserscan", "punktwolke", "drohnenbefliegung", "photogrammetrie", "bauaufmaß", "bestandsaufnahme", "geodät", "tachymeter"]
+        cpv: ["71355", "71354", "71351810"]
+      - id: S019-F2
+        name: "BIM-Modellierung & Planung"
+        beschreibung: "Wir planen Gebäude und Ingenieurbauwerke modellbasiert und koordinieren Fachmodelle nach BIM-Standards."
+        begriffe: ["bim-", "building information", "3d-modell", "revit", "modellbasiert", "fachmodell", "kollisionsprüfung", "digitaler zwilling"]
+        cpv: ["48321", "71240"]
+      - id: S019-F3
+        name: "Tragwerks- & Fachplanung"
+        beschreibung: "Wir übernehmen Tragwerksplanung, technische Ausrüstung und Objektplanung nach HOAI in allen Leistungsphasen."
+        begriffe: ["tragwerksplanung", "statik", "ingenieurbauwerk"]
+        cpv: ["71327", "71320", "71221"]
+      - id: S019-F4
+        name: "Bau- & Betriebsdatenmanagement"
+        beschreibung: "Wir steuern Bauprojekte digital, verwalten Baudokumentation und übergeben Gebäudedaten an das Facility-Management."
+        begriffe: ["projektsteuerung", "bauüberwachung", "baudokumentation", "cafm", "projektraum", "bauzeitenplan", "ava-software", "facility-management-software"]
+        cpv: ["71541", "71521"]
+
+  - id: S020
+    name: "Elektrofahrzeuge & Antriebe"
+    beschreibung: "Zwickau ist eines der größten Elektroauto-Werke Europas; Zulieferer müssen vom Verbrenner auf Batterie, Leistungselektronik und E-Motor umstellen. Auch Kommunen elektrifizieren ihre Fuhrparks."
+    megatrends: [M05]
+    faehigkeiten:
+      - id: S020-F1
+        name: "Batterie & Leistungselektronik"
+        beschreibung: "Wir fertigen Batteriemodule, Gehäuse, Kühlplatten, Stromschienen und Leistungselektronik für Elektrofahrzeuge."
+        begriffe: ["batteriemodul", "batteriegehäuse", "traktionsbatterie", "zellmodul", "kühlplatte", "leistungselektronik", "hochvolt"]
+        cpv: ["3143"]
+      - id: S020-F2
+        name: "Fahrzeugkomponenten & Zulieferteile"
+        beschreibung: "Wir fertigen Karosserie-, Fahrwerks- und Antriebsteile, Kabelsätze und Interieur für Fahrzeughersteller."
+        begriffe: ["automobilzuliefer", "fahrzeugteile", "karosserie", "fahrwerk", "e-motor", "elektromotor", "kabelsatz", "bordnetz", "presswerk", "automotive"]
+        cpv: ["3430", "3431", "3432"]
+      - id: S020-F3
+        name: "E-Fahrzeuge & Fuhrparkumstellung"
+        beschreibung: "Wir liefern Elektro- und Hybridfahrzeuge, bauen Nutzfahrzeuge um und beraten Kommunen bei der Umstellung ihrer Flotten."
+        begriffe: ["elektrofahrzeug", "elektroauto", "e-fahrzeug", "elektroantrieb", "hybridantrieb", "e-transporter", "elektrobus", "flottenumstellung", "fuhrparkmanagement"]
+        cpv: ["34144900", "3411", "3410"]
+      - id: S020-F4
+        name: "Werkstatt & Hochvolt-Service"
+        beschreibung: "Wir warten und reparieren Elektro- und Hybridfahrzeuge mit Hochvolt-qualifiziertem Personal und Diagnosetechnik."
+        begriffe: ["kfz-werkstatt", "kfz-meister", "fahrzeuginstandhaltung", "hochvolt-", "hv-qualifiziert", "fahrzeugdiagnose", "kfz-reparatur", "autohaus", "nutzfahrzeugwerkstatt"]
+        cpv: ["5011", "50116100"]
+
+  - id: S021
+    name: "Ladeinfrastruktur"
+    beschreibung: "Mit jedem Elektrofahrzeug wächst der Bedarf an Ladepunkten in Betrieben, Wohnanlagen und im öffentlichen Raum. Elektrohandwerk und Netzbetreiber teilen sich Planung, Anschluss und Betrieb."
+    megatrends: [M05, M01]
+    faehigkeiten:
+      - id: S021-F1
+        name: "Ladesäulen & Wallboxen"
+        beschreibung: "Wir liefern Ladesäulen, Wallboxen und Schnellladesysteme mit Abrechnungs- und Kommunikationstechnik."
+        begriffe: ["ladesäule", "e-ladesäule", "wallbox", "ladestation", "schnelllade", "ladepunkt", "ladegerät", "ladesystem", "hpc-lader"]
+        cpv: ["31158"]
+      - id: S021-F2
+        name: "Elektroinstallation & Netzanschluss"
+        beschreibung: "Wir installieren Ladeinfrastruktur in Tiefgaragen, auf Betriebshöfen und Parkplätzen einschließlich Netzanschluss und Lastmanagement."
+        begriffe: ["ladeinfrastruktur", "e-mobilität", "elektromobilität", "lastmanagement", "ladepark", "ladehub", "ladeplatz", "ladeplätze"]
+        cpv: ["45315", "45311"]
+      - id: S021-F3
+        name: "Tiefbau & Stellplatzausbau"
+        beschreibung: "Wir erstellen Fundamente, Kabeltrassen und Stellflächen für öffentliche und betriebliche Ladeplätze."
+        begriffe: ["kabelschutzrohr", "parkplatzbau", "parkfläche", "kabelgraben", "betriebshof", "stellplatzanlage", "parkdeck"]
+        cpv: ["45232", "45223300"]
+      - id: S021-F4
+        name: "Ladebetrieb & Abrechnung"
+        beschreibung: "Wir betreiben Ladepunkte, rechnen Ladevorgänge ab und warten Ladeinfrastruktur per Fernüberwachung."
+        begriffe: ["ladebetrieb", "charge point operator", "ladekarte", "roaming", "abrechnungssystem", "ladevorgang", "eichrecht"]
+        cpv: []
+
+  - id: S022
+    name: "Schienenverkehr & Bahninfrastruktur"
+    beschreibung: "Mehr Güter und Fahrgäste sollen auf die Schiene; dafür werden Strecken elektrifiziert, Stellwerke digitalisiert und Bahnhöfe erneuert. Die Sachsen-Franken-Magistrale und Chemnitz-Leipzig betreffen die Region direkt."
+    megatrends: [M05]
+    faehigkeiten:
+      - id: S022-F1
+        name: "Gleis- & Oberbau"
+        beschreibung: "Wir bauen und erneuern Gleise, Weichen, Bahnsteige und Durchlässe im Eisenbahn- und Straßenbahnnetz."
+        begriffe: ["gleisbau", "oberbaumaterial", "oberbauarbeiten", "weiche", "bahnsteig", "gleisschotter", "gleiserneuerung", "straßenbahn", "eisenbahnbau", "bahnübergang", "gleisanlage"]
+        cpv: ["452341", "45213321"]
+      - id: S022-F2
+        name: "Leit- & Sicherungstechnik"
+        beschreibung: "Wir verlegen Kabel und errichten Stellwerks-, Signal- und Zugsicherungstechnik einschließlich ETCS."
+        begriffe: ["stellwerk", "estw", "etcs", "leit- und sicherungstechnik", "signaltechnik", "zugsicherung", "kabeltiefbau", "kabelkanal", "kabeltrog"]
+        cpv: ["45314300", "45316", "34632"]
+      - id: S022-F3
+        name: "Oberleitung & Bahnstrom"
+        beschreibung: "Wir montieren Oberleitungsanlagen, Bahnstromversorgung, Weichenheizung und Gleisfeldbeleuchtung."
+        begriffe: ["oberleitung", "fahrleitung", "bahnstrom", "elektrifizierung", "weichenheizung", "gleisfeldbeleuchtung", "unterwerk", "bahnenergie"]
+        cpv: []
+      - id: S022-F4
+        name: "Schienentransport & Fahrzeuginstandhaltung"
+        beschreibung: "Wir erbringen Traktions- und Rangierleistungen, Bauzugdienste und warten Schienenfahrzeuge."
+        begriffe: ["traktionsleistung", "rangier", "schienengebunden", "bauzug", "güterverkehr", "schienenfahrzeug", "lokomotive", "eisenbahnverkehrsunternehmen", "wagenmeister"]
+        cpv: ["6020", "5022"]
+
+  - id: S023
+    name: "ÖPNV, Rad- & Fußverkehr"
+    beschreibung: "Im ländlichen Raum mit älter werdender Bevölkerung müssen Bus, Rufbus, Rad und sichere Fußwege das eigene Auto teilweise ersetzen. Landkreise vergeben dafür Verkehrsleistungen und Infrastruktur."
+    megatrends: [M05, M07]
+    faehigkeiten:
+      - id: S023-F1
+        name: "Linien- & Bedarfsverkehr"
+        beschreibung: "Wir fahren Linienbusse, Rufbusse und Schülerverkehr im Auftrag von Landkreisen und Verkehrsverbünden."
+        begriffe: ["linienverkehr", "busverkehr", "linienbündel", "personenbeförderung", "schülerbeförderung", "schülerverkehr", "rufbus", "anrufbus", "bedarfsverkehr", "omnibus"]
+        cpv: ["60112", "6013", "3412"]
+      - id: S023-F2
+        name: "Haltestellen & Mobilitätsstationen"
+        beschreibung: "Wir bauen barrierefreie Haltestellen, Busbahnhöfe, Fahrgastunterstände und Mobilitätsstationen."
+        begriffe: ["haltestelle", "busbahnhof", "fahrgastunterstand", "wartehalle", "mobilitätsstation", "verknüpfungsstelle", "park+ride", "bike+ride"]
+        cpv: ["34928"]
+      - id: S023-F3
+        name: "Rad- & Gehwegebau"
+        beschreibung: "Wir bauen Radwege, Gehwege, Querungshilfen und Fahrradabstellanlagen."
+        begriffe: ["radweg", "radverkehr", "gehweg", "fußweg", "radschnellweg", "fahrradabstell", "fahrradparkhaus", "querungshilfe", "radabstellanlage"]
+        cpv: ["45233162", "45233161", "3443"]
+      - id: S023-F4
+        name: "Fahrgastinformation & Verkehrsplanung"
+        beschreibung: "Wir planen Verkehrsnetze, zählen Verkehre und liefern Fahrgastinformations- und Ticketsysteme."
+        begriffe: ["verkehrsplanung", "nahverkehrsplan", "verkehrszählung", "fahrgastinformation", "fahrgastzählung", "ticketsystem", "echtzeitinformation", "mobilitätskonzept"]
+        cpv: ["48813", "71311200"]
+
+  - id: S024
+    name: "Leichtbau & Faserverbund"
+    beschreibung: "Weniger Gewicht heißt weniger Energie in Fahrzeug, Maschine und Gebäude. Chemnitz ist mit Textil-, Kunststoff- und Metallleichtbau einer der führenden Standorte, Recyclingfähigkeit wird zur Pflicht."
+    megatrends: [M05, M02]
+    faehigkeiten:
+      - id: S024-F1
+        name: "Faserverbund & technische Textilien"
+        beschreibung: "Wir verarbeiten Carbon-, Glas- und Naturfasern zu Geweben, Gelegen, Preforms und Verbundbauteilen."
+        begriffe: ["faserverbund", "carbon", "kohlefaser", "glasfaserverstärkt", "cfk", "gfk", "preform", "technische textilien", "vliesstoff", "textilmaschine"]
+        cpv: ["1920"]
+      - id: S024-F2
+        name: "Leichtmetall & Umformen"
+        beschreibung: "Wir gießen, pressen und formen Aluminium- und Magnesiumteile und fügen Mischbauweisen aus Metall und Kunststoff."
+        begriffe: ["leichtmetall", "aluminiumguss", "druckguss", "strangpress", "umformtechnik", "tiefziehen", "aluminiumprofil", "magnesium", "mischbauweise"]
+        cpv: ["1472"]
+      - id: S024-F3
+        name: "Kunststofftechnik & Spritzguss"
+        beschreibung: "Wir fertigen Spritzgussteile, Thermoplast-Verbundbauteile und Werkzeuge für den Kunststoffleichtbau."
+        begriffe: ["spritzguss", "kunststofftechnik", "thermoplast", "kunststoffteile", "werkzeugbau", "formenbau", "extrusion", "kunststoffverarbeitung"]
+        cpv: ["1952"]
+      - id: S024-F4
+        name: "Leichtbau-Engineering & Prüfung"
+        beschreibung: "Wir berechnen und optimieren Leichtbaustrukturen, prüfen Bauteile auf Festigkeit und entwickeln recyclinggerechte Konstruktionen."
+        begriffe: ["leichtbau", "strukturberechnung", "fem-", "finite-elemente", "topologieoptimierung", "bauteilprüfung", "werkstoffprüfung", "crashtest", "festigkeitsnachweis"]
+        cpv: ["7311", "7163"]
+
+  - id: S025
+    name: "Klinik- & Laborausstattung"
+    beschreibung: "Krankenhäuser bündeln Leistungen, bauen um und brauchen moderne Medizintechnik, Labore und Medienversorgung. Regionale Firmen liefern Bau, Ausbau und Ausstattung aus einer Hand."
+    megatrends: [M06]
+    faehigkeiten:
+      - id: S025-F1
+        name: "Medizintechnik & Medizinprodukte"
+        beschreibung: "Wir liefern und warten medizinische Geräte, Untersuchungsleuchten, Medienversorgungseinheiten und medizinisches Verbrauchsmaterial."
+        begriffe: ["medizintechnik", "medizinprodukt", "medizinische geräte", "medienversorgungseinheit", "untersuchungsleuchte", "op-leuchte", "sterilgut", "endoskopie", "medizinisches verbrauchsmaterial"]
+        cpv: ["3311", "3314", "3319"]
+      - id: S025-F2
+        name: "Labor- & Funktionsmöbel"
+        beschreibung: "Wir fertigen Labormöbel, Abzüge, Edelstahltische und Funktionsmöbel für Kliniken, Labore und Praxen."
+        begriffe: ["labormöbel", "laboreinrichtung", "laborabzug", "digestorium", "funktionsmöbel", "edelstahlmöbel", "sektionstisch", "praxiseinrichtung", "sicherheitsschrank"]
+        cpv: ["3918", "33192"]
+      - id: S025-F3
+        name: "Klinikbau & Medizinische Gase"
+        beschreibung: "Wir bauen und sanieren Stationen, OP-Bereiche und Funktionsräume einschließlich medizinischer Gase und Strahlenschutz."
+        begriffe: ["krankenhausbau", "klinikneubau", "op-saal", "operationssaal", "intensivstation", "medizinische gase", "medizingas", "strahlenschutz", "zentralapotheke", "notaufnahme"]
+        cpv: ["452151"]
+      - id: S025-F4
+        name: "Krankenhausplanung & Medizintechnik-Service"
+        beschreibung: "Wir planen Krankenhäuser und Praxen, prüfen Medizingeräte sicherheitstechnisch und betreuen sie im Betrieb."
+        begriffe: ["krankenhausplanung", "medizintechnische planung", "sicherheitstechnische kontrolle", "messtechnische kontrolle", "medizingeräteservice", "laborplanung", "klinikplanung"]
+        cpv: ["5042"]
+
+  - id: S026
+    name: "Digitale Gesundheit & Telemedizin"
+    beschreibung: "Videosprechstunde, elektronische Patientenakte und vernetzte Geräte sollen die Versorgung in dünn besiedelten Gebieten sichern. Das braucht Software, sichere Netze und geschulte Anwender."
+    megatrends: [M06]
+    faehigkeiten:
+      - id: S026-F1
+        name: "Klinik- & Praxissoftware"
+        beschreibung: "Wir entwickeln und betreuen Krankenhausinformationssysteme, Praxissoftware und Laborsoftware."
+        begriffe: ["krankenhausinformationssystem", "kis-", "praxissoftware", "laborinformationssystem", "patientenakte", "pflegedokumentation", "medizinsoftware", "radiologieinformationssystem", "pacs"]
+        cpv: ["48814", "4818"]
+      - id: S026-F2
+        name: "Telemedizin & Fernbetreuung"
+        beschreibung: "Wir bieten Videosprechstunden, Telemonitoring und Hausnotrufsysteme für Patienten und Pflegebedürftige an."
+        begriffe: ["telemedizin", "videosprechstunde", "telemonitoring", "fernbetreuung", "hausnotruf", "notrufsystem", "telepflege", "teleradiologie"]
+        cpv: []
+      - id: S026-F3
+        name: "Vernetzte Medizingeräte & Schnittstellen"
+        beschreibung: "Wir binden Medizingeräte an, entwickeln Schnittstellen nach Gesundheitsstandards und sichern Gesundheitsdaten ab."
+        begriffe: ["telematikinfrastruktur", "hl7", "fhir", "medizingeräteanbindung", "gesundheitsdaten", "e-rezept", "konnektor", "medizinische schnittstelle"]
+        cpv: []
+      - id: S026-F4
+        name: "Gesundheits-IT-Betrieb & Schulung"
+        beschreibung: "Wir betreiben IT in Kliniken und Pflegeeinrichtungen und schulen Personal im Umgang mit digitalen Anwendungen."
+        begriffe: ["klinik-it", "krankenhaus-it", "it-dienstleistung für kliniken", "digitalisierung im gesundheitswesen", "krankenhauszukunftsgesetz", "khzg", "pflegeeinrichtung it"]
+        cpv: []
+
+  - id: S027
+    name: "Hygiene & Infektionsschutz"
+    beschreibung: "Seit der Pandemie gelten in Kliniken, Schulen und Verwaltungen höhere Ansprüche an Reinigung, Lüftung und Desinfektion. Reinigungsdienste sind einer der größten öffentlichen Auftragsbereiche der Region."
+    megatrends: [M06]
+    faehigkeiten:
+      - id: S027-F1
+        name: "Hygienebedarf & Desinfektionsmittel"
+        beschreibung: "Wir liefern Reinigungs- und Desinfektionsmittel, Sanitärhygienepapier, Seifen- und Spendersysteme."
+        begriffe: ["desinfektionsmittel", "hygienebedarf", "sanitärhygiene", "reinigungsmittel", "spendersystem", "handdesinfektion", "hygienepapier", "verbrauchsmaterial reinigung"]
+        cpv: ["3983", "33631600", "3376"]
+      - id: S027-F2
+        name: "Gebäude- & Unterhaltsreinigung"
+        beschreibung: "Wir übernehmen Unterhalts-, Grund-, Glas- und Sonderreinigung in Schulen, Kliniken und Verwaltungsgebäuden."
+        begriffe: ["unterhaltsreinigung", "gebäudereinigung", "grundreinigung", "glasreinigung", "sonderreinigung", "baureinigung", "schulreinigung", "glas- und rahmenreinigung", "reinigungsleistung"]
+        cpv: ["9091"]
+      - id: S027-F3
+        name: "Klinikreinigung & Desinfektion"
+        beschreibung: "Wir reinigen und desinfizieren Krankenhausbereiche, bereiten Medizinprodukte auf und bekämpfen Schädlinge."
+        begriffe: ["krankenhausreinigung", "klinikreinigung", "desinfektion", "flächendesinfektion", "aufbereitung von medizinprodukten", "sterilgutaufbereitung", "schädlingsbekämpfung", "hygienefachkraft"]
+        cpv: ["9092"]
+      - id: S027-F4
+        name: "Wäscherei & Textilservice"
+        beschreibung: "Wir waschen und desinfizieren Krankenhauswäsche, Berufskleidung und Matten im Mietservice."
+        begriffe: ["wäscherei", "textilservice", "krankenhauswäsche", "mietwäsche", "wäscheservice", "mattenservice", "schmutzfangmatte", "berufswäsche"]
+        cpv: ["9831"]
+
+  - id: S028
+    name: "Medizinische Textilien & Hilfsmittel"
+    beschreibung: "Sensoren in Textilien, Kompressionsware und individuelle Hilfsmittel verbinden Gesundheitsversorgung mit der Textil- und Feinwerktechnik der Region. Der Markt wächst mit der Zahl chronisch Kranker."
+    megatrends: [M06]
+    faehigkeiten:
+      - id: S028-F1
+        name: "Medizintextilien & Smart Textiles"
+        beschreibung: "Wir entwickeln und fertigen Verbandstoffe, Kompressionsware, OP-Textilien und Textilien mit eingebauten Sensoren."
+        begriffe: ["medizintextil", "smart textiles", "intelligente textilien", "kompressionsstrumpf", "verbandstoff", "op-textil", "sensortextil", "textile sensorik", "wirkerei", "strickerei"]
+        cpv: ["33141110", "33199"]
+      - id: S028-F2
+        name: "Orthopädie- & Rehatechnik"
+        beschreibung: "Wir fertigen Orthesen, Prothesen, Einlagen und passen Rollstühle und Rehahilfen individuell an."
+        begriffe: ["orthopädietechnik", "orthopädieschuh", "orthese", "prothese", "rehatechnik", "rollstuhlbau", "rollstuhlversorgung", "sanitätshaus", "hilfsmittelversorgung"]
+        cpv: ["33196", "3318"]
+      - id: S028-F3
+        name: "Feinwerk- & Dentaltechnik"
+        beschreibung: "Wir fertigen Implantate, Instrumente und Zahnersatz mit Fräs-, Laser- und 3D-Druckverfahren."
+        begriffe: ["dentaltechnik", "zahntechnik", "dentallabor", "zahnersatz", "implantat", "chirurgische instrumente", "feinwerktechnik", "medizinische instrumente"]
+        cpv: ["3313", "33169"]
+      - id: S028-F4
+        name: "Zulassung & Qualitätsmanagement"
+        beschreibung: "Wir begleiten Hersteller bei Medizinprodukte-Zulassung, klinischer Bewertung und Qualitätsmanagement nach Norm."
+        begriffe: ["medizinprodukteverordnung", "iso 13485", "klinische bewertung", "konformitätsbewertung", "biokompatibil", "medizinprodukterecht"]
+        cpv: []
+
+  - id: S029
+    name: "Pflege & gesundes Altern"
+    beschreibung: "Der Anteil Hochbetagter steigt in Erzgebirge und Vogtland besonders schnell, Pflegekräfte fehlen. Gefragt sind Pflegeplätze, Unterstützung im eigenen Zuhause und entlastende Technik."
+    megatrends: [M07, M06]
+    faehigkeiten:
+      - id: S029-F1
+        name: "Pflegeheim- & Tagespflegebau"
+        beschreibung: "Wir bauen und erweitern Pflegeheime, Tagespflegen und betreutes Wohnen einschließlich Freianlagen."
+        begriffe: ["pflegeheim", "seniorenpflegeheim", "seniorenheim", "tagespflege", "kurzzeitpflege", "betreutes wohnen", "seniorenwohn", "pflegeeinrichtung", "altenpflegeheim"]
+        cpv: ["4521521"]
+      - id: S029-F2
+        name: "Pflegebetten & Hilfsmittel"
+        beschreibung: "Wir liefern Pflegebetten, Lifter, Duschstühle und Alltagshilfen und richten Pflegezimmer ein."
+        begriffe: ["pflegebett", "patientenlifter", "pflegehilfsmittel", "duschstuhl", "toilettenstuhl", "anti-dekubitus", "pflegemöbel", "rollator"]
+        cpv: ["33192100", "33196"]
+      - id: S029-F3
+        name: "Assistenz- & Notruftechnik"
+        beschreibung: "Wir installieren Schwesternrufanlagen, Sturzerkennung und Assistenzsysteme für selbstbestimmtes Wohnen im Alter."
+        begriffe: ["schwesternruf", "lichtrufanlage", "rufanlage", "sturzerkennung", "assistenzsystem", "altersgerechte assistenz", "hausnotruf"]
+        cpv: []
+      - id: S029-F4
+        name: "Pflege- & Betreuungsdienste"
+        beschreibung: "Wir pflegen ambulant und stationär, bieten Alltagsbegleitung, Mahlzeitendienste und Entlastung für Angehörige."
+        begriffe: ["ambulante pflege", "pflegedienst", "altenpflege", "seniorenbetreuung", "alltagsbegleitung", "essen auf rädern", "betreuungsdienst", "pflegeberatung"]
+        cpv: ["853111", "85144"]
+
+  - id: S030
+    name: "Barrierearmes Bauen & Wohnen"
+    beschreibung: "Wohnungen, Bahnhöfe und öffentliche Gebäude müssen für Ältere und Menschen mit Behinderung zugänglich werden. Das schafft Daueraufträge für Aufzüge, Umbauten und Leitsysteme."
+    megatrends: [M07, M08]
+    faehigkeiten:
+      - id: S030-F1
+        name: "Aufzüge & Treppenlifte"
+        beschreibung: "Wir liefern, montieren und warten Personenaufzüge, Plattformlifte und Treppenlifte."
+        begriffe: ["aufzug", "personenaufzug", "aufzugsanlage", "treppenlift", "plattformlift", "hebebühne", "aufzugswartung", "seilaufzug"]
+        cpv: ["45313", "42416100", "50750"]
+      - id: S030-F2
+        name: "Barrierefreie Umbauten"
+        beschreibung: "Wir bauen schwellenlose Zugänge, Rampen, bodengleiche Duschen und barrierefreie Sanitärräume."
+        begriffe: ["barrierefrei", "barrierearm", "bodengleiche dusche", "schwellenlos", "rampe", "behindertengerecht", "rollstuhlgerecht", "altersgerecht", "behinderten-wc"]
+        cpv: ["45332400"]
+      - id: S030-F3
+        name: "Leit- & Orientierungssysteme"
+        beschreibung: "Wir verlegen taktile Bodenindikatoren, montieren Blindenleitsysteme, Beschilderung und automatische Türen."
+        begriffe: ["taktil", "bodenindikator", "blindenleitsystem", "orientierungssystem", "automatiktür", "automatische tür", "türantrieb", "induktive höranlage"]
+        cpv: ["44221"]
+      - id: S030-F4
+        name: "Wohnraumberatung & Planung"
+        beschreibung: "Wir beraten zu Wohnungsanpassung und planen barrierefreie Gebäude nach DIN 18040."
+        begriffe: ["din 18040", "wohnraumanpassung", "wohnungsanpassung", "wohnberatung", "barrierefreiheitskonzept", "barrierefreie planung"]
+        cpv: []
+
+  - id: S031
+    name: "Zuwanderung & Integration"
+    beschreibung: "Zugewanderte sollen schnell Unterkunft, Sprache und Arbeit finden; viele Betriebe sind auf sie angewiesen. Kommunen beauftragen Unterbringung, Betreuung und Sprachkurse."
+    megatrends: [M07]
+    faehigkeiten:
+      - id: S031-F1
+        name: "Unterkünfte & Modulbau"
+        beschreibung: "Wir errichten und vermieten Wohncontainer, Modulgebäude und Gemeinschaftsunterkünfte."
+        begriffe: ["wohncontainer", "containeranlage", "modulbau", "modulgebäude", "gemeinschaftsunterkunft", "flüchtlingsunterkunft", "mobile raumsysteme", "raummodul"]
+        cpv: ["44211", "45223810"]
+      - id: S031-F2
+        name: "Betrieb & Sozialbetreuung"
+        beschreibung: "Wir betreiben Unterkünfte, übernehmen Sozialbetreuung, Hausmeisterdienst und Wachschutz."
+        begriffe: ["sozialbetreuung", "betreibung", "unterkunftsbetrieb", "heimleitung", "migrationsberatung", "flüchtlingssozialarbeit", "hausmeisterdienst"]
+        cpv: ["8531", "8532", "98341140"]
+      - id: S031-F3
+        name: "Sprachkurse & Berufsintegration"
+        beschreibung: "Wir bieten Integrations- und Berufssprachkurse, Kompetenzfeststellung und begleiten in Ausbildung und Arbeit."
+        begriffe: ["integrationskurs", "sprachkurs", "deutschkurs", "berufssprachkurs", "berufsorientierung", "kompetenzfeststellung", "arbeitsmarktintegration", "anerkennungsberatung"]
+        cpv: ["80580", "8040"]
+      - id: S031-F4
+        name: "Dolmetschen & Übersetzen"
+        beschreibung: "Wir dolmetschen bei Behörden, Ärzten und Betrieben und übersetzen Dokumente und Arbeitsanweisungen."
+        begriffe: ["dolmetsch", "übersetzung", "übersetzungsbüro", "sprachmittl", "beglaubigte übersetzung", "mehrsprachig"]
+        cpv: ["7953", "7954"]
+
+  - id: S032
+    name: "Smart City & vernetzte Kommune"
+    beschreibung: "Straßenbeleuchtung, Verkehr, Parken und Versorgung werden über Sensoren und Datenplattformen gesteuert. Mittelgroße Städte wie Chemnitz, Zwickau und Plauen erproben das in Modellprojekten."
+    megatrends: [M08, M03]
+    faehigkeiten:
+      - id: S032-F1
+        name: "Intelligente Straßenbeleuchtung"
+        beschreibung: "Wir rüsten Straßenbeleuchtung auf LED um, montieren Lichtmasten und steuern Leuchten bedarfsgerecht per Funk."
+        begriffe: ["straßenbeleuchtung", "led-umrüstung", "lichtmast", "außenbeleuchtung", "lichtsteuerung", "leuchtenkopf", "öffentliche beleuchtung"]
+        cpv: ["34928500", "45316110", "45316100"]
+      - id: S032-F2
+        name: "Verkehrstechnik & Parkleitsysteme"
+        beschreibung: "Wir errichten Lichtsignalanlagen, Verkehrsdetektion, Parkleitsysteme und Verkehrsrechner."
+        begriffe: ["lichtsignalanlage", "ampelanlage", "verkehrsrechner", "verkehrsbeeinflussung", "parkleitsystem", "verkehrsdetektion", "verkehrstechnik", "verkehrsmanagement", "beschilderung"]
+        cpv: ["453162", "3497", "34996"]
+      - id: S032-F3
+        name: "Sensorik & Funknetze im Stadtraum"
+        beschreibung: "Wir installieren Umwelt-, Füllstands- und Parksensoren und betreiben Funknetze für das Internet der Dinge."
+        begriffe: ["lorawan", "internet der dinge", "smart city", "smarte stadt", "funkzähler", "smart meter", "füllstandssensor", "luftgütemess", "fernauslesung"]
+        cpv: ["3855"]
+      - id: S032-F4
+        name: "Urbane Datenplattform & Bürgerdienste"
+        beschreibung: "Wir bauen urbane Datenplattformen, Geoportale und Apps, mit denen Bürger Schäden melden und Angebote finden."
+        begriffe: ["datenplattform", "geoportal", "urbane daten", "open data", "mängelmelder", "stadt-app", "digitaler zwilling", "geoinformationssystem", "gis-"]
+        cpv: ["72413"]
+
+  - id: S033
+    name: "Bezahlbares Wohnen & serielles Bauen"
+    beschreibung: "Steigende Baukosten und Leerstand neben Wohnungsmangel verlangen günstigeres Bauen und Umbauen im Bestand. Vorgefertigte Bauteile und serielle Sanierung verkürzen Bauzeiten deutlich."
+    megatrends: [M08]
+    faehigkeiten:
+      - id: S033-F1
+        name: "Fertigteile & Vorfertigung"
+        beschreibung: "Wir fertigen Betonfertigteile, Elementdecken, Fassadenelemente und Raummodule im Werk vor."
+        begriffe: ["fertigteilbau", "fertigteilwerk", "fertigteilmontage", "betonfertigteil", "elementdecke", "filigrandecke", "fassadenelement", "vorfertigung", "serielles bauen", "serielle sanierung", "fertighaus"]
+        cpv: ["44114200", "4421", "45223810"]
+      - id: S033-F2
+        name: "Rohbau & Wohnungsbau"
+        beschreibung: "Wir errichten Wohngebäude im Rohbau mit Mauerwerk und Stahlbeton und führen Generalunternehmerleistungen aus."
+        begriffe: ["wohnungsbau", "mehrfamilienhaus", "wohnanlage", "wohngebäude", "rohbauarbeiten", "mauerwerksbau", "generalunternehmer", "schlüsselfertig", "einfamilienhaus"]
+        cpv: ["45211", "45223220"]
+      - id: S033-F3
+        name: "Bestandssanierung & Ausbau"
+        beschreibung: "Wir sanieren Wohnungen im Bestand mit Trockenbau, Estrich, Malerarbeiten, Bodenbelägen und Sanitär."
+        begriffe: ["trockenbau", "estricharbeiten", "malerarbeiten", "bodenbelagsarbeiten", "fliesenarbeiten", "wohnungssanierung", "innenausbau", "putzarbeiten"]
+        cpv: ["45324", "45442", "45432", "45431", "45410"]
+      - id: S033-F4
+        name: "Projektentwicklung & Wohnungsverwaltung"
+        beschreibung: "Wir entwickeln Wohnprojekte, verwalten Mietwohnungen und betreuen Wohnungsgenossenschaften."
+        begriffe: ["projektentwicklung", "wohnungsverwaltung", "hausverwaltung", "immobilienverwaltung", "wohnungsgenossenschaft", "wohnungsbaugesellschaft", "mietverwaltung", "quartiersentwicklung"]
+        cpv: ["70110", "7033"]
+
+  - id: S034
+    name: "Cybersicherheit"
+    beschreibung: "Angriffe auf Kommunen, Kliniken und Mittelständler nehmen zu, neue Pflichten zur Informationssicherheit greifen. Kleine Betriebe brauchen bezahlbare Schutztechnik, Prüfung und Schulung."
+    megatrends: [M09, M03]
+    faehigkeiten:
+      - id: S034-F1
+        name: "Sicherheitstechnik für Netze"
+        beschreibung: "Wir liefern und betreiben Firewalls, Virenschutz, Verschlüsselung und Zugangsschutz für Netzwerke."
+        begriffe: ["firewall", "virenschutz", "endpoint", "verschlüsselung", "zwei-faktor", "zugangsschutz", "vpn", "netzwerksicherheit", "sicherheitssoftware"]
+        cpv: ["4873", "4876"]
+      - id: S034-F2
+        name: "Prüfung & Penetrationstests"
+        beschreibung: "Wir prüfen IT-Systeme mit Penetrationstests und Schwachstellenanalysen und auditieren nach gängigen Standards."
+        begriffe: ["penetrationstest", "pentest", "schwachstellenanalyse", "sicherheitsaudit", "it-sicherheitsaudit", "it-grundschutz", "iso 27001", "isms", "bsi-"]
+        cpv: ["7280"]
+      - id: S034-F3
+        name: "Überwachung & Notfallhilfe"
+        beschreibung: "Wir überwachen Netze rund um die Uhr, erkennen Angriffe und helfen im Ernstfall bei Wiederherstellung und Forensik."
+        begriffe: ["security operations", "soc-", "angriffserkennung", "incident response", "it-forensik", "notfallmanagement", "sicherheitsvorfall"]
+        cpv: []
+      - id: S034-F4
+        name: "Informationssicherheit & Schulung"
+        beschreibung: "Wir beraten zu Datenschutz und Informationssicherheit, stellen Beauftragte und schulen Beschäftigte gegen Phishing."
+        begriffe: ["informationssicherheit", "it-sicherheit", "datenschutzbeauftragt", "awareness", "phishing", "sicherheitsschulung", "nis2"]
+        cpv: ["80533"]
+
+  - id: S035
+    name: "Brand- & Katastrophenschutz"
+    beschreibung: "Waldbrände, Hochwasser und Stromausfälle fordern Feuerwehren und Katastrophenschutz stärker, viele Gerätehäuser und Fahrzeuge sind veraltet. Kommunen investieren in Wachen, Fahrzeuge und Alarmtechnik."
+    megatrends: [M09]
+    faehigkeiten:
+      - id: S035-F1
+        name: "Einsatzfahrzeuge & Aufbauten"
+        beschreibung: "Wir bauen Feuerwehrfahrzeuge, Löschfahrzeug-Aufbauten, Rüstwagen und Katastrophenschutzfahrzeuge auf Fahrgestellen auf."
+        begriffe: ["löschfahrzeug", "feuerwehrfahrzeug", "rüstwagen", "tanklöschfahrzeug", "drehleiter", "einsatzfahrzeug", "fahrzeugaufbau", "katastrophenschutzfahrzeug", "gerätewagen"]
+        cpv: ["3414421"]
+      - id: S035-F2
+        name: "Feuerwehrtechnik & Ausrüstung"
+        beschreibung: "Wir liefern Feuerwehrtechnik, Atemschutz, Schläuche, Pumpen, Notstromaggregate und Ausrüstung für den Bevölkerungsschutz."
+        begriffe: ["feuerwehrtechnik", "feuerwehrbedarf", "atemschutz", "feuerlöscher", "tragkraftspritze", "notstromaggregat", "sandsack", "bevölkerungsschutz", "einsatzbekleidung"]
+        cpv: ["3511"]
+      - id: S035-F3
+        name: "Brandmelde- & Löschanlagen"
+        beschreibung: "Wir errichten und warten Brandmeldeanlagen, Sprachalarmierung, Sprinkler- und Löschanlagen sowie Rauchabzüge."
+        begriffe: ["brandmeldeanlage", "brandmeldezentrale", "sprachalarm", "sprinkler", "löschanlage", "rauchabzug", "rauch- und wärmeabzug", "rwa-anlage", "brandschutztechnik", "sirene"]
+        cpv: ["45312100", "45343", "31625"]
+      - id: S035-F4
+        name: "Wachenbau & Brandschutzplanung"
+        beschreibung: "Wir planen und bauen Feuerwachen, Gerätehäuser und Rettungswachen und erstellen Brandschutzkonzepte."
+        begriffe: ["neubau feuerwache", "feuerwachenneubau", "feuerwehrgerätehaus", "rettungswache", "gefahrenabwehrzentrum", "brandschutzkonzept", "brandschutznachweis", "brandschutzplanung", "feuerwehrtechnisches zentrum"]
+        cpv: ["4521612"]
+
+  - id: S036
+    name: "Objektschutz & Sicherheitstechnik"
+    beschreibung: "Öffentliche Gebäude, Veranstaltungen und Betriebe brauchen mehr Zutrittskontrolle, Überwachung und Personal für Sicherheit. Technik und Wachdienst wachsen zusammen."
+    megatrends: [M09]
+    faehigkeiten:
+      - id: S036-F1
+        name: "Videoüberwachung & Einbruchmeldetechnik"
+        beschreibung: "Wir installieren Videoüberwachung, Einbruchmeldeanlagen und Perimeterschutz und schalten sie auf Leitstellen auf."
+        begriffe: ["videoüberwachung", "videotechnik", "einbruchmeldeanlage", "einbruchmelde", "alarmanlage", "perimeterschutz", "überfallmelde", "gefahrenmeldeanlage", "kameraüberwachung"]
+        cpv: ["32323500", "45312200", "3512"]
+      - id: S036-F2
+        name: "Zutrittskontrolle & Schließsysteme"
+        beschreibung: "Wir liefern elektronische Schließanlagen, Zutrittskontrollsysteme, Sicherheitstüren und Tresore."
+        begriffe: ["zutrittskontrolle", "schließanlage", "schließsystem", "zugangskontrolle", "sicherheitstür", "einbruchhemmend", "tresor", "elektronisches schloss"]
+        cpv: ["4452", "42961100"]
+      - id: S036-F3
+        name: "Wach- & Sicherheitsdienste"
+        beschreibung: "Wir stellen Wachpersonal, Empfangs- und Pfortendienste, Revierstreifen und Veranstaltungsschutz."
+        begriffe: ["wachdienst", "sicherheitsdienst", "bewachung", "objektschutz", "pfortendienst", "empfangsdienst", "revierdienst", "werkschutz", "veranstaltungsschutz", "schließdienst"]
+        cpv: ["79710", "79713", "79714"]
+      - id: S036-F4
+        name: "Notruf- & Leitstellentechnik"
+        beschreibung: "Wir betreiben Notruf- und Serviceleitstellen und verbinden Alarmmeldungen mit Interventionsdiensten."
+        begriffe: ["notrufleitstelle", "notruf- und serviceleitstelle", "alarmaufschaltung", "leitstelle", "fernüberwachung", "alarmverfolgung", "sicherheitszentrale"]
+        cpv: ["79711"]
+
+  - id: S037
+    name: "Brücken- & Straßenerhalt"
+    beschreibung: "Viele Brücken und Straßen aus den 1960er bis 1990er Jahren erreichen ihr Lebensende, der Erhalt hat Vorrang vor Neubau. Prüfung, Instandsetzung und Winterdienst sichern die Erreichbarkeit der Region."
+    megatrends: [M09]
+    faehigkeiten:
+      - id: S037-F1
+        name: "Bauwerksprüfung & Zustandserfassung"
+        beschreibung: "Wir prüfen Brücken und Ingenieurbauwerke nach DIN 1076, erfassen Straßenzustände und bewerten Schäden."
+        begriffe: ["bauwerksprüfung", "brückenprüfung", "din 1076", "zustandserfassung", "bauwerksbuch", "schadensbewertung", "tragfähigkeitsnachweis", "nachrechnung"]
+        cpv: ["71631450", "71631"]
+      - id: S037-F2
+        name: "Brückeninstandsetzung & Massivbau"
+        beschreibung: "Wir sanieren Brücken, erneuern Abdichtungen, Kappen und Lager und führen Betoninstandsetzung aus."
+        begriffe: ["brückenbau", "brückensanierung", "brückeninstandsetzung", "betoninstandsetzung", "brückenkappe", "brückenlager", "ingenieurbau", "massivbau", "ersatzneubau brücke"]
+        cpv: ["452211", "45262330"]
+      - id: S037-F3
+        name: "Straßenbau & Fahrbahnerneuerung"
+        beschreibung: "Wir erneuern Fahrbahnen in Asphalt und Pflaster, setzen Schutzplanken und markieren Straßen."
+        begriffe: ["straßenbau", "asphalt", "fahrbahnerneuerung", "deckenerneuerung", "schutzplanke", "fahrbahnmarkierung", "pflasterarbeiten", "erhaltungsmaßnahme", "straßensanierung"]
+        cpv: ["45233", "4523328"]
+      - id: S037-F4
+        name: "Straßenbetriebsdienst & Winterdienst"
+        beschreibung: "Wir reinigen Straßen und Abläufe, mähen Bankette und räumen und streuen im Winter."
+        begriffe: ["winterdienst", "straßenreinigung", "kehrmaschine", "betriebsdienst", "streudienst", "schneeräum", "bankettpflege", "bankettmahd", "straßenunterhaltung", "verkehrssicherung"]
+        cpv: ["9062", "9063", "9061", "5023"]
+
+  - id: S038
+    name: "Versorgungssicherheit & Lieferketten"
+    beschreibung: "Lieferengpässe und Krisen zeigen, wie abhängig Betriebe und Verwaltungen von fernen Zulieferern und durchgehender Energie sind. Lager, Notstrom und regionale Bezugsquellen gewinnen an Wert."
+    megatrends: [M09]
+    faehigkeiten:
+      - id: S038-F1
+        name: "Notstrom & Notversorgung"
+        beschreibung: "Wir liefern und warten Notstromaggregate, Netzersatzanlagen und unterbrechungsfreie Stromversorgungen."
+        begriffe: ["notstrom", "netzersatzanlage", "stromaggregat", "usv-anlage", "unterbrechungsfreie stromversorgung", "sicherheitsbeleuchtung", "zentralbatterie", "notbeleuchtung", "blackout"]
+        cpv: ["3112", "31154"]
+      - id: S038-F2
+        name: "Lager & Kontraktlogistik"
+        beschreibung: "Wir lagern, kommissionieren und verteilen Waren für Industrie und Behörden, auch als Notfallvorrat."
+        begriffe: ["lagerlogistik", "kontraktlogistik", "lagerhaltung", "warenlager", "logistikzentrum", "lagerverwaltung", "kommissionierung", "bevorratung", "spedition"]
+        cpv: ["6312", "6310"]
+      - id: S038-F3
+        name: "Transport & Kurierdienste"
+        beschreibung: "Wir transportieren Güter per Lkw, Kurier und Schiene und organisieren Umzüge und Sonderfahrten."
+        begriffe: ["gütertransport", "transportdienst", "kurierdienst", "frachtführer", "lkw-transport", "umzugsdienst", "umzugsleistung", "schwertransport", "logistikdienst"]
+        cpv: ["6010", "6016", "98392"]
+      - id: S038-F4
+        name: "Beschaffung & regionale Zulieferung"
+        beschreibung: "Wir beraten zu Einkauf, Lieferantenwechsel und Risikomanagement und bauen regionale Zulieferketten auf."
+        begriffe: ["lieferkette", "lieferantenmanagement", "beschaffungsberatung", "einkaufsberatung", "risikomanagement", "zweitlieferant", "lieferantenaudit"]
+        cpv: ["79418"]
+
+  - id: S039
+    name: "Digitale Schule"
+    beschreibung: "Schulen brauchen schnelles WLAN, Präsentationstechnik, Endgeräte und jemanden, der das alles betreut. Schulträger im Landkreis vergeben dafür wiederkehrend Ausstattung und Wartung."
+    megatrends: [M10, M03]
+    faehigkeiten:
+      - id: S039-F1
+        name: "Endgeräte & Präsentationstechnik"
+        beschreibung: "Wir liefern Tablets, Laptops, interaktive Tafeln, Displays und Medientechnik für Klassenräume."
+        begriffe: ["interaktive tafel", "interaktives display", "digitale tafel", "whiteboard", "beamer", "präsentationstechnik", "medientechnik", "tablet", "notebook", "dokumentenkamera"]
+        cpv: ["30213", "32321", "32322", "38652100"]
+      - id: S039-F2
+        name: "Schulnetz & WLAN"
+        beschreibung: "Wir verkabeln Schulgebäude, richten WLAN, Server und Schulnetze ein und schließen sie ans Breitband an."
+        begriffe: ["schulnetz", "schul-wlan", "digitalpakt", "medienentwicklungsplan", "wlan-ausleuchtung", "accesspoint", "access point", "netzwerkinfrastruktur"]
+        cpv: ["3242"]
+      - id: S039-F3
+        name: "Lernsoftware & Lernplattformen"
+        beschreibung: "Wir entwickeln Lernplattformen, digitale Lehrmittel und Software für Unterricht und Schulverwaltung."
+        begriffe: ["lernplattform", "lernsoftware", "lernmanagement", "e-learning", "digitale lehrmittel", "schulverwaltungssoftware", "lernapp", "bildungssoftware"]
+        cpv: ["4819", "80420"]
+      - id: S039-F4
+        name: "Schul-IT-Support & Medienbildung"
+        beschreibung: "Wir betreuen die IT von Schulen vor Ort und aus der Ferne und schulen Lehrkräfte im Umgang mit Medien."
+        begriffe: ["schul-it", "it-betreuung schule", "schulsupport", "medienbildung", "medienpädagog", "lehrerfortbildung", "geräteverwaltung", "mobile device management"]
+        cpv: []
+
+  - id: S040
+    name: "Bildungsbauten & Kinderbetreuung"
+    beschreibung: "Schwankende Geburtenzahlen, Ganztag und Inklusion verlangen Um- und Neubauten von Kitas, Schulen und Horten. Es ist einer der größten öffentlichen Bauaufträge in der Region."
+    megatrends: [M10, M07]
+    faehigkeiten:
+      - id: S040-F1
+        name: "Schul- & Kitabau"
+        beschreibung: "Wir bauen und sanieren Kindertagesstätten, Schulen, Horte, Mensen und Sporthallen."
+        begriffe: ["schulbau", "schulneubau", "schulsanierung", "schulerweiterung", "ersatzneubau schule", "neubau grundschule", "neubau oberschule", "neubau gymnasium", "neubau kita", "kita-neubau", "neubau kindertagesstätte", "neubau einer kindertagesstätte", "neubau sporthalle", "sporthallenneubau"]
+        cpv: ["452141", "452142", "45212225"]
+      - id: S040-F2
+        name: "Schul- & Kitamöbel"
+        beschreibung: "Wir liefern Schulmöbel, Fachraumeinrichtungen, Kitamöbel und Garderoben."
+        begriffe: ["schulmöbel", "kitamöbel", "fachraum", "fachunterrichtsraum", "schülertisch", "lehrerpult", "fachraumeinrichtung", "naturwissenschaftliche räume"]
+        cpv: ["3916", "39162"]
+      - id: S040-F3
+        name: "Spielplätze & Außenanlagen"
+        beschreibung: "Wir planen und bauen Spielplätze, Schulhöfe und Außenanlagen mit Spielgeräten und Fallschutz."
+        begriffe: ["spielplatz", "spielgerät", "schulhof", "fallschutz", "bewegungsparcours", "sandspielbereich"]
+        cpv: ["37535200", "45112723", "71222"]
+      - id: S040-F4
+        name: "Ganztag & Betreuungsangebote"
+        beschreibung: "Wir betreiben Horte und Ganztagsangebote, liefern Schulverpflegung und organisieren Ferienbetreuung."
+        begriffe: ["ganztagsangebot", "ganztagsschule", "schulverpflegung", "mittagsverpflegung", "kitaverpflegung", "ferienbetreuung", "schulsozialarbeit", "hortbetreuung"]
+        cpv: ["5552", "5551", "8532"]
+
+  - id: S041
+    name: "Berufliche Bildung & Weiterbildung"
+    beschreibung: "Technischer Wandel und Fachkräftemangel machen lebenslanges Lernen zur betrieblichen Notwendigkeit. Bildungsträger, Kammern und Betriebe brauchen Werkstätten, Lehrgeräte und modulare Kurse."
+    megatrends: [M10, M11]
+    faehigkeiten:
+      - id: S041-F1
+        name: "Ausbildungswerkstätten & Lehrgeräte"
+        beschreibung: "Wir richten Ausbildungswerkstätten mit Lehrsystemen, Fehlersimulatoren, Schweißplätzen und Werkbänken ein."
+        begriffe: ["ausbildungswerkstatt", "lehrwerkstatt", "lehrsystem", "fehlersimulator", "übungsstand", "werkbank", "trainingssystem", "ausbildungsausstattung", "lernfabrik"]
+        cpv: ["39162", "3897"]
+      - id: S041-F2
+        name: "Lehrgänge & Umschulung"
+        beschreibung: "Wir bieten Lehrgänge, Umschulungen und Prüfungsvorbereitung in Technik, Handwerk und Pflege an."
+        begriffe: ["umschulung", "weiterbildungsangebot", "lehrgang", "bildungsträger", "zertifikatskurs", "meisterkurs", "meistervorbereitung", "prüfungsvorbereitung", "reha-ausbildung"]
+        cpv: ["8053", "8050", "8051"]
+      - id: S041-F3
+        name: "Digitale Lernangebote"
+        beschreibung: "Wir erstellen E-Learning-Kurse, Lernvideos und virtuelle Trainings für Betriebe und Bildungsträger."
+        begriffe: ["e-learning", "lernvideo", "onlinekurs", "virtuelles training", "blended learning", "lernmanagementsystem", "webinar", "virtual reality"]
+        cpv: ["80420"]
+      - id: S041-F4
+        name: "Personalentwicklung & Kompetenzanalyse"
+        beschreibung: "Wir analysieren Qualifikationsbedarf, entwickeln Personalentwicklungspläne und begleiten Beschäftigte im Wandel."
+        begriffe: ["personalentwicklung", "kompetenzanalyse", "qualifizierungsplan", "qualifikationsbedarf", "weiterbildungsberatung", "coaching", "mitarbeiterentwicklung", "bildungsberatung"]
+        cpv: ["79632", "79633"]
+
+  - id: S042
+    name: "Forschungsinfrastruktur & Labore"
+    beschreibung: "TU Chemnitz, TU Bergakademie Freiberg, Westsächsische Hochschule und Fraunhofer-Institute bauen Labore, Technika und Versuchshallen aus. Das bringt anspruchsvolle Bau-, Technik- und Geräteaufträge in die Region."
+    megatrends: [M10]
+    faehigkeiten:
+      - id: S042-F1
+        name: "Wissenschaftliche Geräte & Versuchsanlagen"
+        beschreibung: "Wir entwickeln und liefern Versuchsanlagen, Reaktoren, Prüfstände und Analysegeräte für Forschungseinrichtungen."
+        begriffe: ["versuchsanlage", "versuchsstand", "technikum", "laborgerät", "analysegerät", "reaktor", "wirbelschicht", "spektrometer", "mikroskop", "pilotanlage"]
+        cpv: ["3843", "3851", "3897"]
+      - id: S042-F2
+        name: "Laborbau & Labortechnik"
+        beschreibung: "Wir bauen Labore mit Laborlüftung, Laborgasen, Abzügen und Sicherheitsausstattung."
+        begriffe: ["laborbau", "laborgebäude", "laborflügel", "laborlüftung", "laborgasanlage", "labortechnik", "chemielabor", "s1-labor", "s2-labor"]
+        cpv: ["452146", "3918"]
+      - id: S042-F3
+        name: "Hochschulbau & Versuchshallen"
+        beschreibung: "Wir errichten Institutsgebäude, Hörsäle, Versuchshallen und Infrastruktur auf Hochschulcampus."
+        begriffe: ["institutsgebäude", "hörsaal", "versuchshalle", "forschungsbau", "forschungszentrum", "hochschulbau", "hochschulgebäude", "universitätsgebäude"]
+        cpv: ["452144", "71250"]
+      - id: S042-F4
+        name: "Labordienstleistungen & Analytik"
+        beschreibung: "Wir führen chemische, physikalische und werkstofftechnische Analysen und Prüfungen im Auftrag durch."
+        begriffe: ["labordienstleistung", "analytik", "prüflabor", "akkreditiertes labor", "werkstoffanalyse", "chemische analyse", "umweltanalytik", "materialprüfung"]
+        cpv: ["71900", "7163"]
+
+  - id: S043
+    name: "Wissenstransfer & Gründungen"
+    beschreibung: "Ideen aus Hochschulen und Instituten sollen öfter in regionalen Betrieben und neuen Firmen ankommen. Gefragt sind Kooperationsprojekte, Gründerunterstützung und Räume zum Ausprobieren."
+    megatrends: [M10]
+    faehigkeiten:
+      - id: S043-F1
+        name: "Auftragsforschung & Entwicklung"
+        beschreibung: "Wir entwickeln im Auftrag neue Produkte und Verfahren und führen Machbarkeitsstudien und Prototypenbau durch."
+        begriffe: ["auftragsforschung", "forschung und entwicklung", "f&e", "prototypenbau", "prototyp", "machbarkeitsstudie", "verbundprojekt", "forschungsprojekt", "entwicklungsdienstleist"]
+        cpv: ["7310", "7311", "7312"]
+      - id: S043-F2
+        name: "Transfer- & Innovationsberatung"
+        beschreibung: "Wir vermitteln zwischen Wissenschaft und Betrieben, beraten zu Fördermitteln und Schutzrechten."
+        begriffe: ["technologietransfer", "wissenstransfer", "innovationsberatung", "fördermittelberatung", "patentanmeldung", "patentberatung", "schutzrecht", "innovationsmanagement", "transferstelle"]
+        cpv: ["7322", "79411100"]
+      - id: S043-F3
+        name: "Gründerzentren & Labflächen"
+        beschreibung: "Wir betreiben Gründerzentren, Coworking-Flächen, Werkstätten und Makerspaces für junge Firmen."
+        begriffe: ["gründerzentrum", "technologiezentrum", "startup", "start-up", "inkubator", "accelerator", "makerspace", "gründerberatung"]
+        cpv: []
+      - id: S043-F4
+        name: "Veranstaltungen & Vernetzung"
+        beschreibung: "Wir organisieren Fachtagungen, Messen und Netzwerktreffen und kommunizieren Forschungsergebnisse."
+        begriffe: ["fachtagung", "kongressorganisation", "messebau", "netzwerkveranstaltung", "wissenschaftskommunikation", "ausstellungsbau", "veranstaltungsorganisation", "eventagentur"]
+        cpv: ["7995"]
+
+  - id: S044
+    name: "Gesundheit & Wohlbefinden am Arbeitsplatz"
+    beschreibung: "Längere Lebensarbeitszeit und Personalmangel machen die Gesundheit der Belegschaft zum betrieblichen Thema. In Vergabedaten taucht das selten auf; die Brücke führt über Arbeitsmedizin, Ergonomie und Bewegungsangebote."
+    megatrends: [M11, M06]
+    faehigkeiten:
+      - id: S044-F1
+        name: "Arbeitsmedizin & Gesundheitsmanagement"
+        beschreibung: "Wir übernehmen arbeitsmedizinische Vorsorge und bauen betriebliches Gesundheitsmanagement mit Analysen und Maßnahmen auf."
+        begriffe: ["arbeitsmedizin", "betriebsarzt", "betriebliches gesundheitsmanagement", "gesundheitsmanagement", "gesundheitsförderung", "vorsorgeuntersuchung", "eingliederungsmanagement"]
+        cpv: ["85147", "71317210"]
+      - id: S044-F2
+        name: "Ergonomische Arbeitsplätze"
+        beschreibung: "Wir liefern höhenverstellbare Tische, ergonomische Stühle, Hebehilfen und gestalten Arbeitsplätze rückenschonend."
+        begriffe: ["ergonomie", "ergonomisch", "höhenverstellbar", "steh-sitz", "bürodrehstuhl", "hebehilfe", "arbeitsplatzgestaltung", "arbeitsplatzleuchte", "akustikelement"]
+        cpv: ["3911", "3912", "31521"]
+      - id: S044-F3
+        name: "Bewegung & Betriebssport"
+        beschreibung: "Wir bieten Betriebssport, Fitness- und Rückenkurse an und liefern Fitness- und Sportgeräte."
+        begriffe: ["betriebssport", "firmenfitness", "rückenschule", "fitnessgerät", "sportgerät", "präventionskurs", "gesundheitskurs", "fitnessstudio"]
+        cpv: ["3744", "3740", "9261"]
+      - id: S044-F4
+        name: "Psychische Gesundheit & Beratung"
+        beschreibung: "Wir beraten Beschäftigte und Führungskräfte vertraulich bei Belastung, Konflikten und Krisen."
+        begriffe: ["mitarbeiterberatung", "employee assistance", "psychische belastung", "gefährdungsbeurteilung psychisch", "stressprävention", "resilienztraining", "supervision", "konfliktberatung"]
+        cpv: ["85312320"]
+
+  - id: S045
+    name: "Unternehmensnachfolge & Erfahrungswissen"
+    beschreibung: "Tausende Inhaber in der Region suchen in den nächsten Jahren Nachfolger, und mit erfahrenen Beschäftigten geht Wissen verloren. Gefragt sind Beratung, Bewertung und Werkzeuge, die Wissen im Betrieb halten."
+    megatrends: [M11, M07]
+    faehigkeiten:
+      - id: S045-F1
+        name: "Nachfolgeberatung & Unternehmensbewertung"
+        beschreibung: "Wir beraten Inhaber zur Übergabe, bewerten Unternehmen und begleiten Verkauf, Übernahme und Finanzierung."
+        begriffe: ["unternehmensnachfolge", "nachfolgeregelung", "betriebsübergabe", "unternehmensbewertung", "unternehmensverkauf", "übernahme eines unternehmens", "nachfolgeberatung", "management-buy"]
+        cpv: ["79411", "66171"]
+      - id: S045-F2
+        name: "Recht, Steuern & Verträge"
+        beschreibung: "Wir gestalten Übergabeverträge, Gesellschaftsrecht und steuerliche Lösungen für Familienbetriebe."
+        begriffe: ["steuerberatung", "gesellschaftsrecht", "erbrecht", "rechtsanwalt", "wirtschaftsprüfung", "übergabevertrag", "schenkungsteuer"]
+        cpv: ["7911", "7922", "7921"]
+      - id: S045-F3
+        name: "Wissenssicherung & Dokumentation"
+        beschreibung: "Wir halten Erfahrungswissen in Handbüchern, Arbeitsanweisungen, Videos und Wissensdatenbanken fest."
+        begriffe: ["wissensmanagement", "wissenssicherung", "wissensdatenbank", "technische dokumentation", "betriebshandbuch", "arbeitsanweisung", "erklärvideo", "technische redaktion"]
+        cpv: []
+      - id: S045-F4
+        name: "Altersgerechte Arbeitsorganisation"
+        beschreibung: "Wir gestalten Arbeitszeitmodelle, Tandems aus Jung und Alt und Übergänge in den Ruhestand."
+        begriffe: ["demografiefest", "lebensphasenorientiert", "generationenmanagement", "wissenstandem", "mentoring", "arbeitszeitmodell", "altersstrukturanalyse"]
+        cpv: ["79414"]
+
+  - id: S046
+    name: "Arbeitsschutz & Schutzausrüstung"
+    beschreibung: "Höhere Anforderungen an Sicherheit und Gesundheitsschutz betreffen Baustellen, Werkstätten und Behörden gleichermaßen. Textil- und Bekleidungsbetriebe der Region liefern Schutz- und Dienstkleidung."
+    megatrends: [M11]
+    faehigkeiten:
+      - id: S046-F1
+        name: "Schutz- & Dienstkleidung"
+        beschreibung: "Wir fertigen und liefern Arbeits-, Schutz- und Dienstkleidung, Sicherheitsschuhe und Uniformen."
+        begriffe: ["arbeitskleidung", "schutzkleidung", "dienstkleidung", "berufskleidung", "sicherheitsschuh", "arbeitsschutzschuh", "warnschutz", "uniform", "einsatzkleidung", "dienstjacke"]
+        cpv: ["1810", "1811", "1813", "1883", "35811", "35113400"]
+      - id: S046-F2
+        name: "Persönliche Schutzausrüstung"
+        beschreibung: "Wir liefern Helme, Gehör- und Augenschutz, Atemschutzmasken, Handschuhe und Absturzsicherungen."
+        begriffe: ["persönliche schutzausrüstung", "psa-", "schutzhelm", "gehörschutz", "schutzbrille", "atemschutzmaske", "schutzhandschuh", "absturzsicherung", "auffanggurt"]
+        cpv: ["18143", "3511"]
+      - id: S046-F3
+        name: "Sicherheitstechnische Betreuung"
+        beschreibung: "Wir stellen Fachkräfte für Arbeitssicherheit, erstellen Gefährdungsbeurteilungen und koordinieren Sicherheit auf Baustellen."
+        begriffe: ["fachkraft für arbeitssicherheit", "sicherheitsfachkraft", "sige-koordinat", "sigeko", "gefährdungsbeurteilung", "arbeitsschutzmanagement", "unterweisung"]
+        cpv: ["71317"]
+      - id: S046-F4
+        name: "Prüfung von Anlagen & Arbeitsmitteln"
+        beschreibung: "Wir prüfen elektrische Geräte, Leitern, Regale, Hebezeuge und Anschlagmittel nach Vorschrift."
+        begriffe: ["dguv v3", "ortsveränderliche", "geräteprüfung", "leiterprüfung", "regalprüfung", "hebezeugprüfung", "uvv-prüfung", "prüfplakette", "betriebssicherheitsverordnung"]
+        cpv: ["7163"]
+
+  - id: S047
+    name: "Neue Arbeitsorte & Büroumbau"
+    beschreibung: "Mobiles Arbeiten verändert, wie viel und welche Bürofläche Verwaltungen und Betriebe brauchen. Flächen werden zu Besprechungs-, Rückzugs- und Projektzonen umgebaut und technisch neu ausgestattet."
+    megatrends: [M11]
+    faehigkeiten:
+      - id: S047-F1
+        name: "Büromöbel & Raumakustik"
+        beschreibung: "Wir planen und liefern Büromöbel, Akustiklösungen, Raum-in-Raum-Systeme und Besprechungsmobiliar."
+        begriffe: ["büromöbel", "büroeinrichtung", "raumakustik", "akustikpaneel", "raum-in-raum", "besprechungstisch", "schreibtisch", "objekteinrichtung", "möblierung"]
+        cpv: ["3913", "3912", "39100"]
+      - id: S047-F2
+        name: "Innenausbau & Umbau im Bestand"
+        beschreibung: "Wir bauen Büroflächen mit Trennwänden, Akustikdecken, Glaswänden und Einbaumöbeln flexibel um."
+        begriffe: ["trennwand", "glastrennwand", "systemtrennwand", "akustikdecke", "rasterdecke", "montagewand", "büroumbau", "flächenumbau", "einbaumöbel"]
+        cpv: ["45421153", "45421146", "45324"]
+      - id: S047-F3
+        name: "Konferenz- & Kollaborationstechnik"
+        beschreibung: "Wir statten Besprechungsräume mit Videokonferenztechnik, Displays und Raumbuchung aus und betreuen sie."
+        begriffe: ["videokonferenz", "konferenztechnik", "medientechnik", "raumbuchung", "hybride meetings", "kollaboration", "telefonanlage", "unified communication"]
+        cpv: ["32232", "48515", "3255"]
+      - id: S047-F4
+        name: "Flächen- & Facility-Management"
+        beschreibung: "Wir analysieren Flächenbedarf, betreiben Gebäude und organisieren Umzüge, Empfang und Hausdienste."
+        begriffe: ["facility management", "facility-management", "flächenmanagement", "gebäudemanagement", "hausmeister", "objektbetreuung", "arbeitsplatzkonzept", "desk-sharing", "umzugsmanagement"]
+        cpv: ["79993", "98341140", "98392"]

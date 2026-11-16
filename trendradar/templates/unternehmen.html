@@ -1,0 +1,58 @@
+{% extends "basis.html" %}
+{% import "_makros.html" as mk %}
+{% set nav = 'unternehmen' %}
+{% block titel %}{{ u.name }}{% endblock %}
+{% block inhalt %}
+<a class="zurueck" href="/unternehmen">← Alle Unternehmen</a>
+<div class="ueberzeile"><span>{{ u.ort }}</span><span>{{ u.kreis }}</span></div>
+<h1>{{ u.name }}</h1>
+<p class="einleitung">{{ 'Ein öffentlicher Auftrag' if u.auftraege == 1 else u.auftraege ~ ' öffentliche Aufträge' }}
+{%- if u.web_status == 'ok' %} und die eigene Website{% endif %} {{ 'zeigt' if u.auftraege == 1 and u.web_status != 'ok' else 'zeigen' }}, was dieses Unternehmen kann.</p>
+
+{% if u.merkmale %}
+<h2>Was das Unternehmen macht</h2>
+<div class="karte">
+  <p class="leise">Aus der Website zusammengefasst von einer KI, die auf dem eigenen Server läuft. Jeder Punkt steht nur hier, weil er
+  wörtlich so auf der Website steht. Klicken zeigt das Zitat.</p>
+  <div class="merkmale">
+  {% for art, gruppe in u.merkmale|groupby('art') %}
+    <div class="merkmal-zeile"><span>{{ art }}</span><div class="chips">
+    {% for m in gruppe %}<details><summary class="chip">{{ m.wert }}</summary><div class="offen"><div class="zitat klein">„{{ m.zitat }}“</div>
+      <div class="quelle"><span>Website, gelesen am {{ m.datum|datum }}</span><a href="{{ m.url }}" target="_blank" rel="noopener">Seite öffnen ↗</a></div></div></details>{% endfor %}
+    </div></div>
+  {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<h2>Passt zu diesen Zukunftsthemen</h2>
+{% set mit = u.subtrends|selectattr('status', 'equalto', 'bewertet')|selectattr('score', 'ge', 6)|list %}
+{% if u.subtrends and u.subtrends[0].status == 'nicht_bewertbar' %}
+<div class="hinweis">Zu wenig Angaben (nicht bewertbar): Über dieses Unternehmen liegt zu wenig Text vor, um es einzuordnen. Das ist
+kein schlechter Wert, sondern eine Lücke in den Daten; im Projekt schließt das Lesen der Website solche Lücken.</div>
+{% elif not mit %}<p class="leise">Für kein Thema liegt ein eindeutiger Nachweis vor.</p>{% endif %}
+{% for s in mit %}
+<div class="karte thema-karte">
+  <div class="kopfzeile"><h3 style="margin:0"><a href="/subtrend/{{ s.id }}" style="color:var(--text)">{% for f in s.farben or [] %}<span class="punkt" style="--farbe:{{ f }}"></span>{% endfor %}{{ s.name }}</a></h3>{{ mk.staerke(s.score) }}</div>
+  {% for b in s.belege[:2] %}<div class="baustein-name">{{ b.faehigkeit }}</div>{{ mk.zitat(b, 'klein') }}{{ mk.quelle(b) }}{% endfor %}
+  {% if s.belege|length > 2 %}<details><summary>{{ s.belege|length - 2 }} weitere Nachweise</summary>
+  {% for b in s.belege[2:] %}<div class="baustein-name">{{ b.faehigkeit }}</div>{{ mk.zitat(b, 'klein') }}{{ mk.quelle(b) }}{% endfor %}</details>{% endif %}
+</div>
+{% endfor %}
+
+<h2>Alle Zukunftsfelder auf einen Blick</h2>
+<div class="karte felder">
+  {% for m in u.megatrends %}
+  <div class="feld-zeile"><a href="/megatrend/{{ m.id }}"><span class="punkt" style="--farbe:{{ m.farbe }}"></span>{{ m.name }}</a>
+    <div class="balken">{% if m.max %}<i style="width:{{ m.max * 10 }}%;background:{{ m.farbe }}"></i>{% endif %}</div>
+    <span>{{ mk.staerke(m.max, m.status) }}</span></div>
+  {% endfor %}
+</div>
+
+<details style="margin-top:30px"><summary>Quellen: {{ u.auftrag_liste|length }} öffentliche Aufträge{% if u.web_seiten %} und {{ u.web_seiten|length }} Seiten der Website{% endif %}</summary>
+<ul class="quellen-liste">
+  {% for a in u.auftrag_liste %}<li><b>{{ a.titel|truncate(110, True, '…') }}</b>{% if a.los %} – {{ a.los|truncate(80, True, '…') }}{% endif %}
+    <div class="quelle"><span>{{ a.datum|datum }}</span><a href="{{ a.url }}" target="_blank" rel="noopener">Bekanntmachung öffnen ↗</a></div></li>{% endfor %}
+  {% for url, datum in u.web_seiten %}<li><a href="{{ url }}" target="_blank" rel="noopener">{{ url|replace('https://','')|replace('http://','')|truncate(80, True, '…') }} ↗</a> <span class="leise">gelesen am {{ datum|datum }}</span></li>{% endfor %}
+</ul></details>
+{% endblock %}

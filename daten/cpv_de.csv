@@ -1,0 +1,1023 @@
+code,bezeichnung
+03115110,Baumwolle
+03400000,Erzeugnisse der Forst- und Holzwirtschaft
+03410000,Holz
+03419100,Nutzholzerzeugnisse
+09123000,Erdgas
+09134220,Dieselkraftstoff (EN 590)
+09310000,Elektrizität
+09323000,Fernwärme
+09330000,Solarenergie
+14212000,"Körnungen, Splitt, Steinmehl, Kiesel, Kies, Schotter und Kleinschlag, Steingemische, Kiessandgemische und andere Aggregate"
+15000000,"Nahrungsmittel, Getränke, Tabak und zugehörige Erzeugnisse"
+15110000,Fleisch
+16000000,Landwirtschaftsmaschinen
+16100000,Land- und forstwirtschaftliche Maschinen für die Bodenbearbeitung oder -bewirtschaftung
+16310000,Mäher
+16311000,Rasenmäher
+16700000,Traktoren
+18000000,"Kleidung, Fußbekleidung, Gepäckartikel und Zubehör"
+18100000,"Arbeitskleidung, besondere Arbeitsbekleidungen und Zubehör"
+18110000,Berufskleidung
+18113000,Arbeitsbekleidung
+18114000,Overalls
+18130000,Spezial-Arbeitskleidung
+18143000,Schutzkleidung
+18200000,Oberbekleidung
+18213000,Windjacken
+18220000,Wetterfeste Kleidung
+18221000,Wasserdichte Kleidung
+18221200,Anoraks
+18234000,Hosen
+18235300,Sweatshirts
+18312000,Unterhosen
+18314000,Bademäntel
+18317000,Socken
+18318400,Unterhemden
+18331000,T-Shirts
+18425000,Gürtel
+18443340,Mützen
+18444200,Schutzhelme
+18812000,Schuhe mit Teilen aus Gummi oder Kunststoff
+18813000,Schuhe mit Oberteil aus Leder
+18814000,Schuhe mit Oberteil aus Textilien
+18820000,Sportschuhe
+18830000,Sicherheitsschuhe
+18831000,Fußbekleidung mit Zehenschutz aus Metall
+18921000,Koffer
+18930000,Säcke und Beutel
+19000000,"Leder- und Textilerzeugnisse, Plastik- und Gummistoffe"
+19212000,Baumwollgewebe
+19240000,Spezialgewebe
+19260000,Stoff
+19522100,Epoxidharz
+22000000,Drucksachen und zugehörige Erzeugnisse
+22110000,Gedruckte Bücher
+22111000,Schulbücher
+22112000,Lehrbücher
+22114000,"Wörterbücher, kartografische Erzeugnisse, Notenhefte und andere Bücher"
+22200000,"Zeitungen, Fachzeitschriften, Periodika und Zeitschriften"
+22211100,Amtsblätter
+22459100,Werbekleber und -streifen
+22460000,"Werbeschriften, Verkaufskataloge und Handbücher"
+22800000,"Register, Rechnungsbücher, Ordner, Formulare und anderes bedrucktes Büromaterial aus Papier oder Pappe"
+22820000,Formulare
+22993000,"Papier und Pappe, lichtempfindlich, wärmeempfindlich oder thermografisch"
+24000000,Chemische Erzeugnisse
+24312120,Chloride
+30000000,"Maschinen, Material und Zubehör für Büro und Computer, außer Möbeln und Softwarepaketen"
+30100000,"Büromaschinen, Büromaterial und Zubehör, außer Computern, Druckern und Möbeln"
+30120000,Fotokopier- und Offsetdruckgeräte
+30121000,Fotokopiergeräte und Thermokopiergeräte
+30121200,Fotokopiergeräte
+30122000,Offsetdruckmaschinen zur Verwendung im Büro
+30140000,Rechen- und Abrechnungsmaschinen
+30191000,Büroausstattung außer Möbeln
+30191200,Overheadprojektoren
+30192000,Bürobedarf
+30192700,Büromaterial
+30193000,Ordnungssysteme und Zubehör
+30195000,Tafeln
+30197000,Kleinere Bürobedarfsartikel
+30197630,Druckpapier
+30197642,Kopierpapier und xerografisches Papier
+30197643,Fotokopierpapier
+30199000,Bürobedarf aus Papier und andere Artikel
+30199200,"Briefumschläge, Briefkarten und Postkarten"
+30199230,Briefumschläge
+30199700,Bedrucktes Büromaterial außer Formularen
+30199720,Briefpapier
+30200000,Computeranlagen und Zubehör
+30210000,Datenverarbeitungsgeräte (Hardware)
+30211000,Zentralrechner
+30211100,Supercomputer
+30211200,Hardware für Zentralrechner
+30211300,Computerplattformen
+30211400,Computerkonfigurationen
+30211500,Hauptprozessor (CPU) oder Prozessoren
+30213000,Personalcomputer
+30213100,Tragbare Computer
+30213200,Tablettcomputer
+30213300,Tischcomputer
+30230000,Computerbezogene Geräte
+30231300,Bildschirme
+30231310,Flachbildschirme
+30231320,Tastbildschirme
+30232100,Drucker und Plotter
+30232110,Laserdrucker
+30233132,Festplattenlaufwerke
+30233141,"RAID (Redundant Array of Independent Disks, redundanter Verbund unabhängiger Festplatten)"
+30233180,Flashspeichergeräte
+30233190,Festplattencontroller
+30236100,Speichererweiterungsvorrichtungen
+30237134,Grafikbeschleunigerkarten
+30237200,Computerzubehör
+30237253,Staubschutzhüllen für Computergeräte
+30237410,Computermäuse
+31000000,"Elektrische Maschinen, Geräte, Ausstattung und Verbrauchsartikel; Beleuchtung"
+31127000,Notstromaggregat
+31170000,Transformatoren
+31200000,Elektrizitätsverteilungs- und -schalteinrichtungen
+31214000,Schaltanlagen
+31216100,Blitzschutzvorrichtungen
+31224100,Stecker und Steckdosen
+31224810,Verlängerungskabel
+31400000,Akkumulatoren und Batterien
+31440000,Batterien
+31500000,Elektrische Lampen und Leuchten
+31518600,Scheinwerfer
+31520000,Leuchten und Beleuchtungszubehör
+31521200,Stehlampen
+31524110,OP-Leuchten
+31532920,Glühlampen und Leuchtstofflampen
+31600000,Elektrische Ausrüstung
+31625300,Einbruchmeldeanlagen
+31651000,Isolierband
+31681410,Elektroartikel
+31682210,Messgeräte und Steuer- und Überwachungsanlagen
+31682530,Notstromversorgungsaggregate
+31710000,Elektronische Ausstattung
+31711000,Elektronischer Bedarf
+31711100,Elektronische Bauteile
+31712100,Mikroelektronische Maschinen und Geräte
+31712330,Halbleiter
+31730000,Elektrotechnische Ausstattung
+32000000,"Rundfunk- und Fernsehgeräte, Kommunikations- und Fernmeldeanlagen und Zubehör"
+32250000,Mobilfunkgeräte
+32252000,GSM-Telefone
+32252110,Freisprech-Mobiltelefone (drahtlos)
+32320000,Fernseh- und audiovisuelle Geräte
+32321000,Fernsehbildprojektionseinrichtungen
+32321200,Audiovisuelle Geräte
+32321300,Audiovisueller Bedarf
+32322000,Multimediaausrüstung
+32323100,Farbbildmonitore
+32340000,Mikrofone und Lautsprecher
+32341000,Mikrofone
+32342000,Lautsprecher
+32343000,Verstärker
+32344250,Funkanlagen
+32400000,Netzwerke
+32424000,Netzwerkinfrastruktur
+32560000,Glasfasermaterial
+32570000,Kommunikationsanlage
+32571000,Kommunikationsinfrastruktur
+32581000,Ausrüstung für Datenübertragung
+33000000,"Medizinische Ausrüstungen, Arzneimittel und Körperpflegeprodukte"
+33100000,Medizinische Geräte
+33120000,Aufzeichnungssysteme und Untersuchungsgeräte
+33123000,Herz-Kreislauf-Ausrüstung
+33124000,Ausrüstung und Ausstattung für Diagnostik und Röntgendiagnostik
+33140000,Medizinische Verbrauchsartikel
+33141000,Nichtchemisches medizinisches Einwegmaterial und hämatologisches Verbrauchsmaterial
+33141121,Chirurgische Suturen
+33141125,Material für chirurgische Suturen
+33162100,OP-Ausrüstung
+33167000,OP-Beleuchtung
+33190000,Verschiedene medizinische Geräte und Produkte
+33191000,"Sterilisierungs-, Desinfektions- und Reinigungsausrüstung"
+33192000,Möbel für ärztliche Zwecke
+33192200,Medizinische Tische
+33192300,"Möbel für ärztliche Zwecke, außer Betten und Tischen"
+33631200,Emollentia und Hautschutzmittel
+33751000,Einwegwindeln
+33771100,Damenbinden oder Tampons
+33930000,Einrichtung für den Obduktionssaal
+34000000,Transportmittel und Erzeugnisse für Verkehrszwecke
+34100000,Kraftfahrzeuge
+34110000,Personenkraftwagen
+34113000,Fahrzeuge mit Allradantrieb
+34113300,Geländegängige Fahrzeuge
+34114000,Spezialfahrzeuge
+34114200,Polizeifahrzeuge
+34114300,Fahrzeuge für die Sozialfürsorge
+34114400,Kleinbusse
+34115200,Kraftfahrzeuge für den Transport von weniger als 10 Personen
+34121000,Busse
+34121100,Busse für den öffentlichen Verkehr
+34130000,Kraftfahrzeuge für den Gütertransport
+34134200,Kipplastwagen
+34139000,Fahrgestelle
+34139200,Fahrgestelle mit Karosserieaufbau
+34143000,Fahrzeuge für den Winterdienst
+34144000,Kraftfahrzeuge für besondere Zwecke
+34144210,Feuerwehrfahrzeuge
+34144211,Fahrzeuge mit Drehleiter
+34144212,Tanklöschfahrzeuge
+34144213,Feuerlöschfahrzeuge
+34144400,Straßeninstandhaltungsfahrzeuge
+34144510,Fahrzeuge für Abfall
+34144700,Nutzfahrzeuge
+34211000,"Karosserien für Busse, Krankenwagen und Lastwagen"
+34328100,Prüfstände
+34351100,Reifen für Kraftfahrzeuge
+34352100,Reifen für Lastkraftwagen
+34611000,Lokomotiven
+34631000,Teile für Lokomotiven oder rollendes Material
+34632300,Elektroinstallationen für den Eisenbahnverkehr
+34741400,Flugsimulatoren
+34913000,Verschiedene Ersatzteile
+34921000,Ausrüstung für die Instandhaltung von Straßen
+34921100,Straßenkehrmaschinen
+34928230,Lärmschutzzäune
+34928310,Sicherheitszäune
+34928320,Schutzplanken
+34928470,Beschilderung
+34928480,Abfallcontainer und -körbe
+34940000,Eisenbahnmaterial
+34992200,Verkehrsschilder
+34999400,Maßstäbliche Modelle
+35000000,"Ausrüstung für Sicherheitszwecke, Brandbekämpfung, Polizei und Verteidigung"
+35110000,"Ausrüstung für Brandbekämpfung, Rettung und Sicherheit"
+35111000,Brandbekämpfungsausrüstung
+35112000,Rettungs- und Notfallausrüstung
+35125100,Sensoren
+35800000,Persönliche Ausrüstung und Hilfsausrüstung
+35810000,Persönliche Ausrüstung
+35811200,Polizeiuniformen
+35812000,Kampfuniformen
+37400000,Sportgeräte und -ausrüstungen
+37412300,"Surfausrüstung und -zubehör, Schwimmausrüstung und -zubehör"
+37420000,Ausrüstungen für Turnhallen
+37422000,"Recks, Barren, Balken"
+37423000,"Gymnastikseile, Turnringe, Kletterzubehör"
+37452000,Ausrüstungen für Schlägersportarten und Hallensportarten
+37452100,Badmintonausrüstung
+37452200,Basketballausrüstung
+37452910,Volleyballpfosten
+37535210,Schaukeln für Spielplätze
+37535220,Kletteranlagen für Spielplätze
+37535250,Wippen für Spielplätze
+37810000,Handwerksbedarf
+38000000,"Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser)"
+38120000,Meteorologische Instrumente
+38300000,Messinstrumente
+38500000,Apparate und Geräte zum Prüfen und Testen
+38510000,Mikroskope
+38540000,Maschinen und Geräte zum Prüfen und Messen
+38542000,Servo-hydraulische Prüfgeräte
+38600000,Optische Instrumente
+38636100,Laser
+38652120,Videoprojektoren
+38970000,"Technischer Simulator für Forschung, Prüfungen und Wissenschaft"
+39000000,"Möbel (einschließlich Büromöbel), Zubehör, Haushaltsgeräte (ausgenommen Beleuchtung) und Reinigungsmittel"
+39100000,Möbel
+39110000,"Sitze, Stühle sowie Zubehörprodukte und -teile"
+39112000,Stühle
+39113000,Verschiedene Sitze und Stühle
+39120000,"Tische, Schränke, Schreibtische und Bücherschränke"
+39121000,Schreibtische und Tische
+39121100,Schreibtische
+39121200,Tische
+39122100,Vorratsschränke
+39130000,Büromöbel
+39141100,Schränke und Regale
+39141400,Einbauküchen
+39150000,Diverse Möbel und Einrichtungen
+39151000,Diverse Möbel
+39151100,Regalanlagen
+39151200,Werkbänke
+39151300,Modulmöbel
+39155000,Büchereimöbel
+39160000,Schulmöbel
+39171000,Schauvitrinen
+39180000,Labormöbel
+39181000,Labortische
+39200000,Ausstattung und Zubehör
+39221000,Kücheneinrichtungen
+39290000,Diverse Einrichtungsgegenstände
+39292000,Schultafeln mit Schreib- oder Zeichenoberflächen oder -geräten
+39294100,Informations- und Werbeerzeugnisse
+39360000,Abdichtungsvorrichtungen
+39512100,Laken
+39512200,Federbettbezüge
+39512500,Kopfkissenbezüge
+39514000,Bad- und Küchentextilien
+39514100,Handtücher
+39514500,Waschlappen
+39515000,"Gardinen, Vorhänge, Schabracken und Textiljalousien"
+39515200,Vorhänge
+39522120,Sonnensegel
+39525600,Spül- und Geschirrtücher
+39715100,Elektrische Durchlauferhitzer oder Warmwasserspeicher und Tauchsieder
+42000000,Industrielle Maschinen
+42100000,Maschinen für die Erzeugung und Nutzung von mechanischer Energie
+42120000,Pumpen und Kompressoren
+42122000,Pumpen
+42122130,Wasserpumpen
+42122220,Abwasserpumpen
+42122230,Dosierpumpen
+42124000,"Teile für Pumpen, Kompressoren, Maschinen oder Motoren"
+42131000,"Leitungsventile, Hähne und Rohrarmaturen"
+42131120,Absperrschieber
+42131142,Regelventile
+42131148,Absperrventile
+42131260,Kugelventile
+42131280,Drosselventile
+42131400,"Ventile, Hähne oder Rohrarmaturen für Sanitäranlagen"
+42160000,Kesselanlagen
+42163000,Dampferzeuger
+42300000,"Industrie- oder Laboratoriumsbrennöfen, Veraschungsöfen und Öfen"
+42413500,Hebevorrichtungen für Fahrzeuge
+42415310,Frei lenkbare Förderfahrzeuge
+42416100,Aufzüge
+42416120,Lastenaufzüge
+42416130,Mechanische Aufzüge
+42417000,Aufzüge und Fördereinrichtungen
+42417200,Fördereinrichtungen
+42511100,Wärmeaustauscher
+42514000,Maschinen und Geräte zum Filtrieren oder Reinigen von Gasen
+42521000,Rauchabzugsvorrichtungen
+42610000,Lasergesteuerte Werkzeugmaschinen und Bearbeitungszentren
+42612000,Bearbeitungszentrum
+42630000,Werkzeugmaschinen für die Metallbearbeitung
+42636000,Pressen
+42636100,Hydraulische Pressen
+42664100,Schmelzvorrichtungen für Kunststoffe
+42700000,"Maschinen für das Textil-, Bekleidungs- und Ledergewerbe"
+42710000,Maschinen für Textilien
+42714000,Wirk- und Strickmaschinen
+42900000,Maschinen für allgemeine und besondere Zwecke
+42924700,"Mechanische Projektions-, Dispergier- oder Sprühvorrichtungen"
+42940000,Maschinen für die Wärmebehandlung von Stoffen
+42942000,Öfen und Zubehör
+42942200,Vakuumöfen
+42961100,Zugangskontrollsystem
+42965110,Lagersystem
+42990000,Diverse Maschinen und Geräte für besondere Zwecke
+42991200,Druckmaschinen
+42993100,Chlorgasgeräte
+42993200,Dosieranlage
+42994000,Maschinen für die Verarbeitung von Kautschuk oder Kunststoffen
+42997300,Industrieroboter
+43200000,Erdbewegungs- und Erdaushubmaschinen sowie zugehörige Teile
+43310000,Baumaschinen
+43325000,Ausrüstung für Parkanlagen und Spielplätze
+43800000,Werkstattausrüstung
+44000000,Baukonstruktionen und Baustoffe; Bauhilfsprodukte (elektrische Apparate ausgenommen)
+44111000,Baumaterialien
+44111700,Fliesen
+44112200,Fußbodenbeläge
+44112230,Linoleum
+44112310,Trennwände
+44113130,Pflastersteine
+44114100,Fertigbeton
+44114200,Betonerzeugnisse
+44114210,Betonpfähle
+44115200,Klempner- und Heizungsinstallationsbedarf
+44115800,Innenausstattungsgegenstände
+44115810,Vorhangschienen und Vorhänge
+44115900,Sonnenschutzvorrichtungen
+44142000,Rahmen
+44160000,"Rohrleitungen, Rohrleitungssysteme, Leitungen, Ummantelungen, Verrohrungen und zugehörige Artikel"
+44163110,Entwässerungsleitungen
+44163111,Abwasserleitungen
+44163112,Dränagesysteme
+44164200,Verrohrungen
+44164310,Rohre und Formstücke
+44167110,Flansche
+44167300,"Winkelstücke, T-Stücke und Rohrformstücke"
+44167400,Bogen
+44170000,"Zu Baustoffen gehörige Platten, Bleche, Streifen und Folien"
+44191000,Verschiedene Holzbaustoffe
+44211000,Vorgefertigte Gebäude
+44211100,"Mobile, modulare Containergebäude"
+44212310,Gerüste
+44212315,Gerüstausstattung
+44212317,Gerüstkonstruktionen
+44221000,"Fenster, Türen und zugehörige Artikel"
+44221100,Fenster
+44221200,Türen
+44221220,Brandschutztüren
+44221230,Schiebetüren
+44221240,Garagentore
+44221300,Tore
+44316400,Metallwaren
+44320000,Kabel und zugehörige Erzeugnisse
+44322100,Kabelkanäle
+44334000,Profile
+44421000,"Gepanzerte oder verstärkte Tresore, Sicherheitskassetten und Türen"
+44421300,Tresore
+44423400,Schilder und Zubehör
+44451000,Münzronden
+44480000,Diverse Brandschutzausrüstungen
+44520000,"Schlösser, Schlüssel und Scharniere"
+44521120,Elektronisches Sicherheitsschloss
+44523300,Beschläge
+44531500,Flanschverschraubungssätze
+44613000,Großcontainer
+44613800,Abfallcontainer
+44614300,Container-Lagerungssystem
+44620000,Heizkörper und Heizkessel sowie Zubehör für Zentralheizungen
+45000000,Bauarbeiten
+45100000,Baureifmachung
+45110000,Abbruch von Gebäuden sowie allgemeine Abbruch- und Erdbewegungsarbeiten
+45111000,"Abbrucharbeiten, Baureifmachung und Abräumung"
+45111100,Abbrucharbeiten
+45111200,Baureifmachung und Abräumung
+45111213,Abräumungsarbeiten
+45111230,Baugrundverfestigungsarbeiten
+45111240,Baugrundentwässerungsarbeiten
+45111250,Bodenproben
+45111290,Grundlegende Arbeiten für die Gas- und Wasserversorgung
+45111300,Abbauarbeiten
+45112000,Aushub- und Erdbewegungsarbeiten
+45112100,Grabenaushub
+45112200,Bodenabtrag
+45112400,Aushubarbeiten
+45112420,Fundamentaushub
+45112500,Erdbewegungsarbeiten
+45112600,Einschnitt und Auftrag
+45112700,Landschaftsgärtnerische Arbeiten
+45112710,Landschaftsgärtnerische Bauleistungen für Grünanlagen
+45112711,Landschaftsgärtnerische Bauleistungen für Parkanlagen
+45112713,Landschaftsgärtnerische Bauleistungen für Dachbegrünungen
+45112720,Landschaftsgärtnerische Bauleistungen für Sport- und Freizeitanlagen
+45112723,Landschaftsgärtnerische Bauleistungen für Spielplätze
+45112730,Landschaftsgärtnerische Bauleistungen für Verkehrsbegleitgrün
+45113000,Baustelleneinrichtung
+45120000,Versuchs- und Aufschlussbohrungen
+45122000,Aufschlussbohrungen
+45200000,Komplett- oder Teilbauleistungen im Hochbau sowie Tiefbauarbeiten
+45210000,Bauleistungen im Hochbau
+45211100,Bauarbeiten für Wohnhäuser
+45211300,Bau kompletter Wohnhäuser
+45212000,"Bauarbeiten für Gebäude, die der Freizeitgestaltung, dem Sport, der Kultur, der Unterbringung und Verpflegung dienen"
+45212190,Sonnenschutzarbeiten
+45212200,Bauarbeiten für Sportanlagen
+45212212,Bauarbeiten für Schwimmbäder
+45212220,Bau von Mehrzweck-Sportanlagen
+45212222,Bau von Turnhallen
+45212225,Bau von Sporthallen
+45212300,Bauarbeiten für Kunst- und Kulturgebäude
+45212310,Bauarbeiten für Ausstellungsgebäude
+45212312,Bau von Ausstellungszentren
+45212313,Bau von Museen
+45212314,Bau von historischen Monumenten oder Gedächtnismalen
+45212331,Bau von Multimedia-Bibliotheken
+45212350,Gebäude von besonderer historischer oder architektonischer Bedeutung
+45212352,Bau von Industriedenkmalen
+45212354,Bau von Schlössern
+45212500,Umbau von Küchen oder Restaurants
+45213000,"Bauarbeiten für kommerzielle Gebäude, Lagerhallen und Industriegebäude, Bauten in Verbindung mit dem Transportwesen"
+45213150,Bau von Bürogebäuden
+45213220,Bauarbeiten für Lagerhallen
+45213221,Bau von Lagerhallen
+45213252,Bau von Werkstätten
+45213321,Bau von Bahnhöfen
+45214000,Bauarbeiten für Schulen oder Forschungsanstalten
+45214100,Bauarbeiten für Kindergärten
+45214200,Bauarbeiten für Schulgebäude
+45214210,Bau von Grundschulen
+45214220,Bau von weiterführenden Schulen
+45214230,Bau von Sonderschulen
+45214300,Bauarbeiten für Hochschulen
+45214310,Bau von Berufsschulen
+45214400,Bauarbeiten für Universitätsgebäude
+45214410,Bau von Fachhochschulen
+45214420,Bau von Hörsälen
+45214500,Bauarbeiten für Fortbildungseinrichtungen
+45214600,Bauarbeiten für Forschungsgebäude
+45214610,Bau von Laborgebäuden
+45214630,Wissenschaftliche Einrichtungen
+45214800,Gebäude für Ausbildungseinrichtungen
+45215000,"Bauarbeiten für Gebäude im Gesundheits- und Sozialwesen, für Krematorien und öffentliche Toiletten"
+45215100,Bauarbeiten für Gebäude im Gesundheitswesen
+45215120,Bau von medizinischen Spezialgebäuden
+45215130,Bau von Kliniken
+45215140,Bau von Krankenhauseinrichtungen
+45215213,Bau von Pflegeheimen
+45216110,Bauarbeiten an Gebäuden für öffentliche Einrichtungen
+45216111,Bau von Polizeirevieren
+45216112,Bau von Gerichtsgebäuden
+45216113,Bau von Gefängnissen
+45216114,Parlamentsgebäude und öffentliche Versammlungssäle
+45216120,Bauarbeiten an Gebäuden für Not- und Rettungsdienste
+45216121,Bau von Feuerwachen
+45216200,Bauarbeiten für Militärgebäude und -einrichtungen
+45220000,Ingenieur- und Hochbauarbeiten
+45221000,"Bauarbeiten für Brücken, Tunnel, Schächte und Unterführungen"
+45221100,Bauarbeiten für Brücken
+45221110,Bau von Brücken
+45221111,Bau von Straßenbrücken
+45221112,Bau von Eisenbahnbrücken
+45221119,Bauarbeiten zur Erneuerung von Brücken
+45221220,Durchlässe
+45221230,Schächte
+45221247,Tunnelbauarbeiten
+45221250,"Tiefbauarbeiten, außer Tunneln, Schächten und Unterführungen"
+45222110,Bau von Mülldeponien
+45223000,Bau von Konstruktionen und baulichen Anlagen
+45223100,Zusammenbau von Metallkonstruktionen
+45223110,Installation von Metallkonstruktionen
+45223200,Bauliche Anlagen
+45223210,Bauarbeiten für Stahlkonstruktionen
+45223220,Rohbauarbeiten
+45223300,Bau von Parkplätzen
+45223500,Stahlbetonkonstruktionen
+45223800,Montage und Errichtung von Fertigkonstruktionen
+45223810,Fertigkonstruktionen
+45223820,Fertigbauelemente und -teile
+45223821,Fertigbauelemente
+45223822,Fertigbauteile
+45231000,"Bauarbeiten für Rohrleitungen, Fernmelde- und Stromleitungen"
+45231100,Bauarbeiten für Rohrleitungen
+45231112,Installation von Rohrleitungsnetzen
+45231113,Neuverlegung von Rohrleitungen
+45231223,Mit der Gasversorgung verbundene Arbeiten
+45231300,Bauarbeiten für Wasser- und Abwasserrohrleitungen
+45231400,Bauarbeiten für Starkstromleitungen
+45231500,Arbeiten für Druckluftleitungen
+45231600,Bauarbeiten für Übertragungsnetz
+45232000,Bauarbeiten und zugehörige Arbeiten für Rohrleitungen und Kabelnetze
+45232100,Nebenarbeiten für Wasserrohrleitungen
+45232130,Bau von Regenwasserrohrleitungen
+45232200,Arbeiten in Verbindung mit Starkstromleitungen
+45232400,Bauarbeiten für Abwasserkanäle
+45232411,Bau von Schmutzwasserleitungen
+45232430,Arbeiten an Wasseraufbereitungsanlagen
+45232450,Bauarbeiten für Entwässerungsanlagen
+45232451,Entwässerungs- und Oberflächenarbeiten
+45232454,Bau von Regenwasserbecken
+45232460,Sanitäre Anlagen
+45233000,"Bauarbeiten, Fundamentierungsarbeiten und Oberbauarbeiten für Fernstraßen und Straßen"
+45233100,Bauarbeiten für Fernstraßen und Straßen
+45233110,Bauarbeiten für Autobahnen
+45233120,Straßenbauarbeiten
+45233124,Bau von Fernstraßen
+45233130,Bauarbeiten für Fernstraßen
+45233141,Straßeninstandhaltungsarbeiten
+45233162,Bau von Fahrradwegen
+45233200,Diverse Oberbauarbeiten
+45233210,Oberbauarbeiten für Fernstraßen
+45233221,Straßenmarkierungsarbeiten
+45233222,Straßenpflaster- und Asphaltarbeiten
+45233228,Oberflächenbeschichtungsarbeiten
+45233250,"Belagarbeiten, außer Fahrbahnen"
+45233252,Oberbauarbeiten für Straßen
+45233280,Anbringen von Leitplanken
+45233290,Installation von Straßenschildern
+45233292,Installation von Sicherheitseinrichtungen
+45234100,Bauarbeiten für Eisenbahnlinien
+45234116,Gleisbauarbeiten
+45234128,Bau von Straßenbahnhaltestellen
+45234140,Bau von schienengleichen Bahnübergängen
+45234160,Fahrleitungsbauarbeiten
+45236000,Oberbauarbeiten
+45236200,Oberbauarbeiten für Freizeitanlagen
+45240000,Wasserbauarbeiten
+45246000,Flussregulierungs- und Hochwasserschutzarbeiten
+45246100,Bau von Flussufermauern
+45246400,Hochwasserschutzarbeiten
+45247110,Kanalbauarbeiten
+45247230,Bau von Deichen
+45251140,Bau von Wärmekraftwerken
+45251141,Bau von geothermischen Kraftwerken
+45251150,Bauarbeiten für Kühltürme
+45251220,Kraftwerk mit Kraft-Wärme-Kopplung
+45255800,Bau von Gaserzeugungsanlagen
+45259000,Reparatur und Wartung von Anlagen
+45260000,Dachdeckarbeiten und Spezialbauarbeiten
+45261000,Errichtung von Dachstühlen sowie Dachdeckarbeiten und zugehörige Arbeiten
+45261100,Errichtung von Dachstühlen
+45261200,Dachdeck- und Dachanstricharbeiten
+45261210,Dachdeckarbeiten
+45261212,Schieferdachdeckarbeiten
+45261213,Blechdachdeckarbeiten
+45261214,Bitumendachdeckarbeiten
+45261215,Solarzellendachdeckarbeiten
+45261220,Dachanstrich- und andere Beschichtungsarbeiten
+45261300,Klempnerarbeiten
+45261310,Blechverwahrungsarbeiten
+45261400,Verschalungsarbeiten
+45261410,Dachabdichtungs- und -dämmarbeiten
+45261420,Abdichtungsarbeiten gegen Wasser
+45262000,"Spezialbauarbeiten, außer Dachbauten"
+45262100,Gerüstarbeiten
+45262110,Abbau von Gerüsten
+45262120,Errichtung von Gerüsten
+45262210,Fundamentierungsarbeiten
+45262300,Betonarbeiten
+45262310,Stahlbetonarbeiten
+45262311,Betonrohbauarbeiten
+45262320,Estricharbeiten
+45262321,Estricharbeiten (Fußboden)
+45262400,Baustahlmontagearbeiten
+45262410,Baustahlmontagearbeiten für Gebäude
+45262420,Baustahlmontagearbeiten für Konstruktionen
+45262426,Herstellung von Pfählen
+45262500,Maurerarbeiten
+45262510,Steinbauarbeiten
+45262511,Steinmetzarbeiten
+45262520,Mauerarbeiten
+45262521,Verblendmauerwerk
+45262522,Mauerwerksarbeiten
+45262600,Diverse Spezialbauarbeiten
+45262620,Stützmauern
+45262660,Asbestbeseitigungsarbeiten
+45262670,Metallbauarbeiten
+45262680,Schweißarbeiten
+45262690,Modernisierung von Altbauten
+45262700,Umbau von Gebäuden
+45300000,Bauinstallationsarbeiten
+45310000,Installation von elektrischen Leitungen
+45311000,Installation von Elektroanlagen
+45311100,Installation von elektrischen Kabeln
+45311200,Elektroinstallationsarbeiten
+45312000,Installation von Alarmanlagen und Antennen
+45312100,Installation von Brandmeldeanlagen
+45312200,Installation von Einbruchmeldeanlagen
+45312310,Blitzschutzarbeiten
+45312311,Installation von Blitzableitern
+45313000,Installation von Aufzügen und Rolltreppen
+45313100,Installation von Aufzügen
+45314000,Installation von Fernmeldeanlagen
+45314200,Installation von Telefonleitungen
+45314300,Kabelinfrastruktur
+45314310,Verlegen von Kabeln
+45314320,Installation von Computerkabelnetzen
+45315000,Heizungs- und sonstige Elektroinstallationen in Gebäuden
+45315100,Elektrotechnikinstallation
+45315300,Stromversorgungsanlagen
+45315500,Mittelspannungsarbeiten
+45315600,Niederspannungsarbeiten
+45315700,Installation von Schaltanlagen
+45316000,Installation von Beleuchtungs- und Signalanlagen
+45316100,Installation von Beleuchtungsanlagen im Freien
+45316211,Installation von beleuchteten Straßenschildern
+45317000,Sonstige Elektroinstallationsarbeiten
+45317100,Elektroinstallationsarbeiten für Pumpanlagen
+45317200,Elektroinstallationsarbeiten für Transformatoren
+45317300,Elektroinstallationsarbeiten für Stromverteilungsanlagen
+45320000,Abdichtungs- und Dämmarbeiten
+45321000,Wärmedämmarbeiten
+45323000,Schalldämmungsarbeiten
+45324000,Gipskartonarbeiten
+45330000,Installateurarbeiten
+45331000,"Installation von Heizungs-, Lüftungs- und Klimaanlagen"
+45331100,Installation von Zentralheizungen
+45331200,Installation von Lüftungs- und Klimaanlagen
+45331210,Installation von Lüftungsanlagen
+45331211,Installation von lufttechnischen Anlagen in Außenanlagen
+45331220,Installation von Klimaanlagen
+45331221,Installation von Teilklimaanlagen
+45331230,Installation von Kühlanlagen
+45331231,Installation von kältetechnischen Anlagen
+45332000,Installateurarbeiten und Verlegung von Abwasserleitungen
+45332200,Wasserinstallationsarbeiten
+45332300,Verlegen von Abwasserleitungen
+45332400,Installation von Sanitäreinrichtungen
+45333000,Installation von Gasanlagen
+45340000,"Installation von Zäunen, Geländern und Sicherheitseinrichtungen"
+45341000,Errichtung von Geländern
+45343000,Brandschutz-Installationsarbeiten
+45343100,Brandschutzarbeiten
+45343200,Installation von Feuerlöschanlagen
+45343220,Installation von Feuerlöschgeräten
+45343230,Installation von Sprinkleranlagen
+45350000,Maschinentechnische Installationen
+45351000,Maschinentechnische Installationsarbeiten
+45400000,Baufertigstellung
+45410000,Putzarbeiten
+45420000,Bautischlerei-Einbauarbeiten
+45421000,Bautischlerarbeiten
+45421100,Einbau von Türen und Fenstern sowie Zubehör
+45421110,Einbau von Tür- und Fensterrahmen
+45421111,Einbau von Türrahmen
+45421112,Einbau von Fensterrahmen
+45421130,Einbau von Türen und Fenstern
+45421131,Einbau von Türen
+45421132,Einbau von Fenstern
+45421140,"Bautischlerei-Einbauarbeiten mit Metall, außer Türen und Fenstern"
+45421141,Einbau von Trennwänden
+45421143,Installation von Jalousien
+45421144,Installation von Markisen
+45421145,Rollladenarbeiten
+45421146,Einbau von abgehängten Decken
+45421148,Einbau von Toren
+45421150,Bautischlerei-Einbauarbeiten ohne Metall
+45421151,Installation von Einbauküchen
+45421152,Installation von Trennwänden
+45421153,Installation von Einbaumöbeln
+45421160,Beschlagarbeiten
+45422000,Zimmer- und Tischlerarbeiten
+45422100,Holzarbeiten
+45430000,Bodenbelags- und Wandverkleidungsarbeiten
+45431000,Boden- und Fliesenarbeiten
+45431100,Verlegen von Bodenfliesen
+45431200,Verlegen von Wandfliesen
+45432000,"Bodenverlege- und Bodenbelagsarbeiten, Wandverkleidungs- und Tapezierarbeiten"
+45432100,Bodenverlege- und Bodenbelagsarbeiten
+45432112,Verlegen von Bodenplatten
+45432113,Verlegen von Parkettböden
+45432130,Bodenbelagsarbeiten
+45432200,Wandverkleidungs- und Tapezierarbeiten
+45432210,Wandverkleidungsarbeiten
+45432220,Tapezierarbeiten
+45440000,Anstrich- und Verglasungsarbeiten
+45441000,Verglasungsarbeiten
+45442100,Anstricharbeiten
+45442110,Anstricharbeiten in Gebäuden
+45442120,Anstricharbeiten und Auftrag von Schutzanstrichen für Konstruktionen
+45442121,Anstricharbeiten für Konstruktionen
+45442180,Neuanstricharbeiten
+45442200,Auftrag von Korrosionsschutzschichten
+45443000,Fassadenarbeiten
+45450000,Sonstige Baufertigstellungsarbeiten
+45451000,Dekorationsarbeiten
+45451200,Verkleidungsarbeiten
+45452000,Fassadenreinigungsarbeiten
+45453000,Überholungs- und Sanierungsarbeiten
+45453100,Sanierungsarbeiten
+45454000,Mit der Umstrukturierung verbundene Arbeiten
+45454100,Mit Instandsetzungsarbeiten verbundene Arbeiten
+45510000,Vermietung von Kranen mit Bedienungspersonal
+48000000,Softwarepaket und Informationssysteme
+48100000,Branchenspezifisches Softwarepaket
+48190000,Unterrichtssoftwarepaket
+48200000,"Softwarepaket für Vernetzung, Internet und Intranet"
+48321000,Softwarepaket für den rechnergestützten Entwurf (CAD)
+48323000,Softwarepaket für die rechnergestützte Fertigung (CAM)
+48400000,Softwarepaket für Geschäftstransaktionen und persönliche Arbeitsabläufe
+48420000,Softwarepaket für das Facility-Management und Softwarepaketreihe
+48440000,Softwarepaket für die Finanzanalyse and Buchhaltung
+48500000,Kommunikations- und Multimedia-Softwarepaket
+48510000,Kommunikationssoftwarepaket
+48516000,Softwarepaket für den Datenaustausch
+48519000,Speicherverwaltungssoftwarepaket
+48730000,Sicherheitssoftwarepaket
+48800000,Informationssysteme und Server
+48810000,Informationssysteme
+48820000,Server
+48821000,Netzwerkserver
+48822000,Computerserver
+48900000,Diverse Softwarepakete und Computersysteme
+48921000,Automatisierungssystem
+50000000,Reparatur- und Wartungsdienste
+50100000,"Reparatur, Wartung und zugehörige Dienste für Fahrzeuge und zugehörige Ausrüstungen"
+50110000,Reparatur und Wartung von Kraftfahrzeugen und zugehörigen Ausrüstungen
+50112000,Reparatur und Wartung von Personenwagen
+50112100,Reparatur von Personenwagen
+50112110,Karosseriereparatur für Fahrzeuge
+50113000,Reparatur und Wartung von Bussen
+50113100,Reparatur von Bussen
+50114000,Reparatur und Wartung von Lastwagen
+50114100,Reparatur von Lastwagen
+50115000,Reparatur und Wartung von Motorrädern
+50116000,Wartungs- und Reparaturdienste für Spezialteile von Fahrzeugen
+50116100,Reparatur von Fahrzeugelektrik
+50116200,Reparatur und Wartung von Fahrzeugbremsen und Bremsteilen
+50116300,Reparatur und Wartung von Fahrzeuggetrieben
+50116400,Reparatur und Wartung von Fahrzeugkraftübertragungen
+50116500,"Reifenreparatur, einschließlich Montieren und Auswuchten"
+50116510,Reifenrunderneuerung
+50116600,Reparatur und Wartung von Anlassern
+50117100,Umbau von Kraftfahrzeugen
+50117300,Instandsetzung von Fahrzeugen
+50313200,Wartung von Fotokopiergeräten
+50324100,Systemwartung
+50333000,Wartung von Funkverbindungseinrichtungen
+50411000,Reparatur und Wartung von Messgeräten
+50421000,Reparatur und Wartung von medizinischen Einrichtungen
+50511000,Reparatur und Wartung von Pumpen
+50512000,Reparatur und Wartung von Ventilen
+50530000,Reparatur und Wartung von Maschinen
+50700000,Reparatur und Wartung von Einrichtungen in Gebäuden
+50800000,Diverse Reparatur- und Wartungsdienste
+51000000,Installation (außer Software)
+51100000,Installation von elektrischen und mechanischen Einrichtungen
+51110000,Installation von elektrischen Einrichtungen
+51112100,Installation von Elektrizitätsverteilungseinrichtungen
+51112200,Installation von Elektrizitätsschalteinrichtungen
+51310000,"Installation von Rundfunk-, Fernseh-, Audio- und Videogeräten"
+51411000,Installation von bildgebenden Geräten
+51430000,Installation von labortechnischen Anlagen
+55524000,Verpflegungsdienste für Schulen
+60000000,Transport- und Beförderungsdienstleistungen (außer Abfalltransport)
+60112000,Öffentlicher Verkehr (Straße)
+60140000,Bedarfspersonenbeförderung
+60160000,Postbeförderung auf der Straße
+60200000,Schienentransport/-beförderung
+60210000,Öffentlicher Schienentransport/öffentliche Schienenbeförderung
+64110000,Postdienste
+64111000,Postdienste im Zusammenhang mit Zeitungen und Zeitschriften
+64112000,Briefpostdienste
+64121100,Postzustellung
+64228000,Dienstleistungen des Übertragens von Fernseh- und Hörfunksendungen
+65120000,Betrieb einer Wasseraufbereitungsanlage
+65310000,Stromversorgung
+65320000,Betrieb von elektrischen Anlagen
+70000000,Immobiliendienste
+70310000,Vermietung oder Verkauf von Gebäuden
+71000000,"Dienstleistungen von Architektur-, Konstruktions- und Ingenieurbüros und Prüfstellen"
+71200000,Dienstleistungen von Architekturbüros
+71221000,Dienstleistungen von Architekturbüros bei Gebäuden
+71222000,Dienstleistungen von Architekturbüros bei Freianlagen
+71240000,Dienstleistungen von Architektur- und Ingenieurbüros sowie planungsbezogene Leistungen
+71242000,"Entwurf und Gestaltung, Kostenschätzung"
+71244000,Kalkulation und Überwachung der Kosten
+71247000,Beaufsichtigung der Bauarbeiten
+71248000,Projektaufsicht und Dokumentation
+71250000,Dienstleistungen von Architektur- und Ingenieurbüros sowie Vermessungsdienste
+71300000,Dienstleistungen von Ingenieurbüros
+71310000,Technische Beratung und Konstruktionsberatung
+71311220,Dienstleistungen im Straßenbau
+71311230,Dienstleistungen im Eisenbahnbau
+71313000,Umwelttechnische Beratung
+71313200,Beratung im Bereich Schallschutz und Raumakustik
+71313410,Risiko- und Gefahrenabschätzung im Bau
+71313440,Dienstleistungen im Zusammenhang mit der Umweltfolgenabschätzung im Bau
+71313450,Umweltüberwachung im Bau
+71314000,Dienstleistungen im Energiebereich
+71314300,Beratung im Bereich Energieeinsparung
+71314310,Dienstleistungen für thermische Bauphysik
+71315000,Haustechnik
+71317100,Beratung im Bereich Brand- und Explosionsschutz und -überwachung
+71318000,Beratungsdienste von Ingenieurbüros
+71319000,Gutachterische Tätigkeit
+71320000,Planungsleistungen im Bauwesen
+71321000,Technische Planungsleistungen für maschinen- und elektrotechnische Gebäudeanlagen
+71321100,Dienstleistungen im Bereich Bauwirtschaft
+71321200,Heizungsplanung
+71321300,Beratung im Bereich Sanitärinstallation
+71321400,Beratung im Bereich Belüftung
+71322000,Technische Planungsleistungen im Tief- und Hochbau
+71322200,Planung von Rohrleitungen
+71322300,Planungsleistungen für Brücken
+71322500,Technische Planungsleistungen für Verkehrsanlagen
+71323000,Technische Planungsleistungen für industrielle Verfahren und Produktionsabläufe
+71323100,Planung von Stromversorgungssystemen
+71326000,Nebendienstleistungen im Bauwesen
+71327000,Dienstleistungen in der Tragwerksplanung
+71330000,Verschiedene von Ingenieuren erbrachte Dienstleistungen
+71332000,Dienstleistungen im Bereich Geotechnik
+71334000,Dienstleistungen im Bereich Maschinenbau und Elektrotechnik
+71335000,Technische Studien
+71350000,Wissenschaftliche und technische Dienstleistungen im Ingenieurwesen
+71351100,Vorbereitung und Analyse von Bohrkernen
+71351210,Geophysikalische Beratung
+71351220,Geologische Beratung
+71351500,Bodenuntersuchungen
+71351900,"Geologische, ozeanografische und hydrologische Untersuchungen"
+71351923,Bathymetrische Vermessungen
+71352000,Untergrunduntersuchungen
+71353000,Oberirdische Vermessung
+71353100,Hydrografische Untersuchungen
+71353200,Vermessungsdienste
+71355000,Vermessungsarbeiten
+71356000,Dienstleistungen im technischen Bereich
+71356400,Technische Planungsleistungen
+71400000,Stadtplanung und Landschaftsgestaltung
+71420000,Landschaftsgestaltung
+71500000,Dienstleistungen im Bauwesen
+71521000,Baustellenüberwachung
+71530000,Beratung im Bauwesen
+71541000,Projektmanagement im Bauwesen
+71600000,"Technische Tests, Analysen und Beratung"
+71610000,Tests und Analysen bezüglich Zusammensetzung und Reinheit
+71620000,Analysen
+71621000,Technische Analysen oder Beratung
+71632200,Zerstörungsfreie Prüfungen
+71700000,Kontroll- und Überwachungsleistungen
+71900000,Labordienste
+72000000,"IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung"
+72200000,Softwareprogrammierung und -beratung
+72210000,Programmierung von Softwarepaketen
+72211000,Programmierung von System- und Anwendersoftware
+72212000,Programmierung von Anwendersoftware
+72212100,Entwicklung von branchenspezifischer Software
+72212200,"Entwicklung von Vernetzungs-, Internet- und Intranetsoftware"
+72212421,Entwicklung von Software für das Facility Management
+72212520,Entwicklung von Multimediasoftware
+72220000,Systemberatung und technische Beratung
+72222300,Informationstechnologiedienste
+72224000,Beratung im Bereich Projektleitung
+72224100,Planung im Bereich Systemimplementierung
+72250000,Systemdienstleistungen und Unterstützungsdienste
+72252000,Datenarchivierung
+72260000,Dienstleistungen in Verbindung mit Software
+72262000,Software-Entwicklung
+72263000,Software-Implementierung
+72267000,Software-Wartung und -Reparatur
+72267100,Wartung von Informationstechnologiesoftware
+72268000,Bereitstellung von Software
+72313000,Datenerfassung
+72315000,Datennetzverwaltungs- und -unterstützungsdienste
+72413000,Website-Gestaltung
+73000000,Forschungs- und Entwicklungsdienste und zugehörige Beratung
+73300000,Planung und Ausführung von Forschung und Entwicklung
+75130000,Unterstützende Dienste für die öffentliche Verwaltung
+77000000,"Dienstleistungen in Landwirtschaft, Forstwirtschft, Gartenbau, Aquakultur und Bienenzucht"
+77200000,Dienstleistungen in der Forstwirtschaft
+77210000,Holzgewinnung
+77211000,Dienstleistungen in Verbindung mit der Holzgewinnung
+77211500,Baumpflege
+77231400,Forstinventur
+77231600,Aufforstung
+77300000,Dienstleistungen im Gartenbau
+77310000,Anpflanzungs- und Pflegearbeiten an Grünflächen
+77311000,Pflegearbeiten für Ziergärten und Parks
+77312100,Unkrautvernichtung
+77313000,Pflege von Parkanlagen
+77314000,Grundstückspflege
+77340000,Baum- und Heckenschnitt
+77342000,Heckenschnitt
+79000000,"Dienstleistungen für Unternehmen: Recht, Marketing, Consulting, Einstellungen, Druck und Sicherheit"
+79200000,Dienstleistungen im Bereich Rechnungslegung und -prüfung sowie Steuerwesen
+79212000,Betriebsprüfung
+79212500,Buchhaltungsprüfung
+79330000,Statistische Dienstleistungen
+79340000,Werbe- und Marketingdienstleistungen
+79341100,Werbeberatung
+79341400,Werbekampagnen
+79400000,Unternehmens- und Managementberatung und zugehörige Dienste
+79411100,Beratungsdienste im Bereich Wirtschaftsförderung
+79421000,"Projektmanagement, außer Projektüberwachung von Bauarbeiten"
+79512000,Call-Center
+79571000,Postversand
+79700000,Dienstleistungen von Detekteien und Sicherheitsdiensten
+79710000,Dienstleistungen von Sicherheitsdiensten
+79711000,Überwachung von Alarmanlagen
+79713000,Bewachungsdienste
+79715000,Streifendienste
+79822000,Satzarbeit
+79822300,Dienstleistungen im Schriftsatz
+79822400,Lithografische Dienste
+79822500,Dienstleistungen im Grafik-Design
+79823000,Dienstleistungen im Bereich Druck und Lieferung
+79900000,Veschiedene Dienstleistungen für Unternehmen und andere Dienstleistungen
+79952000,Event-Organisation
+79953000,Organisation von Festivals
+79954000,Organisation von Parties
+79990000,Verschiedene Dienstleistungen für Unternehmen
+79992000,Empfangsdienste
+80000000,Allgemeine und berufliche Bildung
+80400000,Erwachsenenbildung und sonstiger Unterricht
+80530000,Berufsausbildung
+85000000,Dienstleistungen des Gesundheits- und Sozialwesens
+85141000,Dienstleistungen von medizinischem Personal
+85310000,Dienstleistungen des Sozialwesens
+85311000,Dienstleistungen im Sozialwesen in Verbindung mit Heimen
+85312510,Berufliche Wiedereingliederung
+85320000,Dienstleistungen im Sozialwesen
+90000000,"Abwasser- und Abfallbeseitigungs-, Reinigungs- und Umweltschutzdienste"
+90410000,Abwassersammlung
+90420000,Abwasserbehandlung
+90480000,Verwaltung von Kanalisationsnetzen und Abwasseranlagen
+90491000,Überprüfung von Abwasserkanälen
+90500000,Dienstleistungen im Zusammenhang mit Siedlungs- und anderen Abfällen
+90510000,Beseitigung und Behandlung von Siedlungsabfällen
+90511000,Abholung von Siedlungsabfällen
+90511100,Einsammeln von kommunalem Müll
+90511300,Müllsammlung
+90511400,Altpapiersammlung
+90512000,Transport von Haushaltsabfällen
+90513000,Behandlung und Beseitigung ungefährlicher Siedlungs- und anderer Abfälle
+90513100,Hausmüllbeseitigung
+90513500,Aufbereitung und Entsorgung von flüssigen Abfällen
+90513700,Schlammtransport
+90513800,Schlammbehandlung
+90513900,Schlammentsorgung
+90520000,"Dienstleistungen im Zusammenhang mit radioaktiven, giftigen, medizinischen und gefährlichen Abfällen"
+90523000,"Entsorgung von Giftmüll, außer Atommüll und verseuchten Böden"
+90600000,"Reinigung und Sanierung des städtischen und ländlichen Raumes, und zugehörige Dienstleistungen"
+90610000,Straßenreinigung und Straßenkehrdienste
+90611000,Straßenreinigung
+90620000,Schneeräumung
+90630000,Glatteisbeseitigung
+90700000,Dienstleistungen im Umweltschutz
+90711000,Umweltfolgenabschätzung in anderen Bereichen als dem Bausektor
+90711400,Dienstleistungen im Zusammenhang mit der Umweltfolgenabschätzung in anderen Bereichen als dem Bausektor
+90714000,Umweltaudit
+90715000,Untersuchung von Verschmutzungen
+90730000,Rückverfolgung und Überwachung von Verschmutzungen und Sanierung
+90740000,Schadstoffrückverfolgung und -überwachung und Sanierung
+90900000,Reinigungs- und Hygienedienste
+90910000,Reinigungsdienste
+90911000,"Wohnungs-, Gebäude- und Fensterreinigung"
+90911100,Reinigung von Unterkünften
+90911200,Gebäudereinigung
+90911300,Fensterreinigung
+90914000,Parkplatzreinigung
+90919000,"Büro-, Schul- und Büroausstattungsreinigung"
+90919100,Reinigung von Büroausstattung
+90919200,Büroreinigung
+90919300,Reinigung von Schulen
+90920000,Hygienedienste für Gebäude und Anlagen
+92112000,Dienstleistungen im Zusammenhang mit Film- und Videofilmherstellung
+92312250,Dienstleistungen von einzelnen Künstlern
+92331000,Dienstleistungen in Verbindung mit Jahrmärkten und Vergnügungsparks
+92370000,Dienstleistungen von Tontechnikern
+92522200,Maßnahmen zur Erhaltung von historischen Gebäuden
+92610000,Betrieb von Sportanlagen
+98000000,"Sonstige gemeinschaftliche, soziale und persönliche Dienste"
+98300000,Diverse Dienstleistungen
+98310000,Dienstleistungen von Wäschereien und chemischen Reinigungen
+98312000,Textilreinigung
+98341000,Unterbringung
+98341140,Hausmeisterdienste
+98351110,Dienstleistungen zur Durchsetzung von Parkvorschriften
+98363000,Tauchdienstleistungen
+98390000,Andere Dienste
+98392000,Umzugsdienste
+98395000,Schlosserdienste

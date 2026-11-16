@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# Volltexte der Websites, Vektoren, Modelle: nur auf dem Verarbeitungsrechner
+roh/
+.modelle/
+daten/web_lauf.jsonl
+nachweis/*/stichprobe_*_blind.jsonl
+aus/

@@ -1,0 +1,38 @@
+{
+  "zeitpunkt_utc": "2026-11-11T21:52:00Z",
+  "modell": "qwen3.8:27b",
+  "prompt": "P3",
+  "paare_geprueft": 2539,
+  "belegstellen_geprueft": 5047,
+  "bestaetigt": 1738,
+  "nicht_bestaetigt": 3309,
+  "paare_geaendert": 1940,
+  "modellfehler": 0,
+  "belegstellen_ohne_urteil": 0,
+  "modellaufrufe_in_diesem_lauf": 2156,
+  "verteilung_vorher": {
+    "1": 34830,
+    "2": 1506,
+    "3": 214,
+    "4": 12,
+    "5": 3,
+    "6": 1370,
+    "7": 336,
+    "8": 241,
+    "9": 378,
+    "10": 214
+  },
+  "verteilung_nachher": {
+    "1": 35592,
+    "2": 2064,
+    "3": 475,
+    "4": 14,
+    "5": 3,
+    "6": 520,
+    "7": 127,
+    "8": 116,
+    "9": 147,
+    "10": 46
+  },
+  "zeiten": "hier nicht ausgewiesen; Geschwindigkeit auf der Demo-Hardware: modellwahl_sprachmodell.json"
+}

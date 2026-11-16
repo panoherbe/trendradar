@@ -1,0 +1,104 @@
+{
+  "zeitpunkt_utc": "2026-11-11T22:32:13Z",
+  "maßstab": "blinde Zweitbewertung 04.11.2026, Lauf 1 und 2 (Endstand je Datenstand)",
+  "vorher": "roh/daten-2026-11-04/bewertungen.csv",
+  "nachher": "daten/bewertungen.csv",
+  "teilmengen": {
+    "alle": {
+      "vorher": {
+        "paare": 326,
+        "innerhalb_2": 233,
+        "anteil_innerhalb_2": 0.715,
+        "genau_gleich": 122,
+        "nicht_bewertbar": 0
+      },
+      "nachher": {
+        "paare": 326,
+        "innerhalb_2": 253,
+        "anteil_innerhalb_2": 0.776,
+        "genau_gleich": 129,
+        "nicht_bewertbar": 0
+      }
+    },
+    "lauf_1": {
+      "vorher": {
+        "paare": 168,
+        "innerhalb_2": 121,
+        "anteil_innerhalb_2": 0.72,
+        "genau_gleich": 69,
+        "nicht_bewertbar": 0
+      },
+      "nachher": {
+        "paare": 168,
+        "innerhalb_2": 137,
+        "anteil_innerhalb_2": 0.815,
+        "genau_gleich": 63,
+        "nicht_bewertbar": 0
+      }
+    },
+    "lauf_2": {
+      "vorher": {
+        "paare": 158,
+        "innerhalb_2": 112,
+        "anteil_innerhalb_2": 0.709,
+        "genau_gleich": 53,
+        "nicht_bewertbar": 0
+      },
+      "nachher": {
+        "paare": 158,
+        "innerhalb_2": 116,
+        "anteil_innerhalb_2": 0.734,
+        "genau_gleich": 66,
+        "nicht_bewertbar": 0
+      }
+    },
+    "zweitbewertung_6_10": {
+      "vorher": {
+        "paare": 122,
+        "innerhalb_2": 90,
+        "anteil_innerhalb_2": 0.738,
+        "genau_gleich": 33,
+        "nicht_bewertbar": 0
+      },
+      "nachher": {
+        "paare": 122,
+        "innerhalb_2": 89,
+        "anteil_innerhalb_2": 0.73,
+        "genau_gleich": 44,
+        "nicht_bewertbar": 0
+      }
+    },
+    "verfahren_6_10_vorher": {
+      "vorher": {
+        "paare": 156,
+        "innerhalb_2": 98,
+        "anteil_innerhalb_2": 0.628,
+        "genau_gleich": 33,
+        "nicht_bewertbar": 0
+      },
+      "nachher": {
+        "paare": 156,
+        "innerhalb_2": 108,
+        "anteil_innerhalb_2": 0.692,
+        "genau_gleich": 45,
+        "nicht_bewertbar": 0
+      }
+    },
+    "verfahren_6_10_nachher": {
+      "vorher": {
+        "paare": 121,
+        "innerhalb_2": 80,
+        "anteil_innerhalb_2": 0.661,
+        "genau_gleich": 31,
+        "nicht_bewertbar": 0
+      },
+      "nachher": {
+        "paare": 121,
+        "innerhalb_2": 92,
+        "anteil_innerhalb_2": 0.76,
+        "genau_gleich": 44,
+        "nicht_bewertbar": 0
+      }
+    }
+  }
+}

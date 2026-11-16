@@ -1,0 +1,93 @@
+{
+  "synthetisch": true,
+  "unternehmen": 100000,
+  "subtrends": 100,
+  "bewertungen": 10000000,
+  "belegstellen": 1648342,
+  "sekunden_laden": 303.9,
+  "groesse": "1933 MB",
+  "matrix_sekunden": 1.04,
+  "matrix_werte": 10000000,
+  "nutzer": 10,
+  "dauer_s": 60.3,
+  "anfragen": 1562,
+  "je_sekunde": 25.9,
+  "fehler": {
+    "500": 3
+  },
+  "ms_median": 289.9,
+  "ms_p95": 1142.5,
+  "ms_max": 1934.9,
+  "je_art": {
+    "Rangliste Subtrend (Filter Kreis, Score ≥ 6)": {
+      "n": 269,
+      "ms_median": 266.4,
+      "ms_p95": 493.2
+    },
+    "Rangliste Subtrend, Seite 20 zu 200": {
+      "n": 279,
+      "ms_median": 867.0,
+      "ms_p95": 1721.4
+    },
+    "Rangliste Megatrend (Mittel Top 3)": {
+      "n": 241,
+      "ms_median": 468.3,
+      "ms_p95": 668.5
+    },
+    "Unternehmensprofil (alle Themen mit Belegen)": {
+      "n": 268,
+      "ms_median": 19.6,
+      "ms_p95": 235.1
+    },
+    "Namenssuche": {
+      "n": 247,
+      "ms_median": 227.7,
+      "ms_p95": 383.9
+    },
+    "Subtrend-Seite (HTML)": {
+      "n": 258,
+      "ms_median": 265.7,
+      "ms_p95": 470.9
+    }
+  },
+  "rechnerlast_1min_vorher_nachher": [
+    5.53,
+    10.59
+  ],
+  "zeitpunkt_utc": "2026-11-16T21:46:35Z",
+  "bedingung": "erster Lauf direkt nach dem Laden der 10 Mio. Bewertungen",
+  "wiederholungen": [
+    {
+      "lauf": "wiederholung_1",
+      "bedingung": "gleiche Instanz neu gestartet, Datenbank warm",
+      "dauer_s": 60.1,
+      "anfragen": 2113,
+      "je_sekunde": 35.2,
+      "fehler": {},
+      "ms_median": 260.8,
+      "ms_p95": 619.5,
+      "ms_max": 1252.6,
+      "zeitpunkt_utc": "2026-11-16T21:48:01Z",
+      "rechnerlast_1min_vorher_nachher": [
+        8.1,
+        8.43
+      ]
+    },
+    {
+      "lauf": "wiederholung_2",
+      "bedingung": "nach Neustart der Datenbank und der Instanz",
+      "dauer_s": 60.1,
+      "anfragen": 2054,
+      "je_sekunde": 34.2,
+      "fehler": {},
+      "ms_median": 287.0,
+      "ms_p95": 589.2,
+      "ms_max": 1092.8,
+      "zeitpunkt_utc": "2026-11-16T21:49:33Z",
+      "rechnerlast_1min_vorher_nachher": [
+        6.04,
+        9.5
+      ]
+    }
+  ]
+}

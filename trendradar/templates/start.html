@@ -1,0 +1,44 @@
+{% extends "basis.html" %}
+{% set nav = 'start' %}
+{% block titel %}Zukunftsfelder{% endblock %}
+{% block inhalt %}
+{% set lauf = stand.lauf or {} %}{% set zit = stand.zitate or {} %}
+<section class="held">
+  <div>
+    <div class="ueberzeile">Beispielregion Südwestsachsen · {{ lauf.unternehmen|zahl }} Unternehmen</div>
+    <h1>Welche Firmen der Region passen zu welchem Zukunftsthema?</h1>
+    <p class="einleitung">Wählen Sie ein Zukunftsfeld. Sie sehen, welche Unternehmen dazu beitragen können – und zu jeder Aussage
+    die Quelle, die Sie selbst öffnen können.</p>
+    <form class="suche" action="/unternehmen" method="get" role="search">
+      <input name="q" placeholder="Firma oder Ort suchen, z. B. Zwickau" aria-label="Firma oder Ort">
+      <button class="knopf">Suchen</button>
+    </form>
+  </div>
+  <svg class="radar" viewBox="-110 -14 620 428" role="img" aria-label="Zukunftsfelder: je Punkt ein Feld, größer heißt mehr Unternehmen mit Nachweis">
+    <defs><radialGradient id="schein" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#0b5866" stop-opacity=".10"/><stop offset="1" stop-color="#0b5866" stop-opacity="0"/></radialGradient></defs>
+    <circle cx="200" cy="200" r="196" fill="url(#schein)"/>
+    {% for r in (64, 118, 172) %}<circle cx="200" cy="200" r="{{ r }}" fill="none" stroke="#0b5866" stroke-opacity=".14" stroke-width="1.5"/>{% endfor %}
+    <path d="M200 200 L200 28 A172 172 0 0 1 321.6 78.4 Z" fill="#0b5866" fill-opacity=".07"/>
+    {% for p in radar %}<a href="/megatrend/{{ p.id }}"><circle cx="{{ p.x }}" cy="{{ p.y }}" r="{{ p.r }}" fill="{{ p.farbe }}" fill-opacity=".9" stroke="#fff" stroke-width="3"><title>{{ p.name }}: {{ p.n }} Unternehmen mit Nachweis</title></circle><text x="{{ p.tx }}" y="{{ p.ty }}" text-anchor="{{ p.anker }}" font-size="17" font-weight="600" fill="#5b6973">{{ p.kurz }}</text></a>{% endfor %}
+    <circle cx="200" cy="200" r="7" fill="#0b5866"/>
+  </svg>
+</section>
+
+<h2>Zukunftsfelder</h2>
+<div class="raster">
+  {% for m in tax.megatrends.values() %}{% set u = ueb.get(m.id, {}) %}
+  <a class="karte kachel" href="/megatrend/{{ m.id }}" style="--farbe: {{ m.farbe }}">
+    <h3>{{ m.name }}</h3>
+    <p>{{ m.beschreibung|erster_satz }}</p>
+    <div class="kachel-fuss"><b>{{ u.n_beleg|default(0)|zahl }}</b><span>Unternehmen mit Nachweis</span><i>→</i></div>
+  </a>
+  {% endfor %}
+</div>
+
+<div class="fakten">
+  <div class="fakt"><b>{{ lauf.auftraege|zahl }}</b><span>öffentliche Aufträge aus der Region gelesen</span></div>
+  <div class="fakt"><b>{{ lauf.websites.gelesen|zahl }}</b><span>Firmen-Websites gelesen, höflich und nach den Regeln der Seiten</span></div>
+  {% if zit %}{% set g = zit.auftrag.geprueft + zit.web.geprueft + zit.merkmale.geprueft %}{% set w = zit.auftrag.woertlich + zit.web.woertlich + zit.merkmale.woertlich %}
+  <div class="fakt"><b>{{ (w / g)|prozent }}</b><span>der gezeigten Zitate stehen wörtlich in der Quelle ({{ w|zahl }} von {{ g|zahl }} nachgeprüft)</span></div>{% endif %}
+</div>
+{% endblock %}

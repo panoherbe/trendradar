@@ -1,0 +1,16 @@
+{% extends "basis.html" %}
+{% set nav = 'start' %}
+{% block titel %}Liniennetz{% endblock %}
+{% block inhalt %}
+{% set lauf = stand.lauf or {} %}
+<a class="zurueck" href="/">← Zukunftsfelder</a>
+<div class="ueberzeile">Gesamtbild</div>
+<h1>Alle Themen als Liniennetz</h1>
+<p class="einleitung">Jedes Zukunftsfeld ist eine Linie, jedes Thema eine Station. Die Zahl an der Station: Unternehmen mit
+mindestens einem Nachweis. Ein Klick auf eine Station öffnet das Thema.</p>
+<div class="karte">
+  {{ karte_svg|safe }}
+  <p class="leise" style="margin:14px 0 0">Gepunktet verbunden: dasselbe Thema liegt auf mehreren Linien. Die Anordnung entsteht aus
+  der Taxonomie (Version {{ lauf.taxonomie }}), ohne Handarbeit.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,402 @@
+{
+  "zeitpunkt_utc": "2026-11-11T22:40:20Z",
+  "spalte": "score",
+  "paare": 158,
+  "innerhalb_2": 116,
+  "anteil_innerhalb_2": 0.734,
+  "anteil_innerhalb_2_bereiche_gleich_gewichtet": 0.73,
+  "anteil_innerhalb_2_hochgerechnet": 0.913,
+  "hochgerechnet_nach": "Schichten der Ziehung",
+  "je_schicht_der_ziehung": {
+    "1–3": {
+      "n": 50,
+      "innerhalb_2": 46,
+      "bestand": 38094
+    },
+    "4–5": {
+      "n": 8,
+      "innerhalb_2": 4,
+      "bestand": 8
+    },
+    "6–7": {
+      "n": 50,
+      "innerhalb_2": 28,
+      "bestand": 591
+    },
+    "8–10": {
+      "n": 50,
+      "innerhalb_2": 38,
+      "bestand": 243
+    }
+  },
+  "genau_gleich": 66,
+  "zweitbewertung_nicht_bewertbar": 0,
+  "je_bereich": {
+    "1–3": {
+      "n": 89,
+      "pm2": 66,
+      "gleich": 40,
+      "nb": 0,
+      "anteil_innerhalb_2": 0.742
+    },
+    "4–5": {
+      "n": 0,
+      "pm2": 0,
+      "gleich": 0,
+      "nb": 0,
+      "anteil_innerhalb_2": null
+    },
+    "6–7": {
+      "n": 34,
+      "pm2": 22,
+      "gleich": 11,
+      "nb": 0,
+      "anteil_innerhalb_2": 0.647
+    },
+    "8–10": {
+      "n": 35,
+      "pm2": 28,
+      "gleich": 15,
+      "nb": 0,
+      "anteil_innerhalb_2": 0.8
+    }
+  },
+  "abweichungen_ueber_2": [
+    {
+      "nr": 2,
+      "unternehmen": "BPM Ingenieurgesellschaft mbH",
+      "subtrend": "Klimaanpassung & Hochwasserschutz",
+      "verfahren": 3,
+      "zweitbewertung": 9,
+      "begruendung": "Vier Aufträge ökologische Baubegleitung von Hochwasserschutzmaßnahmen (Pockau, Döbeln, Olbernhau) entsprechen umweltfachlicher Begleitung."
+    },
+    {
+      "nr": 6,
+      "unternehmen": "Neumann und Partner Informationssysteme GmbH",
+      "subtrend": "Digitale Verwaltung & Fachverfahren",
+      "verfahren": 3,
+      "zweitbewertung": 6,
+      "begruendung": "Ein Auftrag (doppelt gelistet): Beschaffung und Implementierung CAFM-Software für WBM, passt zu Fachsoftware/Einführung."
+    },
+    {
+      "nr": 7,
+      "unternehmen": "Spezialfahrzeugbau TUNGER exklusiv GmbH",
+      "subtrend": "Elektrofahrzeuge & Antriebe",
+      "verfahren": 9,
+      "zweitbewertung": 4,
+      "begruendung": "Fahrzeugumbau, Aufbauten und Lkw-Wartung belegt, aber nirgends Elektro-, Hybrid- oder Hochvolttechnik."
+    },
+    {
+      "nr": 11,
+      "unternehmen": "ARGE Bauer Tiefbauplanung GmbH und Schulze & Rank Ingenieurgesellschaft mbH",
+      "subtrend": "Brücken- & Straßenerhalt",
+      "verfahren": 10,
+      "zweitbewertung": 6,
+      "begruendung": "Website: grundhafte Erneuerung Straße Am Wasserturm in Asphalt, erneuerte Busbuchten; als Planer, Auftrag nur Hochwasserschutz."
+    },
+    {
+      "nr": 17,
+      "unternehmen": "EAA Elektro-Anlagen Adelsberg GmbH",
+      "subtrend": "Schienenverkehr & Bahninfrastruktur",
+      "verfahren": 6,
+      "zweitbewertung": 2,
+      "begruendung": "Nur Gebäude-Elektroinstallation (Polizeirevier, SPZ, Klinik) und Versorgungsnetze; keine Bahn-, Signal- oder Oberleitungstechnik."
+    },
+    {
+      "nr": 19,
+      "unternehmen": "Heinrich Schmid GmbH & Co. KG",
+      "subtrend": "Photovoltaik & Speicher",
+      "verfahren": 6,
+      "zweitbewertung": 2,
+      "begruendung": "Maler-, Trockenbau-, WDVS- und Fassadenarbeiten; Website nennt Dachdecken, aber nirgends Photovoltaik oder Speicher."
+    },
+    {
+      "nr": 20,
+      "unternehmen": "Wackler Service Group GmbH & Co. KG",
+      "subtrend": "Brücken- & Straßenerhalt",
+      "verfahren": 8,
+      "zweitbewertung": 2,
+      "begruendung": "Ausschließlich Gebäudereinigung (Behörden, Schulen, Kitas); keine Straßenreinigung, Winterdienst oder Brückenarbeiten."
+    },
+    {
+      "nr": 24,
+      "unternehmen": "Raum & Objektausstattung Buschhaus UG",
+      "subtrend": "Bildungsbauten & Kinderbetreuung",
+      "verfahren": 1,
+      "zweitbewertung": 5,
+      "begruendung": "Vorhänge, Rollos und Sitzauflagen für Förderschul-Neubau: Ausstattung einer Schule, aber keine Schulmöbel oder Fachraumeinrichtung."
+    },
+    {
+      "nr": 25,
+      "unternehmen": "BIUG Beratende Ingenieure für Umweltgeotechnik und Grundbau GmbH",
+      "subtrend": "Rückbau & Baustoffrecycling",
+      "verfahren": 3,
+      "zweitbewertung": 6,
+      "begruendung": "Website nennt Spezialisierung „Abfallwirtschaft, Recycling, Gebäuderückbau“; Auftrag nur Geotechnik Lausitzer Kippen, kein konkretes Rückbauprojekt."
+    },
+    {
+      "nr": 30,
+      "unternehmen": "Medizin & Service GmbH",
+      "subtrend": "Digitale Gesundheit & Telemedizin",
+      "verfahren": 2,
+      "zweitbewertung": 7,
+      "begruendung": "Website: eigene Gesundheitsmonitoring-Software GMON entwickelt und betreut, dazu Diagnosesysteme mit Auswertungssoftware; Aufträge nur Klinikmöbel/Leuchten."
+    },
+    {
+      "nr": 31,
+      "unternehmen": "BEA Consulting GmbH",
+      "subtrend": "Recycling & Wertstoffkreislauf",
+      "verfahren": 3,
+      "zweitbewertung": 6,
+      "begruendung": "Website: Anlagenverschrottung, Rückbau und Verwertung, Schrottankauf (Metallaufbereitung); Aufträge sind Abbruch/Rückbau, Entsorgung nur nebenbei."
+    },
+    {
+      "nr": 34,
+      "unternehmen": "zebra I group GmbH I genese Werbeagentur GmbH",
+      "subtrend": "Rechenzentren & IT-Infrastruktur",
+      "verfahren": 6,
+      "zweitbewertung": 2,
+      "begruendung": "Werbeagentur: Kampagne Standortmarke MV, Website nur Marketing-Tech und Datensicherheit allgemein; keine Server, Verkabelung oder Hosting."
+    },
+    {
+      "nr": 39,
+      "unternehmen": "Hoch- und Tiefbau Reichenbach GmbH",
+      "subtrend": "Wasserversorgung & Abwasser",
+      "verfahren": 9,
+      "zweitbewertung": 6,
+      "begruendung": "JVA Zwickau Paket 17D (mehrfach gelistet): Hausanschlusskanäle Regen-/Schmutzwasser, Trink- und Löschwasserleitungen; übrige Aufträge Bahn/Außenanlagen."
+    },
+    {
+      "nr": 48,
+      "unternehmen": "iproplan Planungsgesellschaft mbH",
+      "subtrend": "Klimaanpassung & Hochwasserschutz",
+      "verfahren": 9,
+      "zweitbewertung": 4,
+      "begruendung": "Mehrere Freianlagenplanungen (Star Park, Kita Genthin, Schulhof) als verwandte Arbeit; kein Hochwasser-, Regenwasser- oder Stadtgrün-Bezug genannt."
+    },
+    {
+      "nr": 59,
+      "unternehmen": "G+M Fliesenlegerbetrieb GmbH",
+      "subtrend": "Bezahlbares Wohnen & serielles Bauen",
+      "verfahren": 1,
+      "zweitbewertung": 4,
+      "begruendung": "Fliesen/Bodenbeläge in Kaufhaus und Gastronomie; kein Wohnungsbau oder Wohnungssanierung belegt."
+    },
+    {
+      "nr": 60,
+      "unternehmen": "euro.bau bornemann gmbh",
+      "subtrend": "Brand- & Katastrophenschutz",
+      "verfahren": 2,
+      "zweitbewertung": 7,
+      "begruendung": "Putzarbeiten beim Neubau Feuerwehrtechnisches Zentrum; zweiter Beleg Ortsfeuerwehr Zug, dort aber Altbau-Innenputz."
+    },
+    {
+      "nr": 72,
+      "unternehmen": "FUCHS Bau Ost GmbH",
+      "subtrend": "Klimaanpassung & Hochwasserschutz",
+      "verfahren": 8,
+      "zweitbewertung": 3,
+      "begruendung": "Rohbau und Betonerhaltung; Website nennt nur allgemein Entwässerung und Erschließung, kein Hochwasser- oder Regenwasserbau."
+    },
+    {
+      "nr": 74,
+      "unternehmen": "BBF Baubüro Freiberg GmbH",
+      "subtrend": "Neue Arbeitsorte & Büroumbau",
+      "verfahren": 2,
+      "zweitbewertung": 5,
+      "begruendung": "Planung Büroanbau mit Bildschirmarbeitsplätzen und Empfang (Wismut); Neubauplanung, kein Büroumbau im Bestand."
+    },
+    {
+      "nr": 80,
+      "unternehmen": "Tischlerei Weigel GmbH",
+      "subtrend": "Barrierearmes Bauen & Wohnen",
+      "verfahren": 6,
+      "zweitbewertung": 2,
+      "begruendung": "Einbaumöbel und Innenausbau, auch Palliativstation-Möblierung; nichts Barrierefreies wie Rampen, Duschen, Leitsysteme."
+    },
+    {
+      "nr": 84,
+      "unternehmen": "Mathes Beratende Ingenieure GmbH",
+      "subtrend": "Forschungsinfrastruktur & Labore",
+      "verfahren": 6,
+      "zweitbewertung": 9,
+      "begruendung": "Tragwerksplanung Neubau Chemische Institute Frankfurt, DLR-Laborgebäude, Universitätsbibliothek Gießen; Website: Campus Westend, Labore RGZM."
+    },
+    {
+      "nr": 85,
+      "unternehmen": "ATS Chemnitz Asphalt-, Tief- und Straßenbau GmbH",
+      "subtrend": "Rückbau & Baustoffrecycling",
+      "verfahren": 1,
+      "zweitbewertung": 4,
+      "begruendung": "Nur Asphalt-, Zaun- und Bodenabbruch bei Freianlagen; kein Gebäudeabbruch, keine Schadstoffsanierung oder Recyclingaufbereitung."
+    },
+    {
+      "nr": 87,
+      "unternehmen": "Tischlerei Weigel GmbH",
+      "subtrend": "Klinik- & Laborausstattung",
+      "verfahren": 3,
+      "zweitbewertung": 7,
+      "begruendung": "Möblierung Palliativstation Krankenhaus Mittweida; dazu Einbaumöbel Archäometrie-/Analysewerkstätten und Arztpraxen laut Website."
+    },
+    {
+      "nr": 88,
+      "unternehmen": "Weber & Kunz GmbH",
+      "subtrend": "Klinik- & Laborausstattung",
+      "verfahren": 3,
+      "zweitbewertung": 8,
+      "begruendung": "Viele Aufträge Labormöbel, Digestorien, Laborspülen, Deckenversorgung; jedoch Schul-Fachräume, nicht Klinik- oder Forschungslabore."
+    },
+    {
+      "nr": 96,
+      "unternehmen": "Büroland GmbH",
+      "subtrend": "Bildungsbauten & Kinderbetreuung",
+      "verfahren": 2,
+      "zweitbewertung": 5,
+      "begruendung": "Lose Möblierung mit Tafeln, Werkbänken, Bühne, Garderoben deutet auf Schulen, aber kein Auftrag nennt Schule oder Kita."
+    },
+    {
+      "nr": 101,
+      "unternehmen": "Ge eN I Gesellschaft für ingenieurtechnische Dienstleistungen mbH",
+      "subtrend": "Forschungsinfrastruktur & Labore",
+      "verfahren": 2,
+      "zweitbewertung": 6,
+      "begruendung": "Baubegleitende Ingenieurvermessung Neubau Institutsgebäude Chemie TU Chemnitz; ein Projekt, mehrfach gelistet."
+    },
+    {
+      "nr": 109,
+      "unternehmen": "Serviceteam Simon GmbH",
+      "subtrend": "Klinik- & Laborausstattung",
+      "verfahren": 7,
+      "zweitbewertung": 10,
+      "begruendung": "Wartungsvertrag Krankenbetten Uniklinikum Halle; Website: Wartung, MPBetreibV-Prüfung, Reparatur von Betten, Steckbeckenspülern, Behandlungsliegen."
+    },
+    {
+      "nr": 110,
+      "unternehmen": "Schürer Industrietorbau GmbH",
+      "subtrend": "Brand- & Katastrophenschutz",
+      "verfahren": 3,
+      "zweitbewertung": 9,
+      "begruendung": "Rutsch-/Sprungschachtanlagen in mindestens fünf neuen Feuer- und Rettungswachen (Krefeld, Wetzlar, Köln, Rheydt, Berlin)."
+    },
+    {
+      "nr": 113,
+      "unternehmen": "G.U.B. Ingenieur AG",
+      "subtrend": "Smart City & vernetzte Kommune",
+      "verfahren": 6,
+      "zweitbewertung": 3,
+      "begruendung": "Nur Verkehrsplanung/Elektrotechnik Busbahnhof Borna; keine Lichtsignal-, Beleuchtungssteuerung, Sensorik oder Datenplattform genannt."
+    },
+    {
+      "nr": 116,
+      "unternehmen": "Elektro-Anlagen Adelsberg GmbH",
+      "subtrend": "Brand- & Katastrophenschutz",
+      "verfahren": 6,
+      "zweitbewertung": 2,
+      "begruendung": "Nur allgemeine Elektroinstallation Gymnasium mit Blitzschutz; keine Brandmelde-, Alarm- oder Löschanlage genannt."
+    },
+    {
+      "nr": 118,
+      "unternehmen": "SF-Ausbau GmbH",
+      "subtrend": "Bezahlbares Wohnen & serielles Bauen",
+      "verfahren": 2,
+      "zweitbewertung": 7,
+      "begruendung": "Mehrere Trockenbau-/Sanierungsaufträge im Bestand (TUD, Polizeirevier), aber keine Wohngebäude."
+    },
+    {
+      "nr": 120,
+      "unternehmen": "HGC-T GmbH",
+      "subtrend": "Forschungsinfrastruktur & Labore",
+      "verfahren": 1,
+      "zweitbewertung": 6,
+      "begruendung": "Ein Auftrag Probenahme und chemische Analytik (Feststoff, Eluat, Grundwasser); Rammpegel nur Messstellenbau."
+    },
+    {
+      "nr": 123,
+      "unternehmen": "Maler GmbH Reichenbach",
+      "subtrend": "Bezahlbares Wohnen & serielles Bauen",
+      "verfahren": 2,
+      "zweitbewertung": 8,
+      "begruendung": "Viele Malerarbeiten bei Generalsanierungen; Website: Badsanierung im Bestand, Schimmelsanierung, Wohnraumgestaltung."
+    },
+    {
+      "nr": 130,
+      "unternehmen": "MTW Elektrobau GmbH",
+      "subtrend": "Ladeinfrastruktur",
+      "verfahren": 3,
+      "zweitbewertung": 7,
+      "begruendung": "Busbetriebshof Lindenau Erweiterung Ladeinfrastruktur, Anbindung Ladegeräte; dazu Trafo-/Mittelspannungsanlagen als Stütze."
+    },
+    {
+      "nr": 133,
+      "unternehmen": "STRABAG AG Direktion Sachsen / Thüringen Bereich Ostsachsen / Gruppe Olbernhau Zöblitzer Straße 26, 09526 Olbernhau",
+      "subtrend": "Bezahlbares Wohnen & serielles Bauen",
+      "verfahren": 7,
+      "zweitbewertung": 3,
+      "begruendung": "Auftrag nur Breitbandtiefbau; Konzern-Website nennt allgemein Hochbau, keinen Wohnungsbau oder Fertigteile."
+    },
+    {
+      "nr": 138,
+      "unternehmen": "euro.bau gmbh",
+      "subtrend": "Neue Arbeitsorte & Büroumbau",
+      "verfahren": 1,
+      "zweitbewertung": 4,
+      "begruendung": "Umbau Bundespolizeigebäude mit Innenputz/Spachtel; keine Trennwände, Akustikdecken oder Büroflächenumbau genannt."
+    },
+    {
+      "nr": 145,
+      "unternehmen": "GeoWiD GmbH",
+      "subtrend": "Wissenstransfer & Gründungen",
+      "verfahren": 6,
+      "zweitbewertung": 9,
+      "begruendung": "Website: Verbundforschung SUBmarIne mit TU Freiberg, eigene Entwicklung Sensorträger, Testdurchführung, Vorstellung auf IFAT; Auftrag nur Tauchleistungen."
+    },
+    {
+      "nr": 147,
+      "unternehmen": "DBI-EWI GmbH",
+      "subtrend": "Robotik & Automatisierungstechnik",
+      "verfahren": 6,
+      "zweitbewertung": 2,
+      "begruendung": "Fremdprüfung Kunststoffabdichtung Deponie; Website Gastechnik-Forschung, Automatisierung nur von Versuchsanlagen, keine Robotik."
+    },
+    {
+      "nr": 148,
+      "unternehmen": "Spezialfahrzeugbau TUNGER exklusiv GmbH",
+      "subtrend": "Leichtbau & Faserverbund",
+      "verfahren": 10,
+      "zweitbewertung": 2,
+      "begruendung": "Fahrzeug- und Aufbautenbau, Promotiontrucks; kein Faserverbund, Leichtmetall oder Leichtbau genannt."
+    },
+    {
+      "nr": 149,
+      "unternehmen": "C&E Consulting und Engineering GmbH",
+      "subtrend": "Digitales Planen & Bauen (BIM)",
+      "verfahren": 6,
+      "zweitbewertung": 9,
+      "begruendung": "Viele HOAI-Planungsaufträge: Tragwerksplanung, Objektplanung Ingenieurbauwerke, Technische Ausrüstung; dazu Vermessung/Bestandserfassung; kein BIM."
+    },
+    {
+      "nr": 151,
+      "unternehmen": "IBT GmbH",
+      "subtrend": "Forschungsinfrastruktur & Labore",
+      "verfahren": 3,
+      "zweitbewertung": 9,
+      "begruendung": "Zahlreiche Lieferungen Hochtemperatur-, Vakuum-, Pyrolyseöfen, Glovebox Hochschule Pforzheim, Forschungsanlage Imprägnierstrecke."
+    },
+    {
+      "nr": 153,
+      "unternehmen": "Wertstoffzentrum Zwickauer Land GmbH",
+      "subtrend": "Wasserversorgung & Abwasser",
+      "verfahren": 2,
+      "zweitbewertung": 5,
+      "begruendung": "Zwei Lose Schlammentnahme aus Kleinkläranlagen und Grubenentleerung; verwandte Abwasserleistung, aber keine benannte Fähigkeit."
+    },
+    {
+      "nr": 155,
+      "unternehmen": "Andreas Süß Gerüstbau GmbH",
+      "subtrend": "Bildungsbauten & Kinderbetreuung",
+      "verfahren": 1,
+      "zweitbewertung": 8,
+      "begruendung": "Gerüstbau an mehreren Schulsanierungen/-erweiterungen (Max-Weber-Schule, GS Theodor Eckert, GGS Opladen, René-Schickele-Schule)."
+    }
+  ]
+}
