@@ -40,7 +40,7 @@ Kurz: Jede Zahl unten ist gemessen und steht mit Datum in [`nachweis/`](nachweis
 | Wo in der Region steckt was? | Radar der elf Zukunftsfelder auf der Startseite; Tabelle Zukunftsfeld × Kreis; alle Themen als Liniennetz unter `/karte` |
 | Hält das große Bestände aus? | **Lasttest mit simulierten Daten** (16.11.2026): 100.000 Unternehmen × 100 Themen = 10 Mio. Einordnungen, 10 gleichzeitige Nutzer, drei Läufe zu 60 s: 95 % der Antworten unter 1,2 s im ersten Lauf direkt nach dem Laden (dort 3 von 1.565 Anfragen mit Serverfehler), unter 0,62 s in zwei Wiederholungen ohne Fehler ([Messprotokoll 16.11.2026](nachweis/2026-11-16/MESSPROTOKOLL.md)) |
 | Kann ich die Ergebnisse weiterverwenden? | Schnittstelle (REST, OpenAPI) unter `/api/v1`, Export als CSV und Excel |
-| Wohin gehen die Texte? | nirgendwohin: beide Modelle laufen auf dem eigenen Server, kein Cloud-Dienst. Ansprechpersonen, E-Mail, Telefon und Steuernummern werden nie gelesen; E-Mail-Adressen, Telefonnummern und Namen nach einer Anrede werden vor dem Speichern entfernt |
+| Wohin gehen die Texte? | Die Anwendung schickt keinen Text in eine Cloud; nur die einmalige Qualitätsmessung nutzte ein kommerzielles Sprachmodell (öffentliche Texte). Beide Modelle der Anwendung laufen auf dem eigenen Server. Ansprechpersonen, E-Mail, Telefon und Steuernummern werden nie gelesen; E-Mail-Adressen, Telefonnummern und Namen nach einer Anrede werden vor dem Speichern entfernt |
 | Ist das geprüft? | 40 automatische Tests, darunter eine Prüfung aller ausgelieferten Datendateien auf E-Mail-Adressen und Telefonnummern |
 | Darf ich das nutzen? | Quellcode unter AGPL-3.0, offen und frei; beide Modelle unter Apache 2.0 |
 
